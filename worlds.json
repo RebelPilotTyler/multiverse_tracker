@@ -1,0 +1,26 @@
+[
+    {
+        "id": "Faerûn",
+        "name": "Faerûn",
+        "top": "20%",
+        "left": "40%"
+    },
+    {
+        "id": "Namek",
+        "name": "Namek",
+        "top": "30%",
+        "left": "60%"
+    },
+    {
+        "id": "RWBY",
+        "name": "RWBY",
+        "top": "50%",
+        "left": "50%"
+    },
+    {
+        "id": "MyHeroAcademia",
+        "name": "My Hero Academia",
+        "top": "70%",
+        "left": "30%"
+    }
+]

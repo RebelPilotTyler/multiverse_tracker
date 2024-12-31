@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiverse Control Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #map {
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .planet {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+            background: gray; /* Default to gray */
+        }
+        .progress-bars {
+            position: absolute;
+            width: 120px;
+            padding: 5px;
+            background-color: black; /* Black box */
+            border: 1px solid white;
+            border-radius: 5px;
+            top: -50px;
+            left: -35px;
+            display: none;
+        }
+        .progress-container {
+            width: 100%;
+            height: 5px;
+            background-color: gray; /* Fill rest with gray */
+            border-radius: 3px;
+            margin: 3px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            border-radius: 3px;
+            position: absolute;
+        }
+        .ASTRAL-bar {
+            background-color: blue;
+        }
+        .SPIRIT-bar {
+            background-color: purple;
+        }
+        #admin {
+            margin-top: 20px;
+            display: none; /* Admin section is hidden initially */
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiverse Control Tracker</h1>
+    <div id="map">
+        <img src="Star-Wars.jpeg" alt="Multiverse Map" width="100%">
+    </div>
+
+    <!-- Admin Controls -->
+    <div id="admin">
+        <h2>Admin Controls</h2>
+        <form id="update-form">
+            <label for="world">Select World:</label>
+            <select id="world"></select>
+            <br><br>
+            <label for="ASTRAL">ASTRAL Control (%):</label>
+            <input type="number" id="ASTRAL" min="0" max="100" step="10" value="0">
+            <br><br>
+            <label for="SPIRIT">SPIRIT Control (%):</label>
+            <input type="number" id="SPIRIT" min="0" max="100" step="10" value="0">
+            <br><br>
+            <button type="button" onclick="updateWorldStatus()">Update Status</button>
+        </form>
+    </div>
+
+    <script>
+        const worldStatuses = {};
+        const mapElement = document.getElementById("map");
+        const worldSelect = document.getElementById("world");
+
+        async function loadWorlds() {
+            const response = await fetch("worlds.json");
+            const worlds = await response.json();
+
+            worlds.forEach(world => {
+                // Initialize world status
+                worldStatuses[world.id] = { ASTRAL: 0, SPIRIT: 0 };
+
+                // Create planet element
+                const planet = document.createElement("div");
+                planet.id = world.id;
+                planet.className = "planet";
+                planet.style.top = world.top;
+                planet.style.left = world.left;
+                planet.textContent = world.name;
+                planet.onmouseover = () => showProgress(planet);
+                planet.onmouseout = () => hideProgress(planet);
+                planet.onclick = () => viewWorld(planet);
+
+                // Add progress bars
+                const progressBars = document.createElement("div");
+                progressBars.className = "progress-bars";
+                progressBars.innerHTML = `
+                    <div class="progress-container">
+                        <div class="progress ASTRAL-bar"></div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress SPIRIT-bar"></div>
+                    </div>
+                `;
+                planet.appendChild(progressBars);
+
+                mapElement.appendChild(planet);
+
+                // Add to world select dropdown
+                const option = document.createElement("option");
+                option.value = world.id;
+                option.textContent = world.name;
+                worldSelect.appendChild(option);
+            });
+        }
+
+        function viewWorld(element) {
+            const world = element.id;
+            const status = worldStatuses[world];
+            alert(`${world} - ASTRAL: ${status.ASTRAL}%, SPIRIT: ${status.SPIRIT}%.`);
+        }
+
+        function updateWorldStatus() {
+            const world = document.getElementById("world").value;
+            const ASTRAL = parseInt(document.getElementById("ASTRAL").value, 10);
+            const SPIRIT = parseInt(document.getElementById("SPIRIT").value, 10);
+
+            // Update control values
+            worldStatuses[world] = { ASTRAL, SPIRIT };
+
+            // Update planet appearance
+            const planet = document.getElementById(world);
+            if (ASTRAL === 100) {
+                planet.style.background = "blue";
+            } else if (SPIRIT === 100) {
+                planet.style.background = "purple";
+            } else {
+                planet.style.background = "gray";
+            }
+
+            // Update progress bars
+            const progressBars = planet.querySelector('.progress-bars');
+            progressBars.querySelector('.ASTRAL-bar').style.width = `${ASTRAL}%`;
+            progressBars.querySelector('.SPIRIT-bar').style.width = `${SPIRIT}%`;
+
+            alert(`Updated ${world} - ASTRAL: ${ASTRAL}%, SPIRIT: ${SPIRIT}%.`);
+        }
+
+        function showProgress(element) {
+            const progressBars = element.querySelector('.progress-bars');
+            progressBars.style.display = 'block';
+        }
+
+        function hideProgress(element) {
+            const progressBars = element.querySelector('.progress-bars');
+            progressBars.style.display = 'none';
+        }
+
+        function promptAdminAccess() {
+            const password = prompt("Enter admin password:");
+            if (password === "admin123") { // Replace with your desired password
+                document.getElementById("admin").style.display = "block";
+            } else {
+                alert("Access denied.");
+            }
+        }
+
+        // Load worlds and initialize
+        loadWorlds().then(() => promptAdminAccess());
+    </script>
+</body>
+</html>
