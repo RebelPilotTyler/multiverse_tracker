@@ -1,4 +1,4 @@
-const GITHUB_TOKEN = 'https://multiverse-tracker.onrender.com';
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const REPO_OWNER = 'RebelPilotTyler'; // Replace with your GitHub username
 const REPO_NAME = 'multiverse_tracker'; // Replace with your repository name
 const FILE_PATH = 'worlds.json'; // Path to your JSON file
