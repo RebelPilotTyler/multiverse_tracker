@@ -5,7 +5,7 @@ const FILE_PATH = 'worlds.json'; // Path to your JSON file
 
 async function fetchWorldStatuses() {
     try {
-        const response = await fetch('https://<your-render-url>.onrender.com/fetch-worlds');
+        const response = await fetch('https://multiverse-tracker.onrender.com/fetch-worlds');
         return await response.json();
     } catch (error) {
         console.error('Error fetching world statuses:', error);
@@ -54,7 +54,7 @@ async function updateWorldStatuses(updatedStatuses) {
 
 async function saveWorldStatuses(updatedWorlds) {
     try {
-        const response = await fetch('https://<your-render-url>.onrender.com/update-worlds', {
+        const response = await fetch('https://multiverse-tracker.onrender.com/update-worlds', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ updatedWorlds }),
@@ -69,6 +69,7 @@ async function saveWorldStatuses(updatedWorlds) {
         console.error('Error saving world statuses:', error);
     }
 }
+
 
 // Example usage:
 (async function () {
