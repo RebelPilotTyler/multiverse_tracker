@@ -5,14 +5,14 @@ const FILE_PATH = 'worlds.json'; // Path to your JSON file
 
 async function fetchWorldStatuses() {
     try {
-        const response = await fetch('https://<your-render-subdomain>.onrender.com/fetch-worlds');
-        const data = await response.json();
-        return JSON.parse(atob(data.content)); // Decode the Base64 content
+        const response = await fetch('https://<your-render-url>.onrender.com/fetch-worlds');
+        return await response.json();
     } catch (error) {
         console.error('Error fetching world statuses:', error);
         return {};
     }
 }
+
 
 
 async function updateWorldStatuses(updatedStatuses) {
@@ -49,6 +49,24 @@ async function updateWorldStatuses(updatedStatuses) {
         console.log('World statuses updated successfully.');
     } catch (error) {
         console.error('Error updating world statuses:', error);
+    }
+}
+
+async function saveWorldStatuses(updatedWorlds) {
+    try {
+        const response = await fetch('https://<your-render-url>.onrender.com/update-worlds', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ updatedWorlds }),
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to save world statuses');
+        }
+
+        console.log('Worlds updated successfully');
+    } catch (error) {
+        console.error('Error saving world statuses:', error);
     }
 }
 
