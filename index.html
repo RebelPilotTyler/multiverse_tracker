@@ -74,23 +74,6 @@
         <img src="Star-Wars.jpeg" alt="Multiverse Map" width="100%">
     </div>
 
-    <!-- Admin Controls -->
-    <div id="admin">
-        <h2>Admin Controls</h2>
-        <form id="update-form">
-            <label for="world">Select World:</label>
-            <select id="world"></select>
-            <br><br>
-            <label for="ASTRAL">ASTRAL Control (%):</label>
-            <input type="number" id="ASTRAL" min="0" max="100" step="10" value="0">
-            <br><br>
-            <label for="SPIRIT">SPIRIT Control (%):</label>
-            <input type="number" id="SPIRIT" min="0" max="100" step="10" value="0">
-            <br><br>
-            <button type="button" onclick="updateWorldStatus()">Update Status</button>
-        </form>
-    </div>
-
     <script>
         const worldStatuses = {};
         const mapElement = document.getElementById("map");
@@ -178,15 +161,6 @@
         function hideProgress(element) {
             const progressBars = element.querySelector('.progress-bars');
             progressBars.style.display = 'none';
-        }
-
-        function promptAdminAccess() {
-            const password = prompt("Enter admin password:");
-            if (password === "admin123") { // Replace with your desired password
-                document.getElementById("admin").style.display = "block";
-            } else {
-                alert("Access denied.");
-            }
         }
 
         // Load worlds and initialize
