@@ -41,3 +41,57 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Proxy server running on port ${PORT}`);
 });
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.json()); // Middleware to parse JSON request bodies
+
+app.post('/update-worlds', async (req, res) => {
+    try {
+        const { updatedWorlds } = req.body; // Get the updated data from the request body
+
+        // Fetch the current file details to get the SHA
+        const getFileResponse = await fetch(
+            `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`,
+            {
+                headers: {
+                    Authorization: `token ${GITHUB_TOKEN}`,
+                },
+            }
+        );
+
+        if (!getFileResponse.ok) {
+            console.error(`Error fetching file details: ${getFileResponse.statusText}`);
+            return res.status(getFileResponse.status).send('Failed to fetch file details');
+        }
+
+        const fileData = await getFileResponse.json();
+        const updatedContent = Buffer.from(JSON.stringify(updatedWorlds, null, 2)).toString('base64'); // Encode updated JSON
+
+        // Update the file on GitHub
+        const updateResponse = await fetch(
+            `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`,
+            {
+                method: 'PUT',
+                headers: {
+                    Authorization: `token ${GITHUB_TOKEN}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    message: 'Update worlds.json',
+                    content: updatedContent,
+                    sha: fileData.sha, // Required for updating the file
+                }),
+            }
+        );
+
+        if (!updateResponse.ok) {
+            console.error(`Error updating file: ${updateResponse.statusText}`);
+            return res.status(updateResponse.status).send('Failed to update file');
+        }
+
+        res.send('Worlds updated successfully');
+    } catch (error) {
+        console.error('Error updating worlds:', error);
+        res.status(500).send('Error updating worlds');
+    }
+});
