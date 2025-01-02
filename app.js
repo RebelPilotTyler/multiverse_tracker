@@ -3,15 +3,15 @@ const REPO_OWNER = 'RebelPilotTyler'; // Replace with your GitHub username
 const REPO_NAME = 'multiverse_tracker'; // Replace with your repository name
 const FILE_PATH = 'worlds.json'; // Path to your JSON file
 
-async function fetchWorldStatuses() {
+const fetchWorldStatuses = async () => {
     try {
-        const response = await fetch('https://multiverse-tracker.onrender.com/fetch-worlds');
-        return await response.json();
+        const response = await fetch('https://<your-render-url>.onrender.com/fetch-worlds?cache-bust=' + Date.now());
+        return await response.json(); // Fetch the latest data
     } catch (error) {
         console.error('Error fetching world statuses:', error);
-        return {};
+        return [];
     }
-}
+};
 
 
 
@@ -70,6 +70,29 @@ async function saveWorldStatuses(updatedWorlds) {
     }
 }
 
+const displayWorlds = async () => {
+    const worlds = await fetchWorldStatuses();
+
+    // Clear existing world elements
+    const mapElement = document.getElementById('map');
+    mapElement.innerHTML = '<img src="Star-Wars.jpeg" alt="Multiverse Map" width="100%">';
+
+    // Dynamically add worlds to the map
+    worlds.forEach((world) => {
+        const planet = document.createElement('div');
+        planet.id = world.id;
+        planet.className = 'planet';
+        planet.style.top = world.top;
+        planet.style.left = world.left;
+        planet.textContent = world.name;
+
+        // Add click, hover, etc., events as needed
+        mapElement.appendChild(planet);
+    });
+};
+
+// Call the function to display worlds when the page loads
+displayWorlds();
 
 // Example usage:
 (async function () {
