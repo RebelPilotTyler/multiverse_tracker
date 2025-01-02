@@ -8,7 +8,7 @@ const fetchWorldStatuses = async () => {
             throw new Error(`Fetch error: ${response.statusText}`);
         }
         const worlds = await response.json();
-        console.log('Fetched Worlds:', worlds);
+        console.log('Fetched Worlds:', worlds); // Debugging line
         return worlds;
     } catch (error) {
         console.error('Error fetching world statuses:', error);
