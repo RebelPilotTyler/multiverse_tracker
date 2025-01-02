@@ -1,5 +1,4 @@
 const express = require('express');
-const cors = require('cors'); // Import CORS middleware
 const fetch = require('node-fetch');
 
 const app = express();
