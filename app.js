@@ -1,6 +1,6 @@
 const GITHUB_TOKEN = 'your_github_token'; // Replace with your token
-const REPO_OWNER = 'your_username'; // Replace with your GitHub username
-const REPO_NAME = 'multiverse-tracker'; // Replace with your repository name
+const REPO_OWNER = 'RebelPilotTyler'; // Replace with your GitHub username
+const REPO_NAME = 'multiverse_tracker'; // Replace with your repository name
 const FILE_PATH = 'worlds.json'; // Path to your JSON file
 
 async function fetchWorldStatuses() {
