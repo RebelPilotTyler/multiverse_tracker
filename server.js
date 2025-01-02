@@ -47,7 +47,13 @@ app.use(bodyParser.json()); // Middleware to parse JSON request bodies
 
 app.post('/update-worlds', async (req, res) => {
     try {
-        const { updatedWorlds } = req.body; // Get the updated data from the request body
+        // Get the updated data from the request body
+        const { updatedWorlds } = req.body;
+
+        // Validate the updatedWorlds format
+        if (!Array.isArray(updatedWorlds)) {
+            return res.status(400).send('Invalid data format: Expected an array of worlds');
+        }
 
         // Fetch the current file details to get the SHA
         const getFileResponse = await fetch(
@@ -65,7 +71,9 @@ app.post('/update-worlds', async (req, res) => {
         }
 
         const fileData = await getFileResponse.json();
-        const updatedContent = Buffer.from(JSON.stringify(updatedWorlds, null, 2)).toString('base64'); // Encode updated JSON
+
+        // Encode the updated content to Base64
+        const updatedContent = Buffer.from(JSON.stringify(updatedWorlds, null, 2)).toString('base64');
 
         // Update the file on GitHub
         const updateResponse = await fetch(
@@ -77,7 +85,7 @@ app.post('/update-worlds', async (req, res) => {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    message: 'Update worlds.json',
+                    message: 'Update worlds.json with new control data',
                     content: updatedContent,
                     sha: fileData.sha, // Required for updating the file
                 }),
