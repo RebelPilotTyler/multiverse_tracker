@@ -1,22 +1,22 @@
 [
-  {
-    "id": "Faerûn",
-    "name": "Faerûn",
-    "top": "20%",
-    "left": "40%",
-    "control": {
-      "ASTRAL": 50,
-      "SPIRIT": 50
+    {
+        "id": "Faerûn",
+        "name": "Faerûn",
+        "top": "20%",
+        "left": "40%",
+        "control": {
+            "ASTRAL": 60,
+            "SPIRIT": 40
+        }
+    },
+    {
+        "id": "Namek",
+        "name": "Namek",
+        "top": "30%",
+        "left": "60%",
+        "control": {
+            "ASTRAL": 30,
+            "SPIRIT": 70
+        }
     }
-  },
-  {
-    "id": "Namek",
-    "name": "Namek",
-    "top": "30%",
-    "left": "60%",
-    "control": {
-      "ASTRAL": 70,
-      "SPIRIT": 30
-    }
-  }
 ]
