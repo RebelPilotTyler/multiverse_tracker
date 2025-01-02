@@ -10,6 +10,10 @@ const FILE_PATH = 'worlds.json'; // Path to the file in the repository
 
 app.use(express.json()); // Middleware to parse JSON request bodies
 
+app.get('/', (req, res) => {
+    res.send('Server is running! Use /fetch-worlds or /update-worlds to interact.');
+});
+
 // Route to fetch worlds.json
 app.get('/fetch-worlds', async (req, res) => {
     try {
