@@ -1,22 +1,13 @@
-import { GITHUB_TOKEN } from './config.js';
+const API_URL = 'worlds.json'; // Path to your manually updated worlds.json file
 
-const API_URL = 'https://api.github.com/repos/RebelPilotTyler/multiverse_tracker/contents/worlds.json';
-
-// Fetch the current world statuses from the GitHub API
+// Fetch the current world statuses from worlds.json
 const fetchWorldStatuses = async () => {
     try {
-        const response = await fetch(API_URL, {
-            headers: {
-                Authorization: `token ${GITHUB_TOKEN}`,
-            },
-        });
-
+        const response = await fetch(API_URL);
         if (!response.ok) {
             throw new Error(`Fetch error: ${response.statusText}`);
         }
-
-        const data = await response.json();
-        const worlds = JSON.parse(atob(data.content)); // Decode Base64 content
+        const worlds = await response.json();
         console.log('Fetched Worlds:', worlds);
         return worlds;
     } catch (error) {
