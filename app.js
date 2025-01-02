@@ -86,12 +86,32 @@ const displayWorlds = async () => {
         planet.style.left = world.left;
         planet.textContent = world.name;
 
-        // Add click, hover, etc., events as needed
+        // Create the progress bars
+        const progressBars = document.createElement('div');
+        progressBars.className = 'progress-bars';
+        progressBars.innerHTML = `
+            <div class="progress-container">
+                <div class="progress ASTRAL-bar" style="width: ${world.control.ASTRAL}%;"></div>
+            </div>
+            <div class="progress-container">
+                <div class="progress SPIRIT-bar" style="width: ${world.control.SPIRIT}%;"></div>
+            </div>
+        `;
+        planet.appendChild(progressBars);
+
+        // Add hover events to show progress bars
+        planet.onmouseover = () => {
+            progressBars.style.display = 'block';
+        };
+        planet.onmouseout = () => {
+            progressBars.style.display = 'none';
+        };
+
+        // Add the planet to the map
         mapElement.appendChild(planet);
     });
 };
 
-// Call the function to display worlds when the page loads
 displayWorlds();
 
 // Example usage:
