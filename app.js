@@ -5,7 +5,7 @@ const FILE_PATH = 'worlds.json'; // Path to your JSON file
 
 const fetchWorldStatuses = async () => {
     try {
-        const response = await fetch('https://<your-render-url>.onrender.com/fetch-worlds?cache-bust=' + Date.now());
+        const response = await fetch('https://multiverse-tracker.onrender.com/fetch-worlds?cache-bust=' + Date.now());
         return await response.json(); // Fetch the latest data
     } catch (error) {
         console.error('Error fetching world statuses:', error);
