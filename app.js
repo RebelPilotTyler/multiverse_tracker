@@ -1,6 +1,6 @@
-const API_URL = 'worlds.json'; // Path to your manually updated worlds.json file
+const API_URL = 'worlds.json'; // Path to your worlds.json file
 
-// Fetch the current world statuses from worlds.json
+// Fetch the current world statuses
 const fetchWorldStatuses = async () => {
     try {
         const response = await fetch(API_URL);
@@ -29,7 +29,15 @@ const displayWorlds = async () => {
         planet.className = 'planet';
         planet.style.top = world.top;
         planet.style.left = world.left;
-        planet.textContent = world.name;
+
+        // Create the image element for the planet
+        const planetImage = document.createElement('img');
+        planetImage.src = world.picture;
+        planetImage.alt = world.name;
+        planetImage.className = 'planet-image';
+
+        // Add the image inside the planet div
+        planet.appendChild(planetImage);
 
         // Create the progress bars
         const progressBars = document.createElement('div');
