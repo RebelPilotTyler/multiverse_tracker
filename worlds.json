@@ -1,42 +1,22 @@
 [
-    {
-        "id": "Faerûn",
-        "name": "Faerûn",
-        "top": "20%",
-        "left": "40%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0
-        }
-    },
-    {
-        "id": "Namek",
-        "name": "Namek",
-        "top": "30%",
-        "left": "60%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0
-        }
-    },
-    {
-        "id": "RWBY",
-        "name": "RWBY",
-        "top": "50%",
-        "left": "50%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0
-        }
-    },
-    {
-        "id": "MyHeroAcademia",
-        "name": "My Hero Academia",
-        "top": "70%",
-        "left": "30%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0
-        }
+  {
+    "id": "Faerûn",
+    "name": "Faerûn",
+    "top": "20%",
+    "left": "40%",
+    "control": {
+      "ASTRAL": 50,
+      "SPIRIT": 50
     }
+  },
+  {
+    "id": "Namek",
+    "name": "Namek",
+    "top": "30%",
+    "left": "60%",
+    "control": {
+      "ASTRAL": 70,
+      "SPIRIT": 30
+    }
+  }
 ]
