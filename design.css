@@ -13,8 +13,8 @@
 }
 
 .planet-image {
-    width: 80%; /* Adjust to control padding inside the circle */
-    height: 80%; /* Same as width for proportional scaling */
+    width: 20%; /* Adjust to control padding inside the circle */
+    height: 20%; /* Same as width for proportional scaling */
     object-fit: contain; /* Ensures the entire image fits within the circle */
     filter: brightness(0) invert(1); /* Changes white parts of the image to match background color */
     pointer-events: none; /* Prevents interaction with the image itself */
