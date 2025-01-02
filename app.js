@@ -5,11 +5,7 @@ const FILE_PATH = 'worlds.json'; // Path to your JSON file
 
 async function fetchWorldStatuses() {
     try {
-        const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`, {
-            headers: {
-                Authorization: `token ${GITHUB_TOKEN}`
-            }
-        });
+        const response = await fetch('https://<your-render-subdomain>.onrender.com/fetch-worlds');
         const data = await response.json();
         return JSON.parse(atob(data.content)); // Decode the Base64 content
     } catch (error) {
@@ -17,6 +13,7 @@ async function fetchWorldStatuses() {
         return {};
     }
 }
+
 
 async function updateWorldStatuses(updatedStatuses) {
     try {
