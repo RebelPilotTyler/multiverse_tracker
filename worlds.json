@@ -5,8 +5,8 @@
         "top": "20%",
         "left": "30%",
         "control": {
-            "ASTRAL": 60,
-            "SPIRIT": 40,
+            "ASTRAL": 100,
+            "SPIRIT": 0,
             "Gilded_Garden": 0,
             "Marines": 0,
             "Flood": 0,
@@ -15,9 +15,9 @@
         },
         "picture": "Logos/Faerun.png",
         "details": {
-            "description": "A vast continent filled with magic, danger, and opportunity.",
-            "points_of_interest": "Waterdeep \n Baldur's Gate",
-            "rifts": "Sword Coast Beach > ???",
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
             "merge_points": "N/A"
         }
     },
@@ -27,15 +27,21 @@
         "top": "40%",
         "left": "50%",
         "control": {
-            "ASTRAL": 30,
-            "SPIRIT": 70,
+            "ASTRAL": 0,
+            "SPIRIT": 0,
             "Gilded_Garden": 0,
             "Marines": 0,
             "Flood": 0,
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/Dragon Ball.png"
+        "picture": "Logos/Dragon Ball.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "Attack on Titan",
@@ -43,15 +49,22 @@
         "top": "60%",
         "left": "70%",
         "control": {
-            "ASTRAL": 10,
-            "SPIRIT": 40,
+            "ASTRAL": 0,
+            "SPIRIT": 20,
             "Gilded_Garden": 0,
             "Marines": 0,
             "Flood": 0,
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/AOT.png"
+        "picture": "Logos/AOT.png",
+        "x_overlay": true,
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "ATLA",
@@ -67,45 +80,19 @@
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/ATLA.png"
+        "picture": "Logos/ATLA.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
-        "id": "LoZ",
-        "name": "LoZ",
+        "id": "Hyrule",
+        "name": "Hyrule",
         "top": "30%",
         "left": "60%",
-        "control": {
-            "ASTRAL": 10,
-            "SPIRIT": 60,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/Hylian Crest.png"
-    },
-    {
-        "id": "Star Wars",
-        "name": "Star Wars",
-        "top": "50%",
-        "left": "80%",
-        "control": {
-            "ASTRAL": 70,
-            "SPIRIT": 30,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/Jedi Order.png"
-    },
-    {
-        "id": "JJK",
-        "name": "JJK",
-        "top": "70%",
-        "left": "40%",
         "control": {
             "ASTRAL": 10,
             "SPIRIT": 40,
@@ -115,7 +102,57 @@
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/JJK.png"
+        "picture": "Logos/Hylian Crest.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
+    },
+    {
+        "id": "Star Wars",
+        "name": "Star Wars",
+        "top": "50%",
+        "left": "80%",
+        "control": {
+            "ASTRAL": 70,
+            "SPIRIT": 15,
+            "Gilded_Garden": 0,
+            "Marines": 0,
+            "Flood": 0,
+            "Super_Earth": 0,
+            "New_Republic": 0
+        },
+        "picture": "Logos/Jedi Order.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
+    },
+    {
+        "id": "Jujutsu Kaisen",
+        "name": "Jujutsu Kaisen",
+        "top": "70%",
+        "left": "40%",
+        "control": {
+            "ASTRAL": 10,
+            "SPIRIT": 10,
+            "Gilded_Garden": 0,
+            "Marines": 0,
+            "Flood": 0,
+            "Super_Earth": 0,
+            "New_Republic": 0
+        },
+        "picture": "Logos/JJK.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "One Piece",
@@ -131,7 +168,13 @@
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/World Gov..png"
+        "picture": "Logos/World Gov..png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "Minecraft",
@@ -147,7 +190,13 @@
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/Minecraft.png"
+        "picture": "Logos/Minecraft.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "Monster Hunter",
@@ -163,7 +212,13 @@
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/Monster Hunter.png"
+        "picture": "Logos/Monster Hunter.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "Oni World",
@@ -171,15 +226,21 @@
         "top": "30%",
         "left": "70%",
         "control": {
-            "ASTRAL": 70,
-            "SPIRIT": 10,
+            "ASTRAL": 0,
+            "SPIRIT": 0,
             "Gilded_Garden": 0,
             "Marines": 0,
             "Flood": 0,
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/Oni World.png"
+        "picture": "Logos/Oni World.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "Panthalassa",
@@ -195,7 +256,13 @@
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/Panthalassa.png"
+        "picture": "Logos/Panthalassa.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "Pokemon",
@@ -203,7 +270,7 @@
         "top": "70%",
         "left": "80%",
         "control": {
-            "ASTRAL": 20,
+            "ASTRAL": 10,
             "SPIRIT": 0,
             "Gilded_Garden": 0,
             "Marines": 0,
@@ -211,7 +278,13 @@
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/Pokemon.png"
+        "picture": "Logos/Pokemon.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "Remnant",
@@ -227,7 +300,13 @@
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/RWBY.png"
+        "picture": "Logos/RWBY.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "Skylands",
@@ -243,7 +322,13 @@
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/Skylanders.png"
+        "picture": "Logos/Skylanders.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "Slime",
@@ -259,7 +344,13 @@
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/Slime.png"
+        "picture": "Logos/Slime.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "Splatoon",
@@ -275,7 +366,13 @@
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/Splatoon.png"
+        "picture": "Logos/Splatoon.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "Super Earth",
@@ -288,14 +385,20 @@
             "Gilded_Garden": 0,
             "Marines": 0,
             "Flood": 0,
-            "Super_Earth": 0,
+            "Super_Earth": 100,
             "New_Republic": 0
         },
-        "picture": "Logos/Super Earth.png"
+        "picture": "Logos/Super Earth.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
-        "id": "MHA",
-        "name": "MHA",
+        "id": "My Hero",
+        "name": "My Hero",
         "top": "10%",
         "left": "80%",
         "control": {
@@ -307,7 +410,13 @@
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/UA.png"
+        "picture": "Logos/UA.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     },
     {
         "id": "Halo",
@@ -319,10 +428,16 @@
             "SPIRIT": 0,
             "Gilded_Garden": 0,
             "Marines": 0,
-            "Flood": 0,
+            "Flood": 40,
             "Super_Earth": 0,
             "New_Republic": 0
         },
-        "picture": "Logos/UNSC.png"
+        "picture": "Logos/UNSC.png",
+        "details": {
+            "description": "-",
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        }
     }
 ]
