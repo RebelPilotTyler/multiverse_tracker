@@ -94,7 +94,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden; /* Prevent scrolling the page itself */
-    background: url('Star-Wars.jpeg') center center / cover no-repeat; /* Background behind the map */
+    background: url('Astral_Sea.jpg') center center / cover no-repeat; /* Background behind the map */
 }
 
 /* Map container for zooming and panning */
