@@ -1,7 +1,6 @@
-const API_URL = 'worlds.json'; // Path to your worlds.json file
+export const API_URL = 'worlds.json'; // Path to your worlds.json file
 
-// Fetch the current world statuses
-const fetchWorldStatuses = async () => {
+export const fetchWorldStatuses = async () => {
     try {
         const response = await fetch(API_URL);
         if (!response.ok) {
@@ -16,8 +15,7 @@ const fetchWorldStatuses = async () => {
     }
 };
 
-// Dynamically display the worlds on the map
-const displayWorlds = async () => {
+export const displayWorlds = async () => {
     const worlds = await fetchWorldStatuses();
 
     const mapElement = document.getElementById('map');
@@ -30,41 +28,53 @@ const displayWorlds = async () => {
         planet.style.top = world.top;
         planet.style.left = world.left;
 
-        // Create the image element for the planet
         const planetImage = document.createElement('img');
         planetImage.src = world.picture;
         planetImage.alt = world.name;
         planetImage.className = 'planet-image';
 
-        // Add the image inside the planet div
         planet.appendChild(planetImage);
 
-        // Create the progress bars
+        // Create the progress bars container
         const progressBars = document.createElement('div');
         progressBars.className = 'progress-bars';
-        progressBars.innerHTML = `
-            <div class="progress-container">
-                <div class="progress ASTRAL-bar" style="width: ${world.control.ASTRAL}%;"></div>
-            </div>
-            <div class="progress-container">
-                <div class="progress SPIRIT-bar" style="width: ${world.control.SPIRIT}%;"></div>
-            </div>
-        `;
 
+        // Add progress bars for each faction (ASTRAL and SPIRIT)
+        const factions = [
+            { name: 'ASTRAL', color: 'blue' },
+            { name: 'SPIRIT', color: 'purple' },
+            { name: 'Gilded_Garden', color: 'gold'},
+            { name: 'Marines', color: 'white'},
+            { name: 'Flood', color: 'green'},
+            { name: 'Super_Earth', color: 'yellow'},
+            { name: 'New_Republic', color: 'red'}
+        ];
+
+        factions.forEach((faction) => {
+            const progressContainer = document.createElement('div');
+            progressContainer.className = 'progress-container';
+
+            const progressBar = document.createElement('div');
+            progressBar.className = `progress ${faction.name}-bar`;
+            progressBar.style.width = `${world.control[faction.name] || 0}%`;
+            progressBar.style.backgroundColor = faction.color;
+
+            progressContainer.appendChild(progressBar);
+            progressBars.appendChild(progressContainer);
+        });
+        console.log(progressBars);
         planet.appendChild(progressBars);
 
         // Show progress bars on hover
         planet.onmouseover = () => {
+            console.log('Hover detected for', world.name); // Debugging hover detection
             progressBars.style.display = 'block';
         };
         planet.onmouseout = () => {
+            console.log('Hover ended for', world.name); // Debugging hover end
             progressBars.style.display = 'none';
         };
 
-        // Append the planet to the map
         mapElement.appendChild(planet);
     });
 };
-
-// Initialize the app
-displayWorlds();

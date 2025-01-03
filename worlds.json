@@ -3,7 +3,7 @@
         "id": "Faerûn",
         "name": "Faerûn",
         "top": "20%",
-        "left": "40%",
+        "left": "30%",
         "control": {
             "ASTRAL": 60,
             "SPIRIT": 40
@@ -13,12 +13,210 @@
     {
         "id": "Namek",
         "name": "Namek",
-        "top": "30%",
-        "left": "60%",
+        "top": "40%",
+        "left": "50%",
         "control": {
             "ASTRAL": 30,
             "SPIRIT": 70
         },
         "picture": "Logos/Dragon Ball.png"
+    },
+    {
+        "id": "Attack on Titan",
+        "name": "Attack on Titan",
+        "top": "60%",
+        "left": "70%",
+        "control": {
+            "ASTRAL": 10,
+            "SPIRIT": 40
+        },
+        "picture": "Logos/AOT.png"
+    },
+    {
+        "id": "ATLA",
+        "name": "ATLA",
+        "top": "10%",
+        "left": "20%",
+        "control": {
+            "ASTRAL": 0,
+            "SPIRIT": 0
+        },
+        "picture": "Logos/ATLA.png"
+    },
+    {
+        "id": "LoZ",
+        "name": "LoZ",
+        "top": "30%",
+        "left": "60%",
+        "control": {
+            "ASTRAL": 10,
+            "SPIRIT": 60
+        },
+        "picture": "Logos/Hylian Crest.png"
+    },
+    {
+        "id": "Star Wars",
+        "name": "Star Wars",
+        "top": "50%",
+        "left": "80%",
+        "control": {
+            "ASTRAL": 70,
+            "SPIRIT": 30
+        },
+        "picture": "Logos/Jedi Order.png"
+    },
+    {
+        "id": "JJK",
+        "name": "JJK",
+        "top": "70%",
+        "left": "40%",
+        "control": {
+            "ASTRAL": 10,
+            "SPIRIT": 40
+        },
+        "picture": "Logos/JJK.png"
+    },
+    {
+        "id": "One Piece",
+        "name": "One Piece",
+        "top": "90%",
+        "left": "50%",
+        "control": {
+            "ASTRAL": 20,
+            "SPIRIT": 30
+        },
+        "picture": "Logos/World Gov..png"
+    },
+    {
+        "id": "Minecraft",
+        "name": "Minecraft",
+        "top": "60%",
+        "left": "10%",
+        "control": {
+            "ASTRAL": 0,
+            "SPIRIT": 0
+        },
+        "picture": "Logos/Minecraft.png"
+    },
+    {
+        "id": "Monster Hunter",
+        "name": "Monster Hunter",
+        "top": "80%",
+        "left": "20%",
+        "control": {
+            "ASTRAL": 0,
+            "SPIRIT": 10
+        },
+        "picture": "Logos/Monster Hunter.png"
+    },
+    {
+        "id": "Oni World",
+        "name": "Oni World",
+        "top": "30%",
+        "left": "70%",
+        "control": {
+            "ASTRAL": 70,
+            "SPIRIT": 10
+        },
+        "picture": "Logos/Oni World.png"
+    },
+    {
+        "id": "Panthalassa",
+        "name": "Panthalassa",
+        "top": "50%",
+        "left": "40%",
+        "control": {
+            "ASTRAL": 0,
+            "SPIRIT": 0
+        },
+        "picture": "Logos/Panthalassa.png"
+    },
+    {
+        "id": "Pokemon",
+        "name": "Pokemon",
+        "top": "70%",
+        "left": "80%",
+        "control": {
+            "ASTRAL": 20,
+            "SPIRIT": 0
+        },
+        "picture": "Logos/Pokemon.png"
+    },
+    {
+        "id": "Remnant",
+        "name": "Remnant",
+        "top": "90%",
+        "left": "70%",
+        "control": {
+            "ASTRAL": 0,
+            "SPIRIT": 10
+        },
+        "picture": "Logos/RWBY.png"
+    },
+    {
+        "id": "Skylands",
+        "name": "Skylands",
+        "top": "40%",
+        "left": "10%",
+        "control": {
+            "ASTRAL": 0,
+            "SPIRIT": 0
+        },
+        "picture": "Logos/Skylanders.png"
+    },
+    {
+        "id": "Slime",
+        "name": "Slime",
+        "top": "20%",
+        "left": "50%",
+        "control": {
+            "ASTRAL": 0,
+            "SPIRIT": 0
+        },
+        "picture": "Logos/Slime.png"
+    },
+    {
+        "id": "Splatoon",
+        "name": "Splatoon",
+        "top": "60%",
+        "left": "90%",
+        "control": {
+            "ASTRAL": 0,
+            "SPIRIT": 0
+        },
+        "picture": "Logos/Splatoon.png"
+    },
+    {
+        "id": "Super Earth",
+        "name": "Super Earth",
+        "top": "80%",
+        "left": "30%",
+        "control": {
+            "ASTRAL": 0,
+            "SPIRIT": 0
+        },
+        "picture": "Logos/Super Earth.png"
+    },
+    {
+        "id": "MHA",
+        "name": "MHA",
+        "top": "10%",
+        "left": "80%",
+        "control": {
+            "ASTRAL": 20,
+            "SPIRIT": 0
+        },
+        "picture": "Logos/UA.png"
+    },
+    {
+        "id": "Halo",
+        "name": "Halo",
+        "top": "30%",
+        "left": "60%",
+        "control": {
+            "ASTRAL": 0,
+            "SPIRIT": 0
+        },
+        "picture": "Logos/UNSC.png"
     }
 ]
