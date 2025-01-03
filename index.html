@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
+    <div id="border-frame"></div>
     <div id="map-container">
         <div id="map">
             <img src="Star-Wars.jpeg" alt="Multiverse Map" id="map-background">
         </div>
-    </div>    
+    </div>   
     <script type="module">
         import { displayWorlds } from './app.js';
 
@@ -21,6 +22,8 @@
         });
     </script>
     <div id="overlay-menu" class="hidden">
+        <br>
+        <br>
         <button id="close-menu">X</button>
         <h2 id="world-name"></h2>
         <p id="world-description"></p>
