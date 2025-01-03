@@ -7,34 +7,43 @@
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
+    <!-- Login Screen -->
+    <div id="login-screen">
+        <input type="text" id="username-input" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" placeholder="Enter username">
+        <input type="password" id="password-input" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" placeholder="Enter password">
+        <button id="login-button" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Login</button>
+        <p id="error-message" style="color: red; display: none;">Incorrect username or password. Try again.</p>
+    </div>
     <div id="border-frame"></div>
-    <div id="map-container">
-        <div id="map">
-            <img src="Star-Wars.jpeg" alt="Multiverse Map" id="map-background">
-        </div>
-    </div>   
-    <script type="module">
-        import { displayWorlds } from './app.js';
+    <div id="main-content" style="display: none;">
+        <div id="map-container">
+            <div id="map">
+                <img src="Star-Wars.jpeg" alt="Multiverse Map" id="map-background">
+            </div>
+        </div>   
+        <script type="module">
+            import { displayWorlds } from './app.js';
 
-        // Initialize the application
-        document.addEventListener('DOMContentLoaded', () => {
-            displayWorlds();
-        });
-    </script>
-    <div id="overlay-menu" class="hidden">
-        <br>
-        <br>
-        <button id="close-menu">X</button>
-        <h2 id="world-name"></h2>
-        <p id="world-description"></p>
-        <h3>Faction Control:</h3>
-        <div id="faction-control"></div>
-        <h3>Points of Interest:</h3>
-        <p id="points_of_interest"></p>
-        <h3>Rifts:</h3>
-        <p id="rifts"></p>
-        <h3>Merge Points:</h3>
-        <p id="merge_points"></p>
+            // Initialize the application
+            document.addEventListener('DOMContentLoaded', () => {
+                displayWorlds();
+            });
+        </script>
+        <div id="overlay-menu" class="hidden">
+            <br>
+            <br>
+            <button id="close-menu">X</button>
+            <h2 class="world_name" id="world-name"></h2>
+            <p class="world_description" id="world-description"></p>
+            <h3 class="worldinfo_header">Faction Control:</h3>
+            <div class="worldinfo" id="faction-control"></div>
+            <h3 class="worldinfo_header">Points of Interest:</h3>
+            <p class="worldinfo" id="points_of_interest"></p>
+            <h3 class="worldinfo_header">Rifts:</h3>
+            <p class="worldinfo" id="rifts"></p>
+            <h3 class="worldinfo_header">Merge Points:</h3>
+            <p class="worldinfo" id="merge_points"></p>
+        </div>
     </div>    
 </body>
 </html>

@@ -319,3 +319,46 @@ function updateMapBoundaries(map, container, scale) {
     map.style.left = `${constrainedLeft}px`;
     map.style.top = `${constrainedTop}px`;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loginButton = document.getElementById('login-button');
+    const usernameInput = document.getElementById('username-input');
+    const passwordInput = document.getElementById('password-input');
+    const errorMessage = document.getElementById('error-message');
+    const loginScreen = document.getElementById('login-screen');
+    const mainContent = document.getElementById('main-content');
+
+    // Array of users and passwords
+    const users = [
+        { username: 'player1', password: 'password1' },
+        { username: 'player2', password: 'password2' },
+        { username: 'admin', password: 'secureadminpass' }
+    ];
+
+    // Handle login
+    loginButton.addEventListener('click', () => {
+        const enteredUsername = usernameInput.value;
+        const enteredPassword = passwordInput.value;
+
+        // Check if the entered credentials match any in the array
+        const user = users.find(
+            (user) => user.username === enteredUsername && user.password === enteredPassword
+        );
+
+        if (user) {
+            loginScreen.style.display = 'none';
+            mainContent.style.display = 'block';
+        } else {
+            errorMessage.style.display = 'block';
+        }
+    });
+
+    // Optionally, handle "Enter" key for username or password input
+    [usernameInput, passwordInput].forEach((input) => {
+        input.addEventListener('keyup', (e) => {
+            if (e.key === 'Enter') {
+                loginButton.click();
+            }
+        });
+    });
+});

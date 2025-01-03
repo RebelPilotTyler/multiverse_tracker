@@ -179,7 +179,7 @@
     border: 40px solid steelblue; /* Steel-colored border */
     box-sizing: border-box; /* Ensure the border is included in the dimensions */
     pointer-events: none; /* Prevent interaction with the border */
-    z-index: 100; /* Ensure it overlays everything */
+    z-index: 10000; /* Ensure it overlays everything */
 }
 
 /* Border frame for image
@@ -195,3 +195,60 @@
     pointer-events: none;
     z-index: 100;
 } */
+
+.world_name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.world_description {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-indent: 20px;
+}
+
+.worldinfo_header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.worldinfo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    text-indent: 20px;
+}
+
+#login-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    z-index: 1000; /* Ensure it overlays everything */
+}
+
+#login-screen input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%; /* Make inputs responsive */
+    max-width: 300px;
+}
+
+#login-screen button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#login-screen p {
+    margin-top: 10px;
+    font-size: 14px;
+}
