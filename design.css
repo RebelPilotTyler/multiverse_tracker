@@ -19,39 +19,35 @@
     object-fit: cover; /* Ensures the entire image fits within the circle */
     filter: brightness(0) invert(1); /* Changes white parts of the image to match background color */
     pointer-events: none; /* Prevents interaction with the image itself */
-    z-index: 11;
+    z-index: 9;
 }
 
 .progress-bars {
     position: absolute;
     top: -50px; /* Adjust as needed to position the bars above the planet */
-    left: 60;
-    width: 120px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for visibility */
     border: 1px solid white;
     border-radius: 5px;
     padding: 5px;
     display: none; /* Hidden by default */
-    z-index: 10; /* Ensure it layers above the background */
+    z-index: 10; /* Ensure it layers above other elements */
 }
 
-
 .progress-container {
-    width: 100%; /* Full width of the container */
+    width: 100px; /* Full width of the container */
     height: 6px; /* Adjust as needed for visibility */
     background-color: gray; /* Unfilled bar background */
     border-radius: 5px;
     margin: 5px 0; /* Space between bars */
     position: relative;
-    z-index: 9;
 }
 
 .progress {
     height: 100%; /* Fill the height of the container */
     border-radius: 5px;
-    background-color: blue; /* Default color for testing */
 }
-
 
 
 .ASTRAL-bar {
@@ -94,4 +90,36 @@
     z-index: 1; /* Lower z-index than progress-bars */
     width: 100%; /* Keep the full-size map */
     height: auto; /* Maintain aspect ratio */
+}
+
+#overlay-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 20;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#overlay-menu.visible {
+    transform: translateX(0);
+}
+
+#overlay-menu.hidden {
+    transform: translateX(100%);
+}
+
+#close-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
