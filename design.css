@@ -107,8 +107,8 @@
 /* Map container for zooming and panning */
 #map {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0%;
+    left: 0%;
     transform: translate(-50%, -50%) scale(1);
     transform-origin: center center;
     width: 200%; /* Adjust based on your map image size */

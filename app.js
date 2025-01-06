@@ -37,9 +37,28 @@ const displayWorldInfo = (world) => {
     factionSection.appendChild(factionContainer);
 
     // Points of Interest, Rifts, and Merge Points
-    document.getElementById('points_of_interest').innerHTML = world.details.points_of_interest.replace(/\n/g, '<br>');
-    document.getElementById('rifts').innerHTML = world.details.rifts.replace(/\n/g, '<br>');
-    document.getElementById('merge_points').innerHTML = world.details.merge_points.replace(/\n/g, '<br>');
+    //document.getElementById('points_of_interest').innerHTML = world.details.points_of_interest.replace(/\n/g, '<br>');
+    //document.getElementById('rifts').innerHTML = world.details.rifts.replace(/\n/g, '<br>');
+    //document.getElementById('merge_points').innerHTML = world.details.merge_points.replace(/\n/g, '<br>');
+
+    if (loggedInUser == "ASTRAL") {
+        document.getElementById('points_of_interest').innerHTML = world.ASTRAL_details.points_of_interest.replace(/\n/g, '<br>');
+        document.getElementById('rifts').innerHTML = world.ASTRAL_details.rifts.replace(/\n/g, '<br>');
+        document.getElementById('merge_points').innerHTML = world.ASTRAL_details.merge_points.replace(/\n/g, '<br>');
+    }
+    if (loggedInUser == "SPIRIT") {
+        document.getElementById('points_of_interest').innerHTML = world.SPIRIT_details.points_of_interest.replace(/\n/g, '<br>');
+        document.getElementById('rifts').innerHTML = world.SPIRIT_details.rifts.replace(/\n/g, '<br>');
+        document.getElementById('merge_points').innerHTML = world.SPIRIT_details.merge_points.replace(/\n/g, '<br>');
+    }
+    if (loggedInUser == "GM") {
+        document.getElementById('points_of_interest').innerHTML = world.ASTRAL_details.points_of_interest.replace(/\n/g, '<br>') + '<br>' + world.SPIRIT_details.points_of_interest.replace(/\n/g, '<br>');
+        document.getElementById('rifts').innerHTML = world.ASTRAL_details.rifts.replace(/\n/g, '<br>') + '<br>' + world.SPIRIT_details.rifts.replace(/\n/g, '<br>');
+        document.getElementById('merge_points').innerHTML = world.ASTRAL_details.merge_points.replace(/\n/g, '<br>') + '<br>' + world.SPIRIT_details.merge_points.replace(/\n/g, '<br>');
+        //document.getElementById('points_of_interest').innerHTML = world.SPIRIT_details.points_of_interest.replace(/\n/g, '<br>');
+        //document.getElementById('rifts').innerHTML = world.SPIRIT_details.rifts.replace(/\n/g, '<br>');
+        //document.getElementById('merge_points').innerHTML = world.SPIRIT_details.merge_points.replace(/\n/g, '<br>');
+    }
 
     menu.classList.remove('hidden');
     menu.classList.add('visible');
@@ -75,7 +94,7 @@ export const displayWorlds = async () => {
     const worlds = await fetchWorldStatuses();
 
     const mapElement = document.getElementById('map');
-    mapElement.innerHTML = '<img src="Login_Page.png" alt="Multiverse Map" width="100%">';
+    mapElement.innerHTML = '<img src="Anomaly Picture.png" alt="Multiverse Map" width="100%">';
 
     const visibleWorlds = worlds.filter((world) => {
         // If no `viewableBy` field, the world is visible to everyone
@@ -344,7 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const users = [
         { username: 'ASTRAL', password: 'epsilon#1' },
         { username: 'SPIRIT', password: 'samisawesome' },
-        { username: 'GM', password: 'prisonOfFear' }
+        { username: 'GM', password: '1' }
     ];
 
     // Handle login

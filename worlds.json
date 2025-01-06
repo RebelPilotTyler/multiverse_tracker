@@ -2,16 +2,23 @@
     {
         "id": "Faerûn",
         "name": "Faerûn",
-        "top": "20%",
-        "left": "30%",
+        "top": "130%",
+        "left": "54%",
         "control": {
             "ASTRAL": 100,
             "SPIRIT": 0
         },
         "picture": "Logos/Faerun.png",
         "details": {
-            "description": "Faerûn is a vibrant and tumultuous world teeming with magic. From its soaring arcane towers to its ancient forests brimming with magical creatures, it is a realm where natural forces blend with powerful sorcery. Technology here is rudimentary, as the inhabitants rely on spells and enchanted artifacts to achieve what others accomplish with machinery.",
-            "points_of_interest": "-",
+            "description": "Faerûn is a vibrant and tumultuous world teeming with magic. From its soaring arcane towers to its ancient forests brimming with magical creatures, it is a realm where natural forces blend with powerful sorcery. Technology here is rudimentary, as the inhabitants rely on spells and enchanted artifacts to achieve what others accomplish with machinery."
+        },
+        "ASTRAL_details": {
+            "points_of_interest": "ASTRAL",
+            "rifts": "WORLD LOCKED",
+            "merge_points": "???"
+        },
+        "SPIRIT_details": {
+            "points_of_interest": "SPIRIT",
             "rifts": "WORLD LOCKED",
             "merge_points": "???"
         },
@@ -20,15 +27,22 @@
     {
         "id": "Dragon Ball",
         "name": "Dragon Ball",
-        "top": "40%",
-        "left": "50%",
+        "top": "194.8%",
+        "left": "57.2%",
         "control": {
             "ASTRAL": 0,
             "SPIRIT": 0
         },
         "picture": "Logos/Dragon Ball.png",
         "details": {
-            "description": "A realm where martial arts and raw power dominate, Dragon Ball is a unique blend of advanced alien technology and almost mystical energy manipulation known as 'ki.' Its inhabitants routinely push the limits of what seems possible, blurring the lines between science and the supernatural.",
+            "description": "A realm where martial arts and raw power dominate, Dragon Ball is a unique blend of advanced alien technology and almost mystical energy manipulation known as 'ki.' Its inhabitants routinely push the limits of what seems possible, blurring the lines between science and the supernatural."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "Planet Banna\nPlanet Namek",
+            "rifts": "???",
+            "merge_points": "???"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "Planet Banna\nPlanet Namek",
             "rifts": "???",
             "merge_points": "???"
@@ -38,8 +52,8 @@
     {
         "id": "Attack on Titan",
         "name": "Attack on Titan",
-        "top": "60%",
-        "left": "70%",
+        "top": "147.5%",
+        "left": "82.4%",
         "control": {
             "ASTRAL": 0,
             "SPIRIT": 20
@@ -47,9 +61,16 @@
         "picture": "Logos/AOT.png",
         "x_overlay": false,
         "details": {
-            "description": "A grim and desperate world, Attack on Titan is defined by its isolation and reliance on rudimentary technology. Magic is non-existent, and survival hinges on innovation within tight constraints. The people have developed advanced engineering in their fight against the towering Titans.",
+            "description": "A grim and desperate world, Attack on Titan is defined by its isolation and reliance on rudimentary technology. Magic is non-existent, and survival hinges on innovation within tight constraints. The people have developed advanced engineering in their fight against the towering Titans."
+        },
+        "ASTRAL_details":{
             "points_of_interest": "Paradis Island - Shiganshina",
             "rifts": "Wall Maria House Basement > ???",
+            "merge_points": "???"
+        },
+        "SPIRIT_details":{
+            "points_of_interest": "Paradis Island - Shiganshina",
+            "rifts": "???",
             "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
@@ -57,15 +78,22 @@
     {
         "id": "ATLA",
         "name": "ATLA",
-        "top": "10%",
-        "left": "20%",
+        "top": "120.2%",
+        "left": "65.8%",
         "control": {
             "ASTRAL": 0,
             "SPIRIT": 0
         },
         "picture": "Logos/ATLA.png",
         "details": {
-            "description": "The Avatar world is deeply attuned to elemental magic known as 'bending,' where individuals manipulate air, water, earth, and fire. Technology is emerging but remains limited, as society leans heavily on their bending arts for warfare, construction, and everyday life.",
+            "description": "The Avatar world is deeply attuned to elemental magic known as 'bending,' where individuals manipulate air, water, earth, and fire. Technology is emerging but remains limited, as society leans heavily on their bending arts for warfare, construction, and everyday life."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "???",
+            "merge_points": "???"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "???",
             "merge_points": "???"
@@ -75,7 +103,7 @@
     {
         "id": "Hyrule",
         "name": "Hyrule",
-        "top": "30%",
+        "top": "45%",
         "left": "60%",
         "control": {
             "ASTRAL": 10,
@@ -83,7 +111,14 @@
         },
         "picture": "Logos/Hylian Crest.png",
         "details": {
-            "description": "Hyrule is a land of legendary magic, protected by ancient relics and gods. Its medieval society is bolstered by enchanted artifacts and divine intervention. Technology is minimal, though ingenuity thrives in the form of puzzles and mechanisms tied to magical ruins.",
+            "description": "Hyrule is a land of legendary magic, protected by ancient relics and gods. Its medieval society is bolstered by enchanted artifacts and divine intervention. Technology is minimal, though ingenuity thrives in the form of puzzles and mechanisms tied to magical ruins."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
+            "rifts": "Hebra Trailhead Snowdrift > Helldivers Terminid Desert\nSPIRIT Outpost > ???",
+            "merge_points": "???"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
             "rifts": "Hebra Trailhead Snowdrift > Helldivers Terminid Desert\nSPIRIT Outpost > ???",
             "merge_points": "???"
@@ -93,15 +128,22 @@
     {
         "id": "Star Wars",
         "name": "Star Wars",
-        "top": "50%",
-        "left": "80%",
+        "top": "84.2%",
+        "left": "42.8%",
         "control": {
             "ASTRAL": 70,
             "SPIRIT": 15
         },
         "picture": "Logos/Jedi Order.png",
         "details": {
-            "description": "The galaxy of Star Wars is a sprawling theater of advanced technology interwoven with the mysterious Force, a quasi-mystical energy binding all living things. From hyperspace travel to droid companions, technological marvels define life, while the Force introduces a magical undercurrent.",
+            "description": "The galaxy of Star Wars is a sprawling theater of advanced technology interwoven with the mysterious Force, a quasi-mystical energy binding all living things. From hyperspace travel to droid companions, technological marvels define life, while the Force introduces a magical undercurrent."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "ASTRAL Station\nElysium\nFelucia SPIRIT Outpost\nDestimo's House - Takodana\nSuhk's House - Dathomir",
+            "rifts": "Takodana Lakeside Cave > ???\nTakodana Forest > Grand Line Whirlpool\nFelucia SPIRIT Outpost > ???\nElysium > ASTRAL Deployment\nDathomir Castle Ruins > ???",
+            "merge_points": "???"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "ASTRAL Station\nElysium\nFelucia SPIRIT Outpost\nDestimo's House - Takodana\nSuhk's House - Dathomir",
             "rifts": "Takodana Lakeside Cave > ???\nTakodana Forest > Grand Line Whirlpool\nFelucia SPIRIT Outpost > ???\nElysium > ASTRAL Deployment\nDathomir Castle Ruins > ???",
             "merge_points": "???"
@@ -111,8 +153,8 @@
     {
         "id": "Jujutsu Kaisen",
         "name": "Jujutsu Kaisen",
-        "top": "70%",
-        "left": "40%",
+        "top": "92.5%",
+        "left": "24.6%",
         "control": {
             "ASTRAL": 10,
             "SPIRIT": 10,
@@ -124,7 +166,14 @@
         },
         "picture": "Logos/JJK.png",
         "details": {
-            "description": "Jujutsu Kaisen is a world enshrouded by cursed energy, a malevolent force born from human emotions. Sorcerers wield this energy to exorcise curses, creating a dangerous yet fascinating interplay between humanity and its inner darkness. Technology is modern but often secondary to the battles fought in the shadows of society.",
+            "description": "Jujutsu Kaisen is a world enshrouded by cursed energy, a malevolent force born from human emotions. Sorcerers wield this energy to exorcise curses, creating a dangerous yet fascinating interplay between humanity and its inner darkness. Technology is modern but often secondary to the battles fought in the shadows of society."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "Kazuma's House",
+            "rifts": "Subway System > Monster Hunter Ancient Forest Riverbed",
+            "merge_points": "???"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "Kazuma's House",
             "rifts": "Subway System > Monster Hunter Ancient Forest Riverbed",
             "merge_points": "???"
@@ -134,8 +183,8 @@
     {
         "id": "One Piece",
         "name": "One Piece",
-        "top": "90%",
-        "left": "50%",
+        "top": "159.8%",
+        "left": "44.2%",
         "control": {
             "ASTRAL": 20,
             "SPIRIT": 30,
@@ -147,7 +196,14 @@
         },
         "picture": "Logos/World Gov..png",
         "details": {
-            "description": "One Piece is a nautical world dominated by powerful pirate crews and Devil Fruits, granting unique abilities akin to magic. Technology is scattered and varies greatly, with some islands displaying advanced innovations while others remain primitive.",
+            "description": "One Piece is a nautical world dominated by powerful pirate crews and Devil Fruits, granting unique abilities akin to magic. Technology is scattered and varies greatly, with some islands displaying advanced innovations while others remain primitive."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "Alabasta Island - Nanohana\nAzure Outpost Ruins\nLogue Town",
+            "rifts": "Grand Line Whirlpool > Takodana Forest",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "Alabasta Island - Nanohana\nAzure Outpost Ruins\nLogue Town",
             "rifts": "Grand Line Whirlpool > Takodana Forest",
             "merge_points": "N/A"
@@ -157,8 +213,8 @@
     {
         "id": "Minecraft",
         "name": "Minecraft",
-        "top": "60%",
-        "left": "10%",
+        "top": "240%",
+        "left": "55%",
         "control": {
             "ASTRAL": 0,
             "SPIRIT": 0,
@@ -170,7 +226,14 @@
         },
         "picture": "Logos/Minecraft.png",
         "details": {
-            "description": "Minecraft is a procedurally infinite realm defined by blocks, where creativity and survival dominate. Technology is rudimentary but adaptable, as inhabitants craft tools, machines, and weapons from natural resources. Magic manifests through enchanting and alchemy, blending seamlessly into the fabric of the world.",
+            "description": "Minecraft is a procedurally infinite realm defined by blocks, where creativity and survival dominate. Technology is rudimentary but adaptable, as inhabitants craft tools, machines, and weapons from natural resources. Magic manifests through enchanting and alchemy, blending seamlessly into the fabric of the world."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "N/A",
             "merge_points": "N/A"
@@ -180,8 +243,8 @@
     {
         "id": "Monster Hunter",
         "name": "Monster Hunter",
-        "top": "80%",
-        "left": "20%",
+        "top": "185%",
+        "left": "35%",
         "control": {
             "ASTRAL": 0,
             "SPIRIT": 10,
@@ -193,7 +256,14 @@
         },
         "picture": "Logos/Monster Hunter.png",
         "details": {
-            "description": "The Monster Hunter world is a vibrant ecosystem ruled by colossal beasts. Advanced weaponry and armor forged from the remains of these creatures serve as the pinnacle of its technological achievements. Magic is absent, but alchemy and ecological mastery drive the balance between survival and dominance.",
+            "description": "The Monster Hunter world is a vibrant ecosystem ruled by colossal beasts. Advanced weaponry and armor forged from the remains of these creatures serve as the pinnacle of its technological achievements. Magic is absent, but alchemy and ecological mastery drive the balance between survival and dominance."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "N/A",
             "merge_points": "N/A"
@@ -203,8 +273,8 @@
     {
         "id": "Oni World",
         "name": "Oni World",
-        "top": "30%",
-        "left": "70%",
+        "top": "160%",
+        "left": "71%",
         "control": {
             "ASTRAL": 0,
             "SPIRIT": 0,
@@ -216,7 +286,14 @@
         },
         "picture": "Logos/Oni World.png",
         "details": {
-            "description": "-",
+            "description": "-"
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "N/A",
             "merge_points": "N/A"
@@ -226,8 +303,8 @@
     {
         "id": "Panthalassa",
         "name": "Panthalassa",
-        "top": "50%",
-        "left": "40%",
+        "top": "110%",
+        "left": "80%",
         "control": {
             "ASTRAL": 0,
             "SPIRIT": 0,
@@ -239,7 +316,14 @@
         },
         "picture": "Logos/Panthalassa.png",
         "details": {
-            "description": "-",
+            "description": "-"
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "N/A",
             "merge_points": "N/A"
@@ -249,8 +333,8 @@
     {
         "id": "Pokemon",
         "name": "Pokemon",
-        "top": "70%",
-        "left": "80%",
+        "top": "92%",
+        "left": "58%",
         "control": {
             "ASTRAL": 10,
             "SPIRIT": 0,
@@ -262,7 +346,14 @@
         },
         "picture": "Logos/Pokemon.png",
         "details": {
-            "description": "Pokémon is a harmonious blend of nature and technology, where humanity coexists with fantastical creatures capable of extraordinary abilities. Technology is advanced, supporting the capture and training of Pokémon, but magic is entirely absent, replaced by the innate powers of the creatures themselves.",
+            "description": "Pokémon is a harmonious blend of nature and technology, where humanity coexists with fantastical creatures capable of extraordinary abilities. Technology is advanced, supporting the capture and training of Pokémon, but magic is entirely absent, replaced by the innate powers of the creatures themselves."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "N/A",
             "merge_points": "N/A"
@@ -272,7 +363,7 @@
     {
         "id": "Remnant",
         "name": "Remnant",
-        "top": "90%",
+        "top": "75%",
         "left": "70%",
         "control": {
             "ASTRAL": 0,
@@ -285,7 +376,14 @@
         },
         "picture": "Logos/RWBY.png",
         "details": {
-            "description": "The world of RWBY combines steampunk technology with a pervasive reliance on magical energy known as Dust. Combat is a delicate balance of skill, strategy, and the unique properties of Dust, while technology is shaped by humanity’s fight for survival against the Grimm.",
+            "description": "The world of RWBY combines steampunk technology with a pervasive reliance on magical energy known as Dust. Combat is a delicate balance of skill, strategy, and the unique properties of Dust, while technology is shaped by humanity’s fight for survival against the Grimm."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "N/A",
             "merge_points": "N/A"
@@ -295,8 +393,8 @@
     {
         "id": "Skylands",
         "name": "Skylands",
-        "top": "40%",
-        "left": "10%",
+        "top": "145%",
+        "left": "18%",
         "control": {
             "ASTRAL": 0,
             "SPIRIT": 0,
@@ -308,7 +406,14 @@
         },
         "picture": "Logos/Skylanders.png",
         "details": {
-            "description": "Skylands is a vibrant realm of floating islands powered by elemental magic. The Skylanders wield powerful abilities tied to these elements to protect their world from evil forces. While magic is the foundation of their society, technological innovations occasionally emerge as complementary tools in their battles.",
+            "description": "Skylands is a vibrant realm of floating islands powered by elemental magic. The Skylanders wield powerful abilities tied to these elements to protect their world from evil forces. While magic is the foundation of their society, technological innovations occasionally emerge as complementary tools in their battles."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "N/A",
             "merge_points": "N/A"
@@ -318,8 +423,8 @@
     {
         "id": "Slime",
         "name": "Slime",
-        "top": "20%",
-        "left": "50%",
+        "top": "195%",
+        "left": "75%",
         "control": {
             "ASTRAL": 0,
             "SPIRIT": 0,
@@ -331,7 +436,14 @@
         },
         "picture": "Logos/Slime.png",
         "details": {
-            "description": "This world is a dynamic fusion of high magic and innovative technology. Races and cultures unite under the guidance of powerful individuals to develop both. The balance of power is dictated by magical prowess, with technology advancing rapidly to complement these mystical capabilities.",
+            "description": "This world is a dynamic fusion of high magic and innovative technology. Races and cultures unite under the guidance of powerful individuals to develop both. The balance of power is dictated by magical prowess, with technology advancing rapidly to complement these mystical capabilities."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "N/A",
             "merge_points": "N/A"
@@ -341,8 +453,8 @@
     {
         "id": "Splatoon",
         "name": "Splatoon",
-        "top": "60%",
-        "left": "90%",
+        "top": "220%",
+        "left": "40%",
         "control": {
             "ASTRAL": 0,
             "SPIRIT": 0,
@@ -354,7 +466,14 @@
         },
         "picture": "Logos/Splatoon.png",
         "details": {
-            "description": "Splatoon is a quirky, vibrant world dominated by Inkling and Octarian cultures, where advanced but playful technology fuels competitive turf wars. Magic is non-existent, and all advancements are rooted in science and engineering, often with a playful twist of creativity.",
+            "description": "Splatoon is a quirky, vibrant world dominated by Inkling and Octarian cultures, where advanced but playful technology fuels competitive turf wars. Magic is non-existent, and all advancements are rooted in science and engineering, often with a playful twist of creativity."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "N/A",
             "merge_points": "N/A"
@@ -364,8 +483,8 @@
     {
         "id": "Super Earth",
         "name": "Super Earth",
-        "top": "80%",
-        "left": "30%",
+        "top": "135%",
+        "left": "33%",
         "control": {
             "ASTRAL": 0,
             "SPIRIT": 0,
@@ -377,7 +496,14 @@
         },
         "picture": "Logos/Super Earth.png",
         "details": {
-            "description": "Super Earth is a militarized, dystopian future defined by relentless warfare across the galaxy. Advanced technology is the backbone of survival, from orbital drops to automated weaponry. Magic is non-existent, as the survival of humanity depends entirely on tactical superiority and firepower.",
+            "description": "Super Earth is a militarized, dystopian future defined by relentless warfare across the galaxy. Advanced technology is the backbone of survival, from orbital drops to automated weaponry. Magic is non-existent, as the survival of humanity depends entirely on tactical superiority and firepower."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "N/A",
             "merge_points": "N/A"
@@ -387,8 +513,8 @@
     {
         "id": "My Hero",
         "name": "My Hero",
-        "top": "10%",
-        "left": "80%",
+        "top": "50%",
+        "left": "40%",
         "control": {
             "ASTRAL": 20,
             "SPIRIT": 0,
@@ -400,7 +526,14 @@
         },
         "picture": "Logos/UA.png",
         "details": {
-            "description": "My Hero Academia is a society reshaped by 'Quirks,' genetic mutations granting superhuman abilities to 80% of the population. While technology is present, the world’s focus is on harnessing and controlling these powers, blending science with what feels like modern-day magic.",
+            "description": "My Hero Academia is a society reshaped by 'Quirks,' genetic mutations granting superhuman abilities to 80% of the population. While technology is present, the world’s focus is on harnessing and controlling these powers, blending science with what feels like modern-day magic."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "N/A",
             "merge_points": "N/A"
@@ -410,8 +543,8 @@
     {
         "id": "Halo",
         "name": "Halo",
-        "top": "30%",
-        "left": "60%",
+        "top": "180%",
+        "left": "20%",
         "control": {
             "ASTRAL": 0,
             "SPIRIT": 0,
@@ -423,7 +556,14 @@
         },
         "picture": "Logos/UNSC.png",
         "details": {
-            "description": "Halo is a vast interstellar battleground where advanced alien and human technology defines the war for survival. From powered armor to energy weapons, the universe thrives on technological innovation. Magic is absent, replaced by scientific marvels that border on the mystical in their complexity.",
+            "description": "Halo is a vast interstellar battleground where advanced alien and human technology defines the war for survival. From powered armor to energy weapons, the universe thrives on technological innovation. Magic is absent, replaced by scientific marvels that border on the mystical in their complexity."
+        },
+        "ASTRAL_details":{
+            "points_of_interest": "-",
+            "rifts": "N/A",
+            "merge_points": "N/A"
+        },
+        "SPIRIT_details":{
             "points_of_interest": "-",
             "rifts": "N/A",
             "merge_points": "N/A"
