@@ -1,5 +1,7 @@
 export const API_URL = 'worlds.json'; // Path to your worlds.json file
 
+let loggedInUser = null;
+
 const displayWorldInfo = (world) => {
     const menu = document.getElementById('overlay-menu');
     document.getElementById('world-name').textContent = world.name;
@@ -73,9 +75,19 @@ export const displayWorlds = async () => {
     const worlds = await fetchWorldStatuses();
 
     const mapElement = document.getElementById('map');
-    mapElement.innerHTML = '<img src="Star-Wars.jpeg" alt="Multiverse Map" width="100%">';
+    mapElement.innerHTML = '<img src="Login_Page.png" alt="Multiverse Map" width="100%">';
 
-    worlds.forEach((world) => {
+    const visibleWorlds = worlds.filter((world) => {
+        // If no `viewableBy` field, the world is visible to everyone
+        if (!world.viewableBy || world.viewableBy.length === 0) {
+            return true;
+        }
+    
+        // Check if `loggedInUser` is in the `viewableBy` array
+        return world.viewableBy.includes(loggedInUser);
+    });
+     
+    visibleWorlds.forEach((world) => {
         console.log(`Processing world: ${world.name}`);
         
         const planet = document.createElement('div');
@@ -330,28 +342,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Array of users and passwords
     const users = [
-        { username: 'player1', password: 'password1' },
-        { username: 'player2', password: 'password2' },
-        { username: 'admin', password: 'secureadminpass' }
+        { username: 'ASTRAL', password: 'epsilon#1' },
+        { username: 'SPIRIT', password: 'samisawesome' },
+        { username: 'GM', password: 'prisonOfFear' }
     ];
 
     // Handle login
     loginButton.addEventListener('click', () => {
-        const enteredUsername = usernameInput.value;
-        const enteredPassword = passwordInput.value;
+    const enteredUsername = usernameInput.value;
+    const enteredPassword = passwordInput.value;
 
-        // Check if the entered credentials match any in the array
-        const user = users.find(
-            (user) => user.username === enteredUsername && user.password === enteredPassword
-        );
+    const user = users.find(
+        (user) => user.username === enteredUsername && user.password === enteredPassword
+    );
 
-        if (user) {
-            loginScreen.style.display = 'none';
-            mainContent.style.display = 'block';
-        } else {
-            errorMessage.style.display = 'block';
-        }
-    });
+    if (user) {
+        loggedInUser = user.username; // Store the logged-in user
+        loginScreen.style.display = 'none';
+        mainContent.style.display = 'block';
+        displayWorlds(); // Load worlds after successful login
+    } else {
+        errorMessage.style.display = 'block';
+    }
+});
+
 
     // Optionally, handle "Enter" key for username or password input
     [usernameInput, passwordInput].forEach((input) => {
