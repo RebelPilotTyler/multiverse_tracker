@@ -510,6 +510,7 @@ function createEditableField(container, worldIndex, key, value) {
 }
 
 async function saveField(worldIndex, key, newValue) {
+    console.log({ worldIndex, key, newValue });
     try {
         const response = await fetch('/.netlify/functions/triggerWorkflow', {
             method: 'POST',
@@ -525,6 +526,7 @@ async function saveField(worldIndex, key, newValue) {
 
         if (response.ok) {
             alert(`Field ${key} updated successfully!`);
+            fetchWorlds();
         } else {
             alert('Error updating field.');
         }

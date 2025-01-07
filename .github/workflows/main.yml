@@ -32,3 +32,9 @@ jobs:
           git add worlds.json
           git commit -m "Updated field $key for world index $worldIndex"
           git push
+      - name: Debug Payload
+        run: |
+          echo "worldIndex=$worldIndex"
+          echo "key=$key"
+          echo "newValue=$newValue"
+        
