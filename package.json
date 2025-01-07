@@ -1,0 +1,10 @@
+{
+  "name": "multiverse-tracker",
+  "version": "1.0.0",
+  "description": "Serverless functions for Multiverse Tracker",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
