@@ -96,6 +96,25 @@ export const displayWorlds = async () => {
     const mapElement = document.getElementById('map');
     mapElement.innerHTML = '<img src="Anomaly Picture.png" alt="Multiverse Map" width="100%">';
 
+    if (loggedInUser == 'ASTRAL') {
+        const icon = document.createElement('img');
+        icon.src = 'ASTRAL Logo.png'; // Path to your overlay image
+        icon.alt = 'Faction Icon';
+        icon.className = 'faction-icon';
+        icon.style.display = 'block'; // Ensure it's visible
+        const iconElement = document.getElementById('faction-icon');
+        iconElement.appendChild(icon);
+    }
+    if (loggedInUser == 'SPIRIT') {
+        const icon = document.createElement('img');
+        icon.src = 'SPIRIT Logo.png'; // Path to your overlay image
+        icon.alt = 'Faction Icon';
+        icon.className = 'faction-icon';
+        icon.style.display = 'block'; // Ensure it's visible
+        const iconElement = document.getElementById('faction-icon');
+        iconElement.appendChild(icon);
+    }
+
     const visibleWorlds = worlds.filter((world) => {
         // If no `viewableBy` field, the world is visible to everyone
         if (!world.viewableBy || world.viewableBy.length === 0) {
@@ -105,7 +124,7 @@ export const displayWorlds = async () => {
         // Check if `loggedInUser` is in the `viewableBy` array
         return world.viewableBy.includes(loggedInUser);
     });
-     
+
     visibleWorlds.forEach((world) => {
         console.log(`Processing world: ${world.name}`);
         
@@ -377,6 +396,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (user) {
         loggedInUser = user.username; // Store the logged-in user
+
         loginScreen.style.display = 'none';
         mainContent.style.display = 'block';
         displayWorlds(); // Load worlds after successful login
