@@ -1,0 +1,30 @@
+name: Update Multiverse Tracker Data
+
+on:
+  repository_dispatch:
+    types: [decrease-astral-control]
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Configure Git Authentication
+      - name: Configure Git Authentication
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/RebelPilotTyler/multiverse_tracker.git
+
+      # Step 3: Decrease ASTRAL Control for Faerûn
+      - name: Update worlds.json
+        run: |
+          jq 'map(if .id == "Faerûn" then .control.ASTRAL -= 10 else . end)' worlds.json > temp.json
+          mv temp.json worlds.json
+          git add worlds.json
+          git commit -m "Decreased ASTRAL control of Faerûn by 10%"
+          git push
