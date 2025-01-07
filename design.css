@@ -286,7 +286,7 @@
     color: white;
     padding: 20px;
     overflow-y: auto;
-    z-index: 20;
+    z-index: 100000;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
 }
