@@ -427,3 +427,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document
+    .getElementById('decrease-astral-control')
+    .addEventListener('click', async () => {
+        try {
+            const response = await fetch('/.netlify/functions/triggerWorkflow', {
+                method: 'POST',
+                body: JSON.stringify({
+                    event_type: 'decrease-astral-control',
+                }),
+            });
+
+            if (response.ok) {
+                alert('ASTRAL control decreased successfully!');
+            } else {
+                alert('Error triggering workflow.');
+            }
+        } catch (error) {
+            console.error('Unexpected error:', error);
+            alert('Unexpected error occurred.');
+        }
+    });
