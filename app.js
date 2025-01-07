@@ -464,6 +464,7 @@ function populateOverlay(worlds) {
         worldTitle.style.fontFamily = 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
         worldTitle.style.fontSize = 30;
         worldTitle.style.fontStyle = 'italic';
+        worldTitle.style.textDecoration = 'underline';
         worldDiv.appendChild(worldTitle);
 
         // Generate editable fields for each property
