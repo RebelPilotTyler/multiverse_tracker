@@ -28,6 +28,11 @@ jobs:
           key=$(jq -r '.key' payload.json)
           newValue=$(jq -r '.newValue' payload.json)
           jq ".[${worldIndex}] |= setpath([\"$(echo $key | tr '.' '\", \"')\"]; \"$newValue\")" worlds.json > temp.json
+
+          echo "worldIndex=$worldIndex"
+          echo "key=$key"
+          echo "newValue=$newValue"
+
           mv temp.json worlds.json
           git add worlds.json
           git commit -m "Updated field $key for world index $worldIndex"
