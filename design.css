@@ -276,7 +276,7 @@
     opacity: .5;
 }
 
-#editor-menu {
+.editor-menu {
     position: fixed;
     top: 0;
     right: 0;
@@ -291,6 +291,6 @@
     transition: transform 0.3s ease-in-out;
 }
 
-#GMButton {
+.GMButton {
     z-index: 100000;
 }
