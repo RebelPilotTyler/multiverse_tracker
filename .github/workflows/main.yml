@@ -37,4 +37,6 @@ jobs:
           echo "worldIndex=$worldIndex"
           echo "key=$key"
           echo "newValue=$newValue"
+          cat worlds.json
+
         
