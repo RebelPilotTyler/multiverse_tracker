@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
+//Comment
 document
     .getElementById('decrease-astral-control')
     .addEventListener('click', async () => {
