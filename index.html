@@ -19,6 +19,14 @@
     </div>
     <div id="faction-icon" class="faction-icon"></div>
     <div id="border-frame"></div>
+    <div id="editor-menu" style="display: none;">
+        <div id="world-editor">
+            <h2>Edit Worlds</h2>
+            <div id="world-fields"></div>
+            <button id="close-overlay">Close</button>
+        </div>
+    </div>        
+    <button id="open-overlay">Edit Worlds</button>
     <div id="main-content" style="display: none;">
         <div id="map-container">
             <div id="map">
@@ -33,14 +41,6 @@
                 displayWorlds();
             });
         </script>
-        <div id="editor-menu" style="display: none;">
-            <div id="world-editor">
-                <h2>Edit Worlds</h2>
-                <div id="world-fields"></div>
-                <button id="close-overlay">Close</button>
-            </div>
-        </div>        
-        <button id="open-overlay">Edit Worlds</button>
         <div id="overlay-menu" class="hidden">
             <br>
             <br>
