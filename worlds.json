@@ -13,13 +13,18 @@
             "description": "Faerûn is a vibrant and tumultuous world teeming with magic. From its soaring arcane towers to its ancient forests brimming with magical creatures, it is a realm where natural forces blend with powerful sorcery. Technology here is rudimentary, as the inhabitants rely on spells and enchanted artifacts to achieve what others accomplish with machinery."
         },
         "ASTRAL_details": {
-            "points_of_interest": "ASTRAL",
+            "points_of_interest": "-",
             "rifts": "WORLD LOCKED",
             "merge_points": "???"
         },
         "SPIRIT_details": {
-            "points_of_interest": "SPIRIT",
+            "points_of_interest": "-",
             "rifts": "WORLD LOCKED",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "Waterdeep\nXanathar's Hideout Ruins",
+            "rifts": "Sword Coast Beach > Xanathar's Castle Ruins\nThe Spine of the World > AoT Forest\n",
             "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
@@ -39,12 +44,17 @@
         },
         "ASTRAL_details":{
             "points_of_interest": "Planet Banna\nPlanet Namek",
-            "rifts": "???",
+            "rifts": "Random Black Hole > ???",
             "merge_points": "???"
         },
         "SPIRIT_details":{
-            "points_of_interest": "Planet Banna\nPlanet Namek",
+            "points_of_interest": "Planet Banna\nPlanet Namek\nEarth 07",
             "rifts": "???",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "Planet Banna\nPlanet Namek\nEarth 07\nAndrothrix 9 Lab",
+            "rifts": "Random Black Hole > ???\nEarth 07 > Mages of Luminus Hideout",
             "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
@@ -64,13 +74,18 @@
             "description": "A grim and desperate world, Attack on Titan is defined by its isolation and reliance on rudimentary technology. Magic is non-existent, and survival hinges on innovation within tight constraints. The people have developed advanced engineering in their fight against the towering Titans."
         },
         "ASTRAL_details":{
-            "points_of_interest": "Paradis Island - Shiganshina",
+            "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave",
             "rifts": "Wall Maria House Basement > ???",
             "merge_points": "???"
         },
         "SPIRIT_details":{
-            "points_of_interest": "Paradis Island - Shiganshina",
-            "rifts": "???",
+            "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave\nMarleyan Capital",
+            "rifts": "Wall Maria House Basement > ???",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave\nMarleyan Capital",
+            "rifts": "Wall Maria House Basement > ???\nVillage > The Spine of the World",
             "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
@@ -98,6 +113,11 @@
             "rifts": "???",
             "merge_points": "???"
         },
+        "GM_details": {
+            "points_of_interest": "-",
+            "rifts": "???",
+            "merge_points": "???"
+        },
         "viewableBy": ["SPIRIT", "GM"]
     },
     {
@@ -115,12 +135,17 @@
         },
         "ASTRAL_details":{
             "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
-            "rifts": "Hebra Trailhead Snowdrift > Helldivers Terminid Desert\nSPIRIT Outpost > ???",
+            "rifts": "Hebra Trailhead Snowdrift > ???",
             "merge_points": "???"
         },
         "SPIRIT_details":{
             "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
-            "rifts": "Hebra Trailhead Snowdrift > Helldivers Terminid Desert\nSPIRIT Outpost > ???",
+            "rifts": "Hebra Trailhead Snowdrift > Helldivers Terminid Desert\nSPIRIT Outpost > SPIRIT Base",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
+            "rifts": "Hebra Trailhead Snowdrift > Helldivers Terminid Desert\nSPIRIT Outpost > SPIRIT Base",
             "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
@@ -139,13 +164,18 @@
             "description": "The galaxy of Star Wars is a sprawling theater of advanced technology interwoven with the mysterious Force, a quasi-mystical energy binding all living things. From hyperspace travel to droid companions, technological marvels define life, while the Force introduces a magical undercurrent."
         },
         "ASTRAL_details":{
-            "points_of_interest": "ASTRAL Station\nElysium\nFelucia SPIRIT Outpost\nDestimo's House - Takodana\nSuhk's House - Dathomir",
-            "rifts": "Takodana Lakeside Cave > ???\nTakodana Forest > Grand Line Whirlpool\nFelucia SPIRIT Outpost > ???\nElysium > ASTRAL Deployment\nDathomir Castle Ruins > ???",
+            "points_of_interest": "ASTRAL Station\nElysium\nDestimo's House - Takodana\nSuhk's House - Dathomir",
+            "rifts": "Takodana Lakeside Cave > ???\nTakodana Forest > Grand Line Whirlpool\nElysium > ASTRAL Deployment\nDathomir Castle Ruins > ???",
             "merge_points": "???"
         },
         "SPIRIT_details":{
-            "points_of_interest": "ASTRAL Station\nElysium\nFelucia SPIRIT Outpost\nDestimo's House - Takodana\nSuhk's House - Dathomir",
-            "rifts": "Takodana Lakeside Cave > ???\nTakodana Forest > Grand Line Whirlpool\nFelucia SPIRIT Outpost > ???\nElysium > ASTRAL Deployment\nDathomir Castle Ruins > ???",
+            "points_of_interest": "ASTRAL Station\nFelucia SPIRIT Outpost",
+            "rifts": "Felucia SPIRIT Outpost > SPIRIT Base\nASTRAL Station Rift Shaft > ???",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "ASTRAL Station\nElysium\nFelucia SPIRIT Outpost\nDestimo's House - Takodana\nSuhk's House - Dathomir\nTyler's Cabin - Dandoran",
+            "rifts": "The Edge of the Galaxy > ???\nTakodana Lakeside Cave > ???\nTakodana Forest > Grand Line Whirlpool\nElysium > ASTRAL Deployment\nDathomir Castle Ruins > Sword Coast Beach\nFelucia SPIRIT Outpost > SPIRIT Base\nASTRAL Station Rift Shaft > ???",
             "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
@@ -169,13 +199,18 @@
             "description": "Jujutsu Kaisen is a world enshrouded by cursed energy, a malevolent force born from human emotions. Sorcerers wield this energy to exorcise curses, creating a dangerous yet fascinating interplay between humanity and its inner darkness. Technology is modern but often secondary to the battles fought in the shadows of society."
         },
         "ASTRAL_details":{
-            "points_of_interest": "Kazuma's House",
-            "rifts": "Subway System > Monster Hunter Ancient Forest Riverbed",
+            "points_of_interest": "Kazuma's House\nAbandoned Lagiacrus Nest",
+            "rifts": "???",
             "merge_points": "???"
         },
         "SPIRIT_details":{
-            "points_of_interest": "Kazuma's House",
-            "rifts": "Subway System > Monster Hunter Ancient Forest Riverbed",
+            "points_of_interest": "Kazuma's House\nKaido's House\nAbandoned Lagiacrus Nest",
+            "rifts": "Subway System > ???\nSubway System > Mistral Merge Point",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "Kazuma's House\nKaido's House\nAbandoned Lagiacrus Nest",
+            "rifts": "Subway System > Monster Hunter Ancient Forest Riverbed\nSubway System > Mistral Merge Point",
             "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
@@ -187,7 +222,7 @@
         "left": "44.2%",
         "control": {
             "ASTRAL": 20,
-            "SPIRIT": 30,
+            "SPIRIT": 20,
             "Gilded_Garden": 0,
             "Marines": 0,
             "Flood": 0,
@@ -199,14 +234,19 @@
             "description": "One Piece is a nautical world dominated by powerful pirate crews and Devil Fruits, granting unique abilities akin to magic. Technology is scattered and varies greatly, with some islands displaying advanced innovations while others remain primitive."
         },
         "ASTRAL_details":{
-            "points_of_interest": "Alabasta Island - Nanohana\nAzure Outpost Ruins\nLogue Town",
+            "points_of_interest": "Alabasta Island - Nanohana\nAzure Outpost Ruins\nLogue Town\nKannon Pirates' Hideout",
             "rifts": "Grand Line Whirlpool > Takodana Forest",
-            "merge_points": "N/A"
+            "merge_points": "???"
         },
         "SPIRIT_details":{
-            "points_of_interest": "Alabasta Island - Nanohana\nAzure Outpost Ruins\nLogue Town",
+            "points_of_interest": "Azure Outpost Ruins\nLogue Town",
+            "rifts": "???",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "Alabasta Island - Nanohana\nAzure Outpost Ruins\nLogue Town\nKannon Pirates' Hideout",
             "rifts": "Grand Line Whirlpool > Takodana Forest",
-            "merge_points": "N/A"
+            "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
     },
@@ -230,13 +270,18 @@
         },
         "ASTRAL_details":{
             "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "rifts": "???",
+            "merge_points": "???"
         },
         "SPIRIT_details":{
             "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "rifts": "???",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "-",
+            "rifts": "???",
+            "merge_points": "???"
         },
         "viewableBy": ["SPIRIT", "GM"]
     },
@@ -259,14 +304,19 @@
             "description": "The Monster Hunter world is a vibrant ecosystem ruled by colossal beasts. Advanced weaponry and armor forged from the remains of these creatures serve as the pinnacle of its technological achievements. Magic is absent, but alchemy and ecological mastery drive the balance between survival and dominance."
         },
         "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "points_of_interest": "Astera Village",
+            "rifts": "Coral Highlands Snowdrift > ???",
+            "merge_points": "???"
         },
         "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "points_of_interest": "Astera Village",
+            "rifts": "Forest > Oni Mountain Fissure\nCoral Highlands Snowdrift > ???\n??? > JJK Subway System",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "Astera Village",
+            "rifts": "Forest > Oni Mountain Fissure\nCoral Highlands Snowdrift > ???\nAncient Forest Riverbed > JJK Subway System",
+            "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
     },
@@ -290,13 +340,18 @@
         },
         "ASTRAL_details":{
             "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "rifts": "???",
+            "merge_points": "???"
         },
         "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "points_of_interest": "Rukia's Village",
+            "rifts": "Mountain Fissure > Monster Hunter Forest",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "Rukia's Village",
+            "rifts": "Mountain Fissure > Monster Hunter Forest",
+            "merge_points": "???"
         },
         "viewableBy": ["SPIRIT", "GM"]
     },
@@ -320,13 +375,18 @@
         },
         "ASTRAL_details":{
             "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "rifts": "???",
+            "merge_points": "???"
         },
         "SPIRIT_details":{
             "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "rifts": "???",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "-",
+            "rifts": "???",
+            "merge_points": "???"
         },
         "viewableBy": ["GM"]
     },
@@ -349,14 +409,19 @@
             "description": "Pokémon is a harmonious blend of nature and technology, where humanity coexists with fantastical creatures capable of extraordinary abilities. Technology is advanced, supporting the capture and training of Pokémon, but magic is entirely absent, replaced by the innate powers of the creatures themselves."
         },
         "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "points_of_interest": "Light & Rachel's House",
+            "rifts": "???",
+            "merge_points": "???"
         },
         "SPIRIT_details":{
             "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "rifts": "???",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "Light & Rachel's House",
+            "rifts": "???",
+            "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
     },
@@ -380,13 +445,18 @@
         },
         "ASTRAL_details":{
             "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "rifts": "???",
+            "merge_points": "???"
         },
         "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "points_of_interest": "Mistral Refugee Hideout",
+            "rifts": "Mistral Merge Point > JJK Subway System",
+            "merge_points": "Mistral Cliffs"
+        },
+        "GM_details": {
+            "points_of_interest": "Mistral Refugee Hideout",
+            "rifts": "Mistral Merge Point > JJK Subway System",
+            "merge_points": "Mistral Cliffs"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
     },
@@ -410,13 +480,18 @@
         },
         "ASTRAL_details":{
             "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "rifts": "Troll Fortress Window > ???",
+            "merge_points": "???"
         },
         "SPIRIT_details":{
             "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "rifts": "Troll Fortress Window > ???",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "-",
+            "rifts": "Troll Fortress Window > ???",
+            "merge_points": "???"
         },
         "viewableBy": ["SPIRIT", "GM"]
     },
@@ -440,13 +515,18 @@
         },
         "ASTRAL_details":{
             "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "rifts": "Jura Waterfall > ???",
+            "merge_points": "???"
         },
         "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "points_of_interest": "Mages of Luminus Hideout",
+            "rifts": "Mages of Luminus Hideout > ???",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "The Sky Garden\nKhusha Mountain Cave\nMages of Luminus Hideout",
+            "rifts": "Mages of Luminus Hideout > Dragon Ball Earth 07\nJura Waterfall > ???",
+            "merge_points": "Barren Lands Oasis"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
     },
@@ -469,14 +549,19 @@
             "description": "Splatoon is a quirky, vibrant world dominated by Inkling and Octarian cultures, where advanced but playful technology fuels competitive turf wars. Magic is non-existent, and all advancements are rooted in science and engineering, often with a playful twist of creativity."
         },
         "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "points_of_interest": "Inkopolis",
+            "rifts": "???",
+            "merge_points": "???"
         },
         "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "points_of_interest": "Inkopolis",
+            "rifts": "???",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "Inkopolis\nChromo's Apartment",
+            "rifts": "???",
+            "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
     },
@@ -500,13 +585,18 @@
         },
         "ASTRAL_details":{
             "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "rifts": "??? > Hebra Trailhead Snowdrift",
+            "merge_points": "???"
         },
         "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "points_of_interest": "Super Earth\nTerminid Desert",
+            "rifts": "Terminid Desert > Hebra Trailhead Snowdrift",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "Super Earth\nTerminid Desert",
+            "rifts": "Terminid Desert > Hebra Trailhead Snowdrift",
+            "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
     },
@@ -516,7 +606,7 @@
         "top": "50%",
         "left": "40%",
         "control": {
-            "ASTRAL": 20,
+            "ASTRAL": 10,
             "SPIRIT": 0,
             "Gilded_Garden": 0,
             "Marines": 0,
@@ -529,14 +619,19 @@
             "description": "My Hero Academia is a society reshaped by 'Quirks,' genetic mutations granting superhuman abilities to 80% of the population. While technology is present, the world’s focus is on harnessing and controlling these powers, blending science with what feels like modern-day magic."
         },
         "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "points_of_interest": "Aurora's Apartment\nThunder Spartan's House",
+            "rifts": "???",
+            "merge_points": "Basement Particle Accelerator"
         },
         "SPIRIT_details":{
             "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "rifts": "???",
+            "merge_points": "Basement Particle Accelerator"
+        },
+        "GM_details": {
+            "points_of_interest": "Aurora's Apartment\nThunder Spartan's House\nFirecracker Shelter",
+            "rifts": "???",
+            "merge_points": "Basement Particle Accelerator"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
     },
@@ -550,7 +645,7 @@
             "SPIRIT": 0,
             "Gilded_Garden": 0,
             "Marines": 0,
-            "Flood": 40,
+            "Flood": 5,
             "Super_Earth": 0,
             "New_Republic": 0
         },
@@ -559,14 +654,19 @@
             "description": "Halo is a vast interstellar battleground where advanced alien and human technology defines the war for survival. From powered armor to energy weapons, the universe thrives on technological innovation. Magic is absent, replaced by scientific marvels that border on the mystical in their complexity."
         },
         "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "points_of_interest": "Crashed High Charity",
+            "rifts": "???",
+            "merge_points": "???"
         },
         "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "N/A",
-            "merge_points": "N/A"
+            "points_of_interest": "Crashed High Charity",
+            "rifts": "???",
+            "merge_points": "???"
+        },
+        "GM_details": {
+            "points_of_interest": "Crashed High Charity",
+            "rifts": "???",
+            "merge_points": "???"
         },
         "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
     }

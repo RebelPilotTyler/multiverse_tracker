@@ -265,11 +265,13 @@
 
 #faction-icon {
     position: fixed;
-    top: 325px;
-    left: 1250px;
+    top: 365px;
+    left: 1290px;
     scale: .2;
-    z-index: 1000; /* Ensure it layers above other overlays */
+    z-index: 19; /* Ensure it layers above other overlays */
     pointer-events: none; /* Prevent interaction with the overlay */
+    transform: translate(-50%, -50%) scale(1);
+    transform-origin: center center;
     /*display: none; /* Hidden by default */
     opacity: .5;
 }

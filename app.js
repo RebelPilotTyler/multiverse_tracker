@@ -52,9 +52,9 @@ const displayWorldInfo = (world) => {
         document.getElementById('merge_points').innerHTML = world.SPIRIT_details.merge_points.replace(/\n/g, '<br>');
     }
     if (loggedInUser == "GM") {
-        document.getElementById('points_of_interest').innerHTML = world.ASTRAL_details.points_of_interest.replace(/\n/g, '<br>') + '<br>' + world.SPIRIT_details.points_of_interest.replace(/\n/g, '<br>');
-        document.getElementById('rifts').innerHTML = world.ASTRAL_details.rifts.replace(/\n/g, '<br>') + '<br>' + world.SPIRIT_details.rifts.replace(/\n/g, '<br>');
-        document.getElementById('merge_points').innerHTML = world.ASTRAL_details.merge_points.replace(/\n/g, '<br>') + '<br>' + world.SPIRIT_details.merge_points.replace(/\n/g, '<br>');
+        document.getElementById('points_of_interest').innerHTML = world.GM_details.points_of_interest.replace(/\n/g, '<br>');
+        document.getElementById('rifts').innerHTML = world.GM_details.rifts.replace(/\n/g, '<br>');
+        document.getElementById('merge_points').innerHTML = world.GM_details.merge_points.replace(/\n/g, '<br>');
         //document.getElementById('points_of_interest').innerHTML = world.SPIRIT_details.points_of_interest.replace(/\n/g, '<br>');
         //document.getElementById('rifts').innerHTML = world.SPIRIT_details.rifts.replace(/\n/g, '<br>');
         //document.getElementById('merge_points').innerHTML = world.SPIRIT_details.merge_points.replace(/\n/g, '<br>');
@@ -108,6 +108,16 @@ export const displayWorlds = async () => {
     if (loggedInUser == 'SPIRIT') {
         const icon = document.createElement('img');
         icon.src = 'SPIRIT Logo.png'; // Path to your overlay image
+        icon.alt = 'Faction Icon';
+        icon.className = 'faction-icon';
+        icon.style.display = 'block'; // Ensure it's visible
+        const iconElement = document.getElementById('faction-icon');
+        iconElement.appendChild(icon);
+    }
+    if (loggedInUser == 'GM') {
+        const icon = document.createElement('img');
+        icon.src = 'Star Squadron Symbol 500PX.png'; // Path to your overlay image
+        icon.style.scale = .6;
         icon.alt = 'Faction Icon';
         icon.className = 'faction-icon';
         icon.style.display = 'block'; // Ensure it's visible
