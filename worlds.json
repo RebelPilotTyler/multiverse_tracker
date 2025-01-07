@@ -31,7 +31,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Dragon Ball",
@@ -65,7 +66,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Attack on Titan",
@@ -100,7 +102,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "ATLA",
@@ -133,7 +136,8 @@
     "viewableBy": [
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Hyrule",
@@ -167,7 +171,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Star Wars",
@@ -201,7 +206,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Jujutsu Kaisen",
@@ -240,7 +246,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "One Piece",
@@ -279,7 +286,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Minecraft",
@@ -317,7 +325,8 @@
     "viewableBy": [
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Monster Hunter",
@@ -356,7 +365,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Oni World",
@@ -394,7 +404,8 @@
     "viewableBy": [
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Panthalassa",
@@ -431,7 +442,8 @@
     },
     "viewableBy": [
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Pokemon",
@@ -470,7 +482,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Remnant",
@@ -509,7 +522,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Skylands",
@@ -547,7 +561,8 @@
     "viewableBy": [
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Slime",
@@ -586,7 +601,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Splatoon",
@@ -625,7 +641,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Super Earth",
@@ -664,7 +681,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "My Hero",
@@ -703,7 +721,8 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   },
   {
     "id": "Halo",
@@ -742,6 +761,7 @@
       "ASTRAL",
       "SPIRIT",
       "GM"
-    ]
+    ],
+    "": ""
   }
 ]
