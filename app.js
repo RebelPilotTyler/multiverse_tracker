@@ -127,12 +127,12 @@ export const displayWorlds = async () => {
         document.getElementById('gm-controls').style.display = 'block';
 
         document.getElementById('open-overlay').addEventListener('click', () => {
-            document.getElementById('overlay-menu').style.display = 'block';
+            document.getElementById('editor-menu').style.display = 'block';
             fetchWorlds(); // Populate the overlay when opened
         });
         
         document.getElementById('close-overlay').addEventListener('click', () => {
-            document.getElementById('overlay-menu').style.display = 'none';
+            document.getElementById('editor-menu').style.display = 'none';
         });
         
     }
