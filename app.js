@@ -123,6 +123,8 @@ export const displayWorlds = async () => {
         icon.style.display = 'block'; // Ensure it's visible
         const iconElement = document.getElementById('faction-icon');
         iconElement.appendChild(icon);
+
+        document.getElementById('gm-controls').style.display = 'block';
     }
 
     const visibleWorlds = worlds.filter((world) => {
