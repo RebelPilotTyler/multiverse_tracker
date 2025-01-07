@@ -1,673 +1,747 @@
 [
-    {
-        "id": "Faerûn",
-        "name": "Faerûn",
-        "top": "130%",
-        "left": "54%",
-        "control": {
-            "ASTRAL": 100,
-            "SPIRIT": 0
-        },
-        "picture": "Logos/Faerun.png",
-        "details": {
-            "description": "Faerûn is a vibrant and tumultuous world teeming with magic. From its soaring arcane towers to its ancient forests brimming with magical creatures, it is a realm where natural forces blend with powerful sorcery. Technology here is rudimentary, as the inhabitants rely on spells and enchanted artifacts to achieve what others accomplish with machinery."
-        },
-        "ASTRAL_details": {
-            "points_of_interest": "-",
-            "rifts": "WORLD LOCKED",
-            "merge_points": "???"
-        },
-        "SPIRIT_details": {
-            "points_of_interest": "-",
-            "rifts": "WORLD LOCKED",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "Waterdeep\nXanathar's Hideout Ruins",
-            "rifts": "Sword Coast Beach > Xanathar's Castle Ruins\nThe Spine of the World > AoT Forest\n",
-            "merge_points": "???"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+  {
+    "id": "Faerûn",
+    "name": "Faerûn",
+    "top": "130%",
+    "left": "54%",
+    "control": {
+      "ASTRAL": 90,
+      "SPIRIT": 0
     },
-    {
-        "id": "Dragon Ball",
-        "name": "Dragon Ball",
-        "top": "194.8%",
-        "left": "57.2%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0
-        },
-        "picture": "Logos/Dragon Ball.png",
-        "details": {
-            "description": "A realm where martial arts and raw power dominate, Dragon Ball is a unique blend of advanced alien technology and almost mystical energy manipulation known as 'ki.' Its inhabitants routinely push the limits of what seems possible, blurring the lines between science and the supernatural."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "Planet Banna\nPlanet Namek",
-            "rifts": "Random Black Hole > ???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "Planet Banna\nPlanet Namek\nEarth 07",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "Planet Banna\nPlanet Namek\nEarth 07\nAndrothrix 9 Lab",
-            "rifts": "Random Black Hole > ???\nEarth 07 > Mages of Luminus Hideout",
-            "merge_points": "???"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "picture": "Logos/Faerun.png",
+    "details": {
+      "description": "Faerûn is a vibrant and tumultuous world teeming with magic. From its soaring arcane towers to its ancient forests brimming with magical creatures, it is a realm where natural forces blend with powerful sorcery. Technology here is rudimentary, as the inhabitants rely on spells and enchanted artifacts to achieve what others accomplish with machinery."
     },
-    {
-        "id": "Attack on Titan",
-        "name": "Attack on Titan",
-        "top": "147.5%",
-        "left": "82.4%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 20
-        },
-        "picture": "Logos/AOT.png",
-        "x_overlay": false,
-        "details": {
-            "description": "A grim and desperate world, Attack on Titan is defined by its isolation and reliance on rudimentary technology. Magic is non-existent, and survival hinges on innovation within tight constraints. The people have developed advanced engineering in their fight against the towering Titans."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave",
-            "rifts": "Wall Maria House Basement > ???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave\nMarleyan Capital",
-            "rifts": "Wall Maria House Basement > ???",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave\nMarleyan Capital",
-            "rifts": "Wall Maria House Basement > ???\nVillage > The Spine of the World",
-            "merge_points": "???"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "ASTRAL_details": {
+      "points_of_interest": "-",
+      "rifts": "WORLD LOCKED",
+      "merge_points": "???"
     },
-    {
-        "id": "ATLA",
-        "name": "ATLA",
-        "top": "120.2%",
-        "left": "65.8%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0
-        },
-        "picture": "Logos/ATLA.png",
-        "details": {
-            "description": "The Avatar world is deeply attuned to elemental magic known as 'bending,' where individuals manipulate air, water, earth, and fire. Technology is emerging but remains limited, as society leans heavily on their bending arts for warfare, construction, and everyday life."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "viewableBy": ["SPIRIT", "GM"]
+    "SPIRIT_details": {
+      "points_of_interest": "-",
+      "rifts": "WORLD LOCKED",
+      "merge_points": "???"
     },
-    {
-        "id": "Hyrule",
-        "name": "Hyrule",
-        "top": "45%",
-        "left": "60%",
-        "control": {
-            "ASTRAL": 10,
-            "SPIRIT": 40
-        },
-        "picture": "Logos/Hylian Crest.png",
-        "details": {
-            "description": "Hyrule is a land of legendary magic, protected by ancient relics and gods. Its medieval society is bolstered by enchanted artifacts and divine intervention. Technology is minimal, though ingenuity thrives in the form of puzzles and mechanisms tied to magical ruins."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
-            "rifts": "Hebra Trailhead Snowdrift > ???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
-            "rifts": "Hebra Trailhead Snowdrift > Helldivers Terminid Desert\nSPIRIT Outpost > SPIRIT Base",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
-            "rifts": "Hebra Trailhead Snowdrift > Helldivers Terminid Desert\nSPIRIT Outpost > SPIRIT Base",
-            "merge_points": "???"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "GM_details": {
+      "points_of_interest": "Waterdeep\nXanathar's Hideout Ruins",
+      "rifts": "Sword Coast Beach > Xanathar's Castle Ruins\nThe Spine of the World > AoT Forest\n",
+      "merge_points": "???"
     },
-    {
-        "id": "Star Wars",
-        "name": "Star Wars",
-        "top": "84.2%",
-        "left": "42.8%",
-        "control": {
-            "ASTRAL": 70,
-            "SPIRIT": 15
-        },
-        "picture": "Logos/Jedi Order.png",
-        "details": {
-            "description": "The galaxy of Star Wars is a sprawling theater of advanced technology interwoven with the mysterious Force, a quasi-mystical energy binding all living things. From hyperspace travel to droid companions, technological marvels define life, while the Force introduces a magical undercurrent."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "ASTRAL Station\nElysium\nDestimo's House - Takodana\nSuhk's House - Dathomir",
-            "rifts": "Takodana Lakeside Cave > ???\nTakodana Forest > Grand Line Whirlpool\nElysium > ASTRAL Deployment\nDathomir Castle Ruins > ???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "ASTRAL Station\nFelucia SPIRIT Outpost",
-            "rifts": "Felucia SPIRIT Outpost > SPIRIT Base\nASTRAL Station Rift Shaft > ???",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "ASTRAL Station\nElysium\nFelucia SPIRIT Outpost\nDestimo's House - Takodana\nSuhk's House - Dathomir\nTyler's Cabin - Dandoran",
-            "rifts": "The Edge of the Galaxy > ???\nTakodana Lakeside Cave > ???\nTakodana Forest > Grand Line Whirlpool\nElysium > ASTRAL Deployment\nDathomir Castle Ruins > Sword Coast Beach\nFelucia SPIRIT Outpost > SPIRIT Base\nASTRAL Station Rift Shaft > ???",
-            "merge_points": "???"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Dragon Ball",
+    "name": "Dragon Ball",
+    "top": "194.8%",
+    "left": "57.2%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 0
     },
-    {
-        "id": "Jujutsu Kaisen",
-        "name": "Jujutsu Kaisen",
-        "top": "92.5%",
-        "left": "24.6%",
-        "control": {
-            "ASTRAL": 10,
-            "SPIRIT": 10,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/JJK.png",
-        "details": {
-            "description": "Jujutsu Kaisen is a world enshrouded by cursed energy, a malevolent force born from human emotions. Sorcerers wield this energy to exorcise curses, creating a dangerous yet fascinating interplay between humanity and its inner darkness. Technology is modern but often secondary to the battles fought in the shadows of society."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "Kazuma's House\nAbandoned Lagiacrus Nest",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "Kazuma's House\nKaido's House\nAbandoned Lagiacrus Nest",
-            "rifts": "Subway System > ???\nSubway System > Mistral Merge Point",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "Kazuma's House\nKaido's House\nAbandoned Lagiacrus Nest",
-            "rifts": "Subway System > Monster Hunter Ancient Forest Riverbed\nSubway System > Mistral Merge Point",
-            "merge_points": "???"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "picture": "Logos/Dragon Ball.png",
+    "details": {
+      "description": "A realm where martial arts and raw power dominate, Dragon Ball is a unique blend of advanced alien technology and almost mystical energy manipulation known as 'ki.' Its inhabitants routinely push the limits of what seems possible, blurring the lines between science and the supernatural."
     },
-    {
-        "id": "One Piece",
-        "name": "One Piece",
-        "top": "159.8%",
-        "left": "44.2%",
-        "control": {
-            "ASTRAL": 20,
-            "SPIRIT": 20,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/World Gov..png",
-        "details": {
-            "description": "One Piece is a nautical world dominated by powerful pirate crews and Devil Fruits, granting unique abilities akin to magic. Technology is scattered and varies greatly, with some islands displaying advanced innovations while others remain primitive."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "Alabasta Island - Nanohana\nAzure Outpost Ruins\nLogue Town\nKannon Pirates' Hideout",
-            "rifts": "Grand Line Whirlpool > Takodana Forest",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "Azure Outpost Ruins\nLogue Town",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "Alabasta Island - Nanohana\nAzure Outpost Ruins\nLogue Town\nKannon Pirates' Hideout",
-            "rifts": "Grand Line Whirlpool > Takodana Forest",
-            "merge_points": "???"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "ASTRAL_details": {
+      "points_of_interest": "Planet Banna\nPlanet Namek",
+      "rifts": "Random Black Hole > ???",
+      "merge_points": "???"
     },
-    {
-        "id": "Minecraft",
-        "name": "Minecraft",
-        "top": "240%",
-        "left": "55%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/Minecraft.png",
-        "details": {
-            "description": "Minecraft is a procedurally infinite realm defined by blocks, where creativity and survival dominate. Technology is rudimentary but adaptable, as inhabitants craft tools, machines, and weapons from natural resources. Magic manifests through enchanting and alchemy, blending seamlessly into the fabric of the world."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "viewableBy": ["SPIRIT", "GM"]
+    "SPIRIT_details": {
+      "points_of_interest": "Planet Banna\nPlanet Namek\nEarth 07",
+      "rifts": "???",
+      "merge_points": "???"
     },
-    {
-        "id": "Monster Hunter",
-        "name": "Monster Hunter",
-        "top": "185%",
-        "left": "35%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 10,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/Monster Hunter.png",
-        "details": {
-            "description": "The Monster Hunter world is a vibrant ecosystem ruled by colossal beasts. Advanced weaponry and armor forged from the remains of these creatures serve as the pinnacle of its technological achievements. Magic is absent, but alchemy and ecological mastery drive the balance between survival and dominance."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "Astera Village",
-            "rifts": "Coral Highlands Snowdrift > ???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "Astera Village",
-            "rifts": "Forest > Oni Mountain Fissure\nCoral Highlands Snowdrift > ???\n??? > JJK Subway System",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "Astera Village",
-            "rifts": "Forest > Oni Mountain Fissure\nCoral Highlands Snowdrift > ???\nAncient Forest Riverbed > JJK Subway System",
-            "merge_points": "???"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "GM_details": {
+      "points_of_interest": "Planet Banna\nPlanet Namek\nEarth 07\nAndrothrix 9 Lab",
+      "rifts": "Random Black Hole > ???\nEarth 07 > Mages of Luminus Hideout",
+      "merge_points": "???"
     },
-    {
-        "id": "Oni World",
-        "name": "Oni World",
-        "top": "160%",
-        "left": "71%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/Oni World.png",
-        "details": {
-            "description": "-"
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "Rukia's Village",
-            "rifts": "Mountain Fissure > Monster Hunter Forest",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "Rukia's Village",
-            "rifts": "Mountain Fissure > Monster Hunter Forest",
-            "merge_points": "???"
-        },
-        "viewableBy": ["SPIRIT", "GM"]
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Attack on Titan",
+    "name": "Attack on Titan",
+    "top": "147.5%",
+    "left": "82.4%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 20
     },
-    {
-        "id": "Panthalassa",
-        "name": "Panthalassa",
-        "top": "110%",
-        "left": "80%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/Panthalassa.png",
-        "details": {
-            "description": "-"
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "viewableBy": ["GM"]
+    "picture": "Logos/AOT.png",
+    "x_overlay": false,
+    "details": {
+      "description": "A grim and desperate world, Attack on Titan is defined by its isolation and reliance on rudimentary technology. Magic is non-existent, and survival hinges on innovation within tight constraints. The people have developed advanced engineering in their fight against the towering Titans."
     },
-    {
-        "id": "Pokemon",
-        "name": "Pokemon",
-        "top": "92%",
-        "left": "58%",
-        "control": {
-            "ASTRAL": 10,
-            "SPIRIT": 0,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/Pokemon.png",
-        "details": {
-            "description": "Pokémon is a harmonious blend of nature and technology, where humanity coexists with fantastical creatures capable of extraordinary abilities. Technology is advanced, supporting the capture and training of Pokémon, but magic is entirely absent, replaced by the innate powers of the creatures themselves."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "Light & Rachel's House",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "Light & Rachel's House",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "ASTRAL_details": {
+      "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave",
+      "rifts": "Wall Maria House Basement > ???",
+      "merge_points": "???"
     },
-    {
-        "id": "Remnant",
-        "name": "Remnant",
-        "top": "75%",
-        "left": "70%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 10,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/RWBY.png",
-        "details": {
-            "description": "The world of RWBY combines steampunk technology with a pervasive reliance on magical energy known as Dust. Combat is a delicate balance of skill, strategy, and the unique properties of Dust, while technology is shaped by humanity’s fight for survival against the Grimm."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "Mistral Refugee Hideout",
-            "rifts": "Mistral Merge Point > JJK Subway System",
-            "merge_points": "Mistral Cliffs"
-        },
-        "GM_details": {
-            "points_of_interest": "Mistral Refugee Hideout",
-            "rifts": "Mistral Merge Point > JJK Subway System",
-            "merge_points": "Mistral Cliffs"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "SPIRIT_details": {
+      "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave\nMarleyan Capital",
+      "rifts": "Wall Maria House Basement > ???",
+      "merge_points": "???"
     },
-    {
-        "id": "Skylands",
-        "name": "Skylands",
-        "top": "145%",
-        "left": "18%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/Skylanders.png",
-        "details": {
-            "description": "Skylands is a vibrant realm of floating islands powered by elemental magic. The Skylanders wield powerful abilities tied to these elements to protect their world from evil forces. While magic is the foundation of their society, technological innovations occasionally emerge as complementary tools in their battles."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "Troll Fortress Window > ???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "Troll Fortress Window > ???",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "-",
-            "rifts": "Troll Fortress Window > ???",
-            "merge_points": "???"
-        },
-        "viewableBy": ["SPIRIT", "GM"]
+    "GM_details": {
+      "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave\nMarleyan Capital",
+      "rifts": "Wall Maria House Basement > ???\nVillage > The Spine of the World",
+      "merge_points": "???"
     },
-    {
-        "id": "Slime",
-        "name": "Slime",
-        "top": "195%",
-        "left": "75%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0,
-            "Gilded_Garden": 90,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/Slime.png",
-        "details": {
-            "description": "This world is a dynamic fusion of high magic and innovative technology. Races and cultures unite under the guidance of powerful individuals to develop both. The balance of power is dictated by magical prowess, with technology advancing rapidly to complement these mystical capabilities."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "Jura Waterfall > ???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "Mages of Luminus Hideout",
-            "rifts": "Mages of Luminus Hideout > ???",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "The Sky Garden\nKhusha Mountain Cave\nMages of Luminus Hideout",
-            "rifts": "Mages of Luminus Hideout > Dragon Ball Earth 07\nJura Waterfall > ???",
-            "merge_points": "Barren Lands Oasis"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "ATLA",
+    "name": "ATLA",
+    "top": "120.2%",
+    "left": "65.8%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 0
     },
-    {
-        "id": "Splatoon",
-        "name": "Splatoon",
-        "top": "220%",
-        "left": "40%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/Splatoon.png",
-        "details": {
-            "description": "Splatoon is a quirky, vibrant world dominated by Inkling and Octarian cultures, where advanced but playful technology fuels competitive turf wars. Magic is non-existent, and all advancements are rooted in science and engineering, often with a playful twist of creativity."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "Inkopolis",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "Inkopolis",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "Inkopolis\nChromo's Apartment",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "picture": "Logos/ATLA.png",
+    "details": {
+      "description": "The Avatar world is deeply attuned to elemental magic known as 'bending,' where individuals manipulate air, water, earth, and fire. Technology is emerging but remains limited, as society leans heavily on their bending arts for warfare, construction, and everyday life."
     },
-    {
-        "id": "Super Earth",
-        "name": "Super Earth",
-        "top": "135%",
-        "left": "33%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 100,
-            "New_Republic": 0
-        },
-        "picture": "Logos/Super Earth.png",
-        "details": {
-            "description": "Super Earth is a militarized, dystopian future defined by relentless warfare across the galaxy. Advanced technology is the backbone of survival, from orbital drops to automated weaponry. Magic is non-existent, as the survival of humanity depends entirely on tactical superiority and firepower."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "-",
-            "rifts": "??? > Hebra Trailhead Snowdrift",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "Super Earth\nTerminid Desert",
-            "rifts": "Terminid Desert > Hebra Trailhead Snowdrift",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "Super Earth\nTerminid Desert",
-            "rifts": "Terminid Desert > Hebra Trailhead Snowdrift",
-            "merge_points": "???"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "ASTRAL_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "???"
     },
-    {
-        "id": "My Hero",
-        "name": "My Hero",
-        "top": "50%",
-        "left": "40%",
-        "control": {
-            "ASTRAL": 10,
-            "SPIRIT": 0,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 0,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/UA.png",
-        "details": {
-            "description": "My Hero Academia is a society reshaped by 'Quirks,' genetic mutations granting superhuman abilities to 80% of the population. While technology is present, the world’s focus is on harnessing and controlling these powers, blending science with what feels like modern-day magic."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "Aurora's Apartment\nThunder Spartan's House",
-            "rifts": "???",
-            "merge_points": "Basement Particle Accelerator"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "-",
-            "rifts": "???",
-            "merge_points": "Basement Particle Accelerator"
-        },
-        "GM_details": {
-            "points_of_interest": "Aurora's Apartment\nThunder Spartan's House\nFirecracker Shelter",
-            "rifts": "???",
-            "merge_points": "Basement Particle Accelerator"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
+    "SPIRIT_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "???"
     },
-    {
-        "id": "Halo",
-        "name": "Halo",
-        "top": "180%",
-        "left": "20%",
-        "control": {
-            "ASTRAL": 0,
-            "SPIRIT": 0,
-            "Gilded_Garden": 0,
-            "Marines": 0,
-            "Flood": 5,
-            "Super_Earth": 0,
-            "New_Republic": 0
-        },
-        "picture": "Logos/UNSC.png",
-        "details": {
-            "description": "Halo is a vast interstellar battleground where advanced alien and human technology defines the war for survival. From powered armor to energy weapons, the universe thrives on technological innovation. Magic is absent, replaced by scientific marvels that border on the mystical in their complexity."
-        },
-        "ASTRAL_details":{
-            "points_of_interest": "Crashed High Charity",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "SPIRIT_details":{
-            "points_of_interest": "Crashed High Charity",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "GM_details": {
-            "points_of_interest": "Crashed High Charity",
-            "rifts": "???",
-            "merge_points": "???"
-        },
-        "viewableBy": ["ASTRAL", "SPIRIT", "GM"]
-    }
+    "GM_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Hyrule",
+    "name": "Hyrule",
+    "top": "45%",
+    "left": "60%",
+    "control": {
+      "ASTRAL": 10,
+      "SPIRIT": 40
+    },
+    "picture": "Logos/Hylian Crest.png",
+    "details": {
+      "description": "Hyrule is a land of legendary magic, protected by ancient relics and gods. Its medieval society is bolstered by enchanted artifacts and divine intervention. Technology is minimal, though ingenuity thrives in the form of puzzles and mechanisms tied to magical ruins."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
+      "rifts": "Hebra Trailhead Snowdrift > ???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
+      "rifts": "Hebra Trailhead Snowdrift > Helldivers Terminid Desert\nSPIRIT Outpost > SPIRIT Base",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
+      "rifts": "Hebra Trailhead Snowdrift > Helldivers Terminid Desert\nSPIRIT Outpost > SPIRIT Base",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Star Wars",
+    "name": "Star Wars",
+    "top": "84.2%",
+    "left": "42.8%",
+    "control": {
+      "ASTRAL": 70,
+      "SPIRIT": 15
+    },
+    "picture": "Logos/Jedi Order.png",
+    "details": {
+      "description": "The galaxy of Star Wars is a sprawling theater of advanced technology interwoven with the mysterious Force, a quasi-mystical energy binding all living things. From hyperspace travel to droid companions, technological marvels define life, while the Force introduces a magical undercurrent."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "ASTRAL Station\nElysium\nDestimo's House - Takodana\nSuhk's House - Dathomir",
+      "rifts": "Takodana Lakeside Cave > ???\nTakodana Forest > Grand Line Whirlpool\nElysium > ASTRAL Deployment\nDathomir Castle Ruins > ???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "ASTRAL Station\nFelucia SPIRIT Outpost",
+      "rifts": "Felucia SPIRIT Outpost > SPIRIT Base\nASTRAL Station Rift Shaft > ???",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "ASTRAL Station\nElysium\nFelucia SPIRIT Outpost\nDestimo's House - Takodana\nSuhk's House - Dathomir\nTyler's Cabin - Dandoran",
+      "rifts": "The Edge of the Galaxy > ???\nTakodana Lakeside Cave > ???\nTakodana Forest > Grand Line Whirlpool\nElysium > ASTRAL Deployment\nDathomir Castle Ruins > Sword Coast Beach\nFelucia SPIRIT Outpost > SPIRIT Base\nASTRAL Station Rift Shaft > ???",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Jujutsu Kaisen",
+    "name": "Jujutsu Kaisen",
+    "top": "92.5%",
+    "left": "24.6%",
+    "control": {
+      "ASTRAL": 10,
+      "SPIRIT": 10,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/JJK.png",
+    "details": {
+      "description": "Jujutsu Kaisen is a world enshrouded by cursed energy, a malevolent force born from human emotions. Sorcerers wield this energy to exorcise curses, creating a dangerous yet fascinating interplay between humanity and its inner darkness. Technology is modern but often secondary to the battles fought in the shadows of society."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "Kazuma's House\nAbandoned Lagiacrus Nest",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "Kazuma's House\nKaido's House\nAbandoned Lagiacrus Nest",
+      "rifts": "Subway System > ???\nSubway System > Mistral Merge Point",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "Kazuma's House\nKaido's House\nAbandoned Lagiacrus Nest",
+      "rifts": "Subway System > Monster Hunter Ancient Forest Riverbed\nSubway System > Mistral Merge Point",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "One Piece",
+    "name": "One Piece",
+    "top": "159.8%",
+    "left": "44.2%",
+    "control": {
+      "ASTRAL": 20,
+      "SPIRIT": 20,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/World Gov..png",
+    "details": {
+      "description": "One Piece is a nautical world dominated by powerful pirate crews and Devil Fruits, granting unique abilities akin to magic. Technology is scattered and varies greatly, with some islands displaying advanced innovations while others remain primitive."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "Alabasta Island - Nanohana\nAzure Outpost Ruins\nLogue Town\nKannon Pirates' Hideout",
+      "rifts": "Grand Line Whirlpool > Takodana Forest",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "Azure Outpost Ruins\nLogue Town",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "Alabasta Island - Nanohana\nAzure Outpost Ruins\nLogue Town\nKannon Pirates' Hideout",
+      "rifts": "Grand Line Whirlpool > Takodana Forest",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Minecraft",
+    "name": "Minecraft",
+    "top": "240%",
+    "left": "55%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 0,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/Minecraft.png",
+    "details": {
+      "description": "Minecraft is a procedurally infinite realm defined by blocks, where creativity and survival dominate. Technology is rudimentary but adaptable, as inhabitants craft tools, machines, and weapons from natural resources. Magic manifests through enchanting and alchemy, blending seamlessly into the fabric of the world."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Monster Hunter",
+    "name": "Monster Hunter",
+    "top": "185%",
+    "left": "35%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 10,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/Monster Hunter.png",
+    "details": {
+      "description": "The Monster Hunter world is a vibrant ecosystem ruled by colossal beasts. Advanced weaponry and armor forged from the remains of these creatures serve as the pinnacle of its technological achievements. Magic is absent, but alchemy and ecological mastery drive the balance between survival and dominance."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "Astera Village",
+      "rifts": "Coral Highlands Snowdrift > ???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "Astera Village",
+      "rifts": "Forest > Oni Mountain Fissure\nCoral Highlands Snowdrift > ???\n??? > JJK Subway System",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "Astera Village",
+      "rifts": "Forest > Oni Mountain Fissure\nCoral Highlands Snowdrift > ???\nAncient Forest Riverbed > JJK Subway System",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Oni World",
+    "name": "Oni World",
+    "top": "160%",
+    "left": "71%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 0,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/Oni World.png",
+    "details": {
+      "description": "-"
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "Rukia's Village",
+      "rifts": "Mountain Fissure > Monster Hunter Forest",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "Rukia's Village",
+      "rifts": "Mountain Fissure > Monster Hunter Forest",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Panthalassa",
+    "name": "Panthalassa",
+    "top": "110%",
+    "left": "80%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 0,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/Panthalassa.png",
+    "details": {
+      "description": "-"
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "GM"
+    ]
+  },
+  {
+    "id": "Pokemon",
+    "name": "Pokemon",
+    "top": "92%",
+    "left": "58%",
+    "control": {
+      "ASTRAL": 10,
+      "SPIRIT": 0,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/Pokemon.png",
+    "details": {
+      "description": "Pokémon is a harmonious blend of nature and technology, where humanity coexists with fantastical creatures capable of extraordinary abilities. Technology is advanced, supporting the capture and training of Pokémon, but magic is entirely absent, replaced by the innate powers of the creatures themselves."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "Light & Rachel's House",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "Light & Rachel's House",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Remnant",
+    "name": "Remnant",
+    "top": "75%",
+    "left": "70%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 10,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/RWBY.png",
+    "details": {
+      "description": "The world of RWBY combines steampunk technology with a pervasive reliance on magical energy known as Dust. Combat is a delicate balance of skill, strategy, and the unique properties of Dust, while technology is shaped by humanity’s fight for survival against the Grimm."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "Mistral Refugee Hideout",
+      "rifts": "Mistral Merge Point > JJK Subway System",
+      "merge_points": "Mistral Cliffs"
+    },
+    "GM_details": {
+      "points_of_interest": "Mistral Refugee Hideout",
+      "rifts": "Mistral Merge Point > JJK Subway System",
+      "merge_points": "Mistral Cliffs"
+    },
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Skylands",
+    "name": "Skylands",
+    "top": "145%",
+    "left": "18%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 0,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/Skylanders.png",
+    "details": {
+      "description": "Skylands is a vibrant realm of floating islands powered by elemental magic. The Skylanders wield powerful abilities tied to these elements to protect their world from evil forces. While magic is the foundation of their society, technological innovations occasionally emerge as complementary tools in their battles."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "-",
+      "rifts": "Troll Fortress Window > ???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "-",
+      "rifts": "Troll Fortress Window > ???",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "-",
+      "rifts": "Troll Fortress Window > ???",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Slime",
+    "name": "Slime",
+    "top": "195%",
+    "left": "75%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 0,
+      "Gilded_Garden": 90,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/Slime.png",
+    "details": {
+      "description": "This world is a dynamic fusion of high magic and innovative technology. Races and cultures unite under the guidance of powerful individuals to develop both. The balance of power is dictated by magical prowess, with technology advancing rapidly to complement these mystical capabilities."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "-",
+      "rifts": "Jura Waterfall > ???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "Mages of Luminus Hideout",
+      "rifts": "Mages of Luminus Hideout > ???",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "The Sky Garden\nKhusha Mountain Cave\nMages of Luminus Hideout",
+      "rifts": "Mages of Luminus Hideout > Dragon Ball Earth 07\nJura Waterfall > ???",
+      "merge_points": "Barren Lands Oasis"
+    },
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Splatoon",
+    "name": "Splatoon",
+    "top": "220%",
+    "left": "40%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 0,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/Splatoon.png",
+    "details": {
+      "description": "Splatoon is a quirky, vibrant world dominated by Inkling and Octarian cultures, where advanced but playful technology fuels competitive turf wars. Magic is non-existent, and all advancements are rooted in science and engineering, often with a playful twist of creativity."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "Inkopolis",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "Inkopolis",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "Inkopolis\nChromo's Apartment",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Super Earth",
+    "name": "Super Earth",
+    "top": "135%",
+    "left": "33%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 0,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 100,
+      "New_Republic": 0
+    },
+    "picture": "Logos/Super Earth.png",
+    "details": {
+      "description": "Super Earth is a militarized, dystopian future defined by relentless warfare across the galaxy. Advanced technology is the backbone of survival, from orbital drops to automated weaponry. Magic is non-existent, as the survival of humanity depends entirely on tactical superiority and firepower."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "-",
+      "rifts": "??? > Hebra Trailhead Snowdrift",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "Super Earth\nTerminid Desert",
+      "rifts": "Terminid Desert > Hebra Trailhead Snowdrift",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "Super Earth\nTerminid Desert",
+      "rifts": "Terminid Desert > Hebra Trailhead Snowdrift",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "My Hero",
+    "name": "My Hero",
+    "top": "50%",
+    "left": "40%",
+    "control": {
+      "ASTRAL": 10,
+      "SPIRIT": 0,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/UA.png",
+    "details": {
+      "description": "My Hero Academia is a society reshaped by 'Quirks,' genetic mutations granting superhuman abilities to 80% of the population. While technology is present, the world’s focus is on harnessing and controlling these powers, blending science with what feels like modern-day magic."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "Aurora's Apartment\nThunder Spartan's House",
+      "rifts": "???",
+      "merge_points": "Basement Particle Accelerator"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "-",
+      "rifts": "???",
+      "merge_points": "Basement Particle Accelerator"
+    },
+    "GM_details": {
+      "points_of_interest": "Aurora's Apartment\nThunder Spartan's House\nFirecracker Shelter",
+      "rifts": "???",
+      "merge_points": "Basement Particle Accelerator"
+    },
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  },
+  {
+    "id": "Halo",
+    "name": "Halo",
+    "top": "180%",
+    "left": "20%",
+    "control": {
+      "ASTRAL": 0,
+      "SPIRIT": 0,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 5,
+      "Super_Earth": 0,
+      "New_Republic": 0
+    },
+    "picture": "Logos/UNSC.png",
+    "details": {
+      "description": "Halo is a vast interstellar battleground where advanced alien and human technology defines the war for survival. From powered armor to energy weapons, the universe thrives on technological innovation. Magic is absent, replaced by scientific marvels that border on the mystical in their complexity."
+    },
+    "ASTRAL_details": {
+      "points_of_interest": "Crashed High Charity",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "SPIRIT_details": {
+      "points_of_interest": "Crashed High Charity",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "GM_details": {
+      "points_of_interest": "Crashed High Charity",
+      "rifts": "???",
+      "merge_points": "???"
+    },
+    "viewableBy": [
+      "ASTRAL",
+      "SPIRIT",
+      "GM"
+    ]
+  }
 ]
