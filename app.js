@@ -124,8 +124,6 @@ export const displayWorlds = async () => {
         const iconElement = document.getElementById('faction-icon');
         iconElement.appendChild(icon);
 
-        document.getElementById('gm-controls').style.display = 'block';
-
         document.getElementById('open-overlay').addEventListener('click', () => {
             document.getElementById('editor-menu').style.display = 'block';
             fetchWorlds(); // Populate the overlay when opened
