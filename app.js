@@ -125,6 +125,16 @@ export const displayWorlds = async () => {
         iconElement.appendChild(icon);
 
         document.getElementById('gm-controls').style.display = 'block';
+
+        document.getElementById('open-overlay').addEventListener('click', () => {
+            document.getElementById('overlay-menu').style.display = 'block';
+            fetchWorlds(); // Populate the overlay when opened
+        });
+        
+        document.getElementById('close-overlay').addEventListener('click', () => {
+            document.getElementById('overlay-menu').style.display = 'none';
+        });
+        
     }
 
     const visibleWorlds = worlds.filter((world) => {
@@ -427,7 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-//Comment
+
 document
     .getElementById('decrease-astral-control')
     .addEventListener('click', async () => {
@@ -449,3 +459,97 @@ document
             alert('Unexpected error occurred.');
         }
     });
+
+async function fetchWorlds() {
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/RebelPilotTyler/multiverse_tracker/main/worlds.json');
+        if (response.ok) {
+            const data = await response.json();
+            populateOverlay(data);
+        } else {
+            console.error('Failed to fetch worlds:', response.status);
+        }
+    } catch (error) {
+        console.error('Error fetching worlds:', error);
+    }
+}
+
+function populateOverlay(worlds) {
+    const worldFields = document.getElementById('world-fields');
+    worldFields.innerHTML = ''; // Clear previous fields
+
+    worlds.forEach((world, index) => {
+        const worldDiv = document.createElement('div');
+        worldDiv.className = 'world';
+
+        // Create a title for the world
+        const worldTitle = document.createElement('h3');
+        worldTitle.textContent = world.name;
+        worldDiv.appendChild(worldTitle);
+
+        // Generate editable fields for each property
+        for (const key in world) {
+            if (typeof world[key] === 'object') {
+                // Handle nested objects (e.g., control)
+                for (const subKey in world[key]) {
+                    createEditableField(worldDiv, index, `${key}.${subKey}`, world[key][subKey]);
+                }
+            } else {
+                createEditableField(worldDiv, index, key, world[key]);
+            }
+        }
+
+        worldFields.appendChild(worldDiv);
+    });
+}
+
+function createEditableField(container, worldIndex, key, value) {
+    const fieldDiv = document.createElement('div');
+    fieldDiv.className = 'field';
+
+    // Label
+    const label = document.createElement('label');
+    label.textContent = key;
+    label.htmlFor = `${worldIndex}-${key}`;
+    fieldDiv.appendChild(label);
+
+    // Input
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.id = `${worldIndex}-${key}`;
+    input.value = value;
+    fieldDiv.appendChild(input);
+
+    // Save Button
+    const button = document.createElement('button');
+    button.textContent = 'Save';
+    button.onclick = () => saveField(worldIndex, key, input.value);
+    fieldDiv.appendChild(button);
+
+    container.appendChild(fieldDiv);
+}
+
+async function saveField(worldIndex, key, newValue) {
+    try {
+        const response = await fetch('/.netlify/functions/triggerWorkflow', {
+            method: 'POST',
+            body: JSON.stringify({
+                event_type: 'update-world-field',
+                payload: {
+                    worldIndex,
+                    key,
+                    newValue,
+                },
+            }),
+        });
+
+        if (response.ok) {
+            alert(`Field ${key} updated successfully!`);
+        } else {
+            alert('Error updating field.');
+        }
+    } catch (error) {
+        console.error('Unexpected error:', error);
+        alert('Unexpected error occurred.');
+    }
+}

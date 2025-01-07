@@ -2,7 +2,7 @@ name: Update Multiverse Tracker Data
 
 on:
   repository_dispatch:
-    types: [decrease-astral-control]
+    types: [update-world-field]
 
 jobs:
   update-data:
@@ -20,11 +20,15 @@ jobs:
           git config --global user.email "actions@github.com"
           git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/RebelPilotTyler/multiverse_tracker.git
 
-      # Step 3: Decrease ASTRAL Control for Faerûn
+      # Step 3: Update worlds.json
       - name: Update worlds.json
         run: |
-          jq 'map(if .id == "Faerûn" then .control.ASTRAL -= 10 else . end)' worlds.json > temp.json
+          echo '${{ github.event.client_payload }}' > payload.json
+          worldIndex=$(jq -r '.worldIndex' payload.json)
+          key=$(jq -r '.key' payload.json)
+          newValue=$(jq -r '.newValue' payload.json)
+          jq ".[${worldIndex}] |= setpath([\"$(echo $key | tr '.' '\", \"')\"]; \"$newValue\")" worlds.json > temp.json
           mv temp.json worlds.json
           git add worlds.json
-          git commit -m "Decreased ASTRAL control of Faerûn by 10%"
+          git commit -m "Updated field $key for world index $worldIndex"
           git push
