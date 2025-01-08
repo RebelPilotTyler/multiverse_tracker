@@ -70,7 +70,7 @@ function setupEventListeners() {
 exports.handler = async (event) => {
     console.log('Event received:', JSON.stringify(event, null, 2)); // Debug event payload
     try {
-        await initializeBot();
+        //await initializeBot();
         setupEventListeners();
 
         if (event.httpMethod === 'POST') {
