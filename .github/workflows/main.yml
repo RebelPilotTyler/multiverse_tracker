@@ -20,25 +20,29 @@ jobs:
           git config --global user.email "actions@github.com"
           git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/RebelPilotTyler/multiverse_tracker.git
 
-      # Step 3: Update worlds.json
+      # Step 3: Create Payload File
+      - name: Create Payload File
+        run: |
+          echo '${{ toJson(github.event.client_payload) }}' > payload.json
+
+      # Step 4: Extract Variables
+      - name: Extract Variables
+        run: |
+          worldIndex=$(jq -r '.worldIndex' payload.json)
+          key=$(jq -r '.key' payload.json)
+          newValue=$(jq -r '.newValue' payload.json)
+          echo "World Index: $worldIndex"
+          echo "Key: $key"
+          echo "New Value: $newValue"
+
+      # Step 5: Update worlds.json
       - name: Update worlds.json
         run: |
-          echo '${{ github.event.client_payload }}' > payload.json
           worldIndex=$(jq -r '.worldIndex' payload.json)
           key=$(jq -r '.key' payload.json)
           newValue=$(jq -r '.newValue' payload.json)
           jq ".[${worldIndex}] |= setpath([\"$(echo $key | tr '.' '\", \"')\"]; \"$newValue\")" worlds.json > temp.json
-
           mv temp.json worlds.json
           git add worlds.json
           git commit -m "Updated field $key for world index $worldIndex"
           git push
-          
-      - name: Debug Payload
-        run: |
-          echo "worldIndex=$worldIndex"
-          echo "key=$key"
-          echo "newValue=$newValue"
-          cat worlds.json
-
-        
