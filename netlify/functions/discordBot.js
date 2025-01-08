@@ -81,21 +81,33 @@ exports.handler = async (event) => {
                 if (channel) {
                     const notificationMessage = `🔔 **World Update** 🔔\n🌍 **World**: ${worldName}\n🛠️ **Field Changed**: ${fieldChanged}\n✨ **New Value**: ${newValue}`;
                     await channel.send(notificationMessage);
+
+                    // Ensure a valid response is returned
                     return { statusCode: 200, body: 'Notification sent.' };
                 } else {
+                    console.error('Channel not found.');
                     return { statusCode: 404, body: 'Channel not found.' };
                 }
             }
 
+            console.error('Invalid action in request.');
             return { statusCode: 400, body: 'Invalid action.' };
         }
 
+        console.error('Invalid HTTP method.');
         return { statusCode: 405, body: 'Method not allowed.' };
     } catch (error) {
-        console.error('Handler error:', error);
-        return { statusCode: 500, body: JSON.stringify({ error: error.message }) };
+        console.error('Error in handler:', error.message, error.stack);
+        return {
+            statusCode: 500,
+            body: JSON.stringify({
+                error: error.message,
+                stack: error.stack,
+            }),
+        };
     }
 };
+
 
 // Ensure the bot initializes properly on startup
 initializeBot()
