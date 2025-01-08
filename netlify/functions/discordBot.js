@@ -76,3 +76,11 @@ client.once('ready', async () => {
         console.error('Channel not found. Check the CHANNEL_ID.');
     }
 });
+
+client.once('ready', () => {
+    console.log('Bot is online!');
+    console.log('Guilds the bot is connected to:');
+    client.guilds.cache.forEach((guild) => {
+        console.log(`- ${guild.name} (ID: ${guild.id})`);
+    });
+});
