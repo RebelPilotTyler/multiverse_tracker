@@ -1,8 +1,7 @@
 const { Client, GatewayIntentBits } = require('discord.js');
-const fs = require('fs');
 
 // Initialize Discord bot
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 const TOKEN = process.env.BOT_TOKEN; // Add your bot token in Netlify environment variables
 const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID; // Add your channel ID in Netlify environment variables
 
@@ -15,12 +14,6 @@ async function initializeBot() {
         console.log('Discord bot initialized');
         botInitialized = true;
     }
-}
-
-// Load worlds data
-function loadWorlds() {
-    const data = fs.readFileSync('./worlds.json', 'utf8');
-    return JSON.parse(data);
 }
 
 // Serverless function handler
@@ -49,33 +42,3 @@ exports.handler = async (event) => {
 
     return { statusCode: 405, body: 'Method not allowed.' };
 };
-
-// Respond to commands
-client.on('messageCreate', (message) => {
-    if (message.author.bot) return; // Ignore bot messages
-
-    const args = message.content.trim().split(/\s+/); // Split the message into words
-    const command = args.shift().toLowerCase(); // Extract the command
-
-    // Handle the "!world" command
-    if (command === '!world') {
-        const worldName = args.join(' '); // Combine the rest of the message into the world name
-        const worlds = loadWorlds(); // Load worlds data
-
-        const world = worlds.find((w) => w.name.toLowerCase() === worldName.toLowerCase());
-        if (world) {
-            // Respond with world information
-            message.channel.send(`🌍 **${world.name}**\nControl: ASTRAL - ${world.control.ASTRAL}%`);
-        } else {
-            // Respond if the world is not found
-            message.channel.send(`⚠️ World "${worldName}" not found. Make sure the name is spelled correctly.`);
-        }
-    }
-});
-
-// Bot login
-client.once('ready', () => {
-    console.log(`Bot logged in as ${client.user.tag}`);
-});
-
-client.login(TOKEN);
