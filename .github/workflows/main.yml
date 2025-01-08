@@ -82,10 +82,9 @@ jobs:
           git add worlds.json
           git commit -m "Updated field $key for world index $worldIndex"
           git push
-          
-      - name: Notify Discord Bot via Webhook
+
+      - name: Notify Discord Bot
         run: |
           curl -X POST -H "Content-Type: application/json" \
-          -d "{\"content\": \"🌍 **World Updated:** ${key} changed to ${newValue} in ${worldName}.\"}" \
-          ${{ secrets.DISCORD_BOT_WEBHOOK }}
-        
+          -d '{"action": "notify", "worldName": "Faerûn", "message": "ASTRAL control changed"}' \
+          https://multiverse-tracker.netlify.app/.netlify/functions/discordBot
