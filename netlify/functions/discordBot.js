@@ -2,16 +2,14 @@ const { Client, GatewayIntentBits } = require('discord.js');
 
 // Discord bot setup
 const client = new Client({
-    intents: [
-        GatewayIntentBits.Guilds, // Allows the bot to interact with guilds (servers)
-    ],
+    intents: [GatewayIntentBits.Guilds], // Minimum required intents
 });
-const TOKEN = process.env.BOT_TOKEN; // Discord bot token from environment variables
-const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID; // Target Discord channel ID
+const TOKEN = process.env.BOT_TOKEN; // Discord bot token
+const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID; // Target Discord channel
 
 let botInitialized = false;
 
-// Function to initialize the bot
+// Initialize the bot at startup
 async function initializeBot() {
     if (!botInitialized) {
         try {
@@ -25,24 +23,24 @@ async function initializeBot() {
     }
 }
 
+// Call initializeBot immediately when the serverless function is deployed
+initializeBot().catch((err) => console.error('Startup error:', err));
+
 // Serverless function handler
 exports.handler = async (event) => {
     try {
-        // Ensure the bot is initialized
-        await initializeBot();
-
-        // Parse the incoming request body
+        // Parse the incoming request
         const body = JSON.parse(event.body);
         const { worldName, fieldChanged, newValue } = body;
 
-        // Send a message to the Discord channel
+        // Send the notification to Discord
         const channel = client.channels.cache.get(CHANNEL_ID);
         if (channel) {
             const message = `🔔 **World Update** 🔔\n🌍 **World**: ${worldName}\n🛠️ **Field Changed**: ${fieldChanged}\n✨ **New Value**: ${newValue}`;
-            await channel.send(message);
+            await channel.send(message); // Wait for the message to be sent
             console.log(`Message sent to Discord: ${message}`);
 
-            // Return a successful response
+            // Return success response
             return { statusCode: 200, body: 'Notification sent.' };
         } else {
             console.error('Channel not found.');
@@ -59,6 +57,3 @@ exports.handler = async (event) => {
         };
     }
 };
-
-// Initialize the bot when the serverless function is deployed
-initializeBot().catch((err) => console.error('Startup error:', err));
