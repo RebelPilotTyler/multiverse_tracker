@@ -1,23 +1,11 @@
 const { Client, GatewayIntentBits } = require('discord.js');
-const chokidar = require('chokidar');
 const fs = require('fs');
+const chokidar = require('chokidar'); // For watching file changes
 
 // Bot setup
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 const TOKEN = process.env.BOT_TOKEN; // Replace with your bot's token
 const CHANNEL_ID = 'website-test'; // Replace with your Discord channel ID
-
-// When the bot is ready
-client.once('ready', () => {
-    console.log(`Logged in as ${client.user.tag}`);
-
-    // Watch for changes in worlds.json
-    const watcher = chokidar.watch('./worlds.json', { persistent: true });
-    watcher.on('change', () => {
-        const worlds = loadWorlds();
-        client.channels.cache.get(CHANNEL_ID).send('🌍 **Worlds updated!**');
-    });
-});
 
 // Load worlds data
 function loadWorlds() {
@@ -27,12 +15,12 @@ function loadWorlds() {
 
 // Respond to commands
 client.on('messageCreate', (message) => {
-    if (message.author.bot) return;
+    if (message.author.bot) return; // Ignore bot messages
 
     const args = message.content.trim().split(/\s+/);
     const command = args.shift().toLowerCase();
 
-    // Lookup world info
+    // Handle !world command
     if (command === '!world') {
         const worldName = args.join(' ');
         const worlds = loadWorlds();
@@ -44,6 +32,16 @@ client.on('messageCreate', (message) => {
             message.channel.send(`⚠️ World "${worldName}" not found.`);
         }
     }
+});
+
+// Notify on file changes
+client.once('ready', () => {
+    console.log(`Logged in as ${client.user.tag}`);
+
+    const watcher = chokidar.watch('./worlds.json', { persistent: true });
+    watcher.on('change', () => {
+        client.channels.cache.get(CHANNEL_ID).send('🌍 **Worlds updated!**');
+    });
 });
 
 // Login to Discord
