@@ -2,7 +2,7 @@ const { Client, GatewayIntentBits } = require('discord.js');
 const fs = require('fs');
 
 // Initialize Discord bot
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 const TOKEN = process.env.BOT_TOKEN; // Add your bot token in Netlify environment variables
 const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID; // Add your channel ID in Netlify environment variables
 
