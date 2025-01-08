@@ -68,8 +68,8 @@ jobs:
           key=$(jq -r '.key' payload.json)
           newValue=$(jq -r '.newValue' payload.json)
 
-          # Transform dot-separated key into JSON array path
-          path=$(echo "$key" | awk -F. '{ for (i=1; i<=NF; i++) printf "[\"%s\"]", $i }')
+          # Transform dot-separated key into an array of keys for jq
+          path=$(echo "$key" | awk -F. '{ printf "[\"%s\"", $1; for (i=2; i<=NF; i++) printf ", \"%s\"", $i; printf "]" }')
 
           # Debugging: Print the transformed path
           echo "Transformed path: $path"
