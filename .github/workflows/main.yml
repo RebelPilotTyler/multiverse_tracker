@@ -92,7 +92,6 @@ jobs:
       
           curl -X POST -H "Content-Type: application/json" \
           -d "{
-                \"action\": \"notify\",
                 \"worldName\": \"${worldName}\",
                 \"fieldChanged\": \"${fieldChanged}\",
                 \"newValue\": \"${newValue}\"
