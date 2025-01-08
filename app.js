@@ -516,7 +516,7 @@ async function saveField(worldIndex, key, newValue) {
             method: 'POST',
             body: JSON.stringify({
                 event_type: 'update-world-field',
-                payload: {
+                client_payload: {
                     worldIndex,
                     key,
                     newValue,
