@@ -46,7 +46,7 @@ jobs:
           echo "worldIndex=$worldIndex"
           echo "key=$key"
           echo "newValue=$newValue"
-          
+
       - name: Validate Variables
         run: |
           worldIndex=$(jq -r '.worldIndex' payload.json)
@@ -67,8 +67,18 @@ jobs:
           worldIndex=$(jq -r '.worldIndex' payload.json)
           key=$(jq -r '.key' payload.json)
           newValue=$(jq -r '.newValue' payload.json)
-          jq ".[${worldIndex}] |= setpath([\"$(echo $key | tr '.' '\", \"')\"]; \"$newValue\")" worlds.json > temp.json
+
+          # Transform dot-separated key into JSON array path
+          path=$(echo "$key" | awk -F. '{ for (i=1; i<=NF; i++) printf "[\"%s\"]", $i }')
+
+          # Debugging: Print the transformed path
+          echo "Transformed path: $path"
+
+          # Update the JSON file
+          jq ".[${worldIndex}] |= setpath($path; \"$newValue\")" worlds.json > temp.json
           mv temp.json worlds.json
+
+          # Commit and push changes
           git add worlds.json
           git commit -m "Updated field $key for world index $worldIndex"
           git push
