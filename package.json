@@ -5,6 +5,18 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
+    "discord.js": "^14.17.3",
     "node-fetch": "^2.6.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RebelPilotTyler/multiverse_tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RebelPilotTyler/multiverse_tracker/issues"
+  },
+  "homepage": "https://github.com/RebelPilotTyler/multiverse_tracker#readme"
 }
