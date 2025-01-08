@@ -172,7 +172,7 @@ export const displayWorlds = async () => {
         }
 
         // Add the overlay image if ASTRAL has 100% control
-        if ((world.control.ASTRAL || 0) === 100) {
+        if (Number(world.control.ASTRAL || 0) === 100) {
             const overlayImage = document.createElement('img');
             overlayImage.src = 'Logos/World Lock.png'; // Path to the overlay image
             overlayImage.alt = 'ASTRAL Control Overlay';
