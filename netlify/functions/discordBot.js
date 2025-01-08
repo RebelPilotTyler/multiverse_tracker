@@ -31,34 +31,30 @@ client.once('ready', () => {
     });
 });
 
-const sendNotification = async (worldName, fieldChanged, newValue) => {
+exports.handler = async (event) => {
+    console.log('Received event:', event.body);
+
     try {
         if (!botInitialized) {
             await initializeBot();
         }
 
-        const channel = client.channels.cache.get(process.env.DISCORD_CHANNEL_ID);
-        if (channel) {
-            const message = `🔔 **World Update** 🔔\n🌍 **World**: ${worldName}\n🛠️ **Field Changed**: ${fieldChanged}\n✨ **New Value**: ${newValue}`;
-            await channel.send(message);
-            console.log('Message sent successfully.');
-        } else {
-            console.error('Channel not found:', process.env.DISCORD_CHANNEL_ID);
-        }
-    } catch (error) {
-        console.error('Error sending message:', error.message);
-    }
-};
-
-exports.handler = async (event) => {
-    try {
         const body = JSON.parse(event.body);
         const { worldName, fieldChanged, newValue } = body;
 
-        // Trigger message sending in the background
-        sendNotification(worldName, fieldChanged, newValue);
-
-        return { statusCode: 200, body: 'Notification is being processed.' };
+        console.log('Attempting to fetch channel...');
+        const channel = client.channels.cache.get(process.env.DISCORD_CHANNEL_ID);
+        if (channel) {
+            console.log('Channel found:', channel.name);
+            const message = `🔔 **World Update** 🔔\n🌍 **World**: ${worldName}\n🛠️ **Field Changed**: ${fieldChanged}\n✨ **New Value**: ${newValue}`;
+            console.log('Attempting to send message:', message);
+            await channel.send(message);
+            console.log('Message sent successfully.');
+            return { statusCode: 200, body: 'Notification sent.' };
+        } else {
+            console.error('Channel not found:', process.env.DISCORD_CHANNEL_ID);
+            return { statusCode: 404, body: 'Channel not found.' };
+        }
     } catch (error) {
         console.error('Error in handler:', error.message);
         return {
