@@ -22,13 +22,15 @@ exports.handler = async (event) => {
 
     if (event.httpMethod === 'POST') {
         const body = JSON.parse(event.body);
-        const { action, worldName, message } = body;
+        const { action, worldName, message, fieldChanged, newValue } = body;
 
-        // Handle sending notifications
         if (action === 'notify') {
             const channel = client.channels.cache.get(CHANNEL_ID);
             if (channel) {
-                await channel.send(`🌍 ${message} for **${worldName}**`);
+                // Construct the message dynamically
+                const notificationMessage = `🔔 **World Update** 🔔\n🌍 **World**: ${worldName}\n🛠️ **Field Changed**: ${fieldChanged}\n✨ **New Value**: ${newValue}`;
+                
+                await channel.send(notificationMessage);
                 return { statusCode: 200, body: 'Notification sent.' };
             } else {
                 return { statusCode: 404, body: 'Channel not found.' };
