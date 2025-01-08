@@ -68,6 +68,7 @@ function setupEventListeners() {
 
 // Serverless function handler
 exports.handler = async (event) => {
+    console.log('Event received:', JSON.stringify(event, null, 2)); // Debug event payload
     try {
         await initializeBot();
         setupEventListeners();
