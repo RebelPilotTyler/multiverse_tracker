@@ -35,6 +35,32 @@ jobs:
           echo "Key: $key"
           echo "New Value: $newValue"
 
+      - name: Debug Variables
+        run: |
+          echo "Payload:"
+          cat payload.json
+          worldIndex=$(jq -r '.worldIndex' payload.json)
+          key=$(jq -r '.key' payload.json)
+          newValue=$(jq -r '.newValue' payload.json)
+          echo "Extracted Variables:"
+          echo "worldIndex=$worldIndex"
+          echo "key=$key"
+          echo "newValue=$newValue"
+          
+      - name: Validate Variables
+        run: |
+          worldIndex=$(jq -r '.worldIndex' payload.json)
+          key=$(jq -r '.key' payload.json)
+          newValue=$(jq -r '.newValue' payload.json)
+      
+          if [[ -z "$worldIndex" || -z "$key" || -z "$newValue" || "$worldIndex" == "null" || "$key" == "null" || "$newValue" == "null" ]]; then
+            echo "Error: Missing or invalid payload data"
+            echo "worldIndex=$worldIndex"
+            echo "key=$key"
+            echo "newValue=$newValue"
+            exit 1
+          fi
+    
       # Step 5: Update worlds.json
       - name: Update worlds.json
         run: |
