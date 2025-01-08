@@ -33,6 +33,8 @@ exports.handler = async (event) => {
         const body = JSON.parse(event.body);
         const { worldName, fieldChanged, newValue } = body;
 
+        console.log('Loaded CHANNEL_ID:', CHANNEL_ID);
+
         // Send the notification to Discord
         const channel = client.channels.cache.get(CHANNEL_ID);
         if (channel) {
