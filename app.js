@@ -179,6 +179,7 @@ export const displayWorlds = async () => {
             overlayImage.className = 'lock-overlay';
             overlayImage.style.display = 'block'; // Ensure it's visible
             planet.appendChild(overlayImage);
+            console.log("Added ASTRAL lock for: " + world.name);
         }
 
         planet.addEventListener('click', () => {
