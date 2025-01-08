@@ -33,6 +33,7 @@ exports.handler = async (event) => {
         const body = JSON.parse(event.body);
         const { worldName, fieldChanged, newValue } = body;
 
+        console.log('Loaded CHANNEL_ID:', process.env.DISCORD_CHANNEL_ID);
         console.log('Loaded CHANNEL_ID:', CHANNEL_ID);
 
         // Send the notification to Discord
@@ -59,3 +60,19 @@ exports.handler = async (event) => {
         };
     }
 };
+
+client.once('ready', async () => {
+    console.log(`Logged in as ${client.user.tag}`);
+    const channel = client.channels.cache.get(process.env.DISCORD_CHANNEL_ID);
+
+    if (channel) {
+        try {
+            await channel.send('Test message from the bot!');
+            console.log('Message sent successfully.');
+        } catch (error) {
+            console.error('Failed to send message:', error.message);
+        }
+    } else {
+        console.error('Channel not found. Check the CHANNEL_ID.');
+    }
+});
