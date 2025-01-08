@@ -82,3 +82,10 @@ jobs:
           git add worlds.json
           git commit -m "Updated field $key for world index $worldIndex"
           git push
+          
+      - name: Notify Discord Bot via Webhook
+        run: |
+          curl -X POST -H "Content-Type: application/json" \
+          -d "{\"content\": \"🌍 **World Updated:** ${key} changed to ${newValue} in ${worldName}.\"}" \
+          ${{ secrets.DISCORD_BOT_WEBHOOK }}
+        
