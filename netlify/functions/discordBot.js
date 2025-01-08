@@ -33,6 +33,10 @@ client.once('ready', () => {
 
 const sendNotification = async (worldName, fieldChanged, newValue) => {
     try {
+        if (!botInitialized) {
+            await initializeBot();
+        }
+
         const channel = client.channels.cache.get(process.env.DISCORD_CHANNEL_ID);
         if (channel) {
             const message = `🔔 **World Update** 🔔\n🌍 **World**: ${worldName}\n🛠️ **Field Changed**: ${fieldChanged}\n✨ **New Value**: ${newValue}`;
