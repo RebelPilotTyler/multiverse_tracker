@@ -31,27 +31,30 @@ client.once('ready', () => {
     });
 });
 
-exports.handler = async (event) => {
-    console.log('Received event:', event.body);
-
+const sendNotification = async (worldName, fieldChanged, newValue) => {
     try {
-        if (!botInitialized) {
-            await initializeBot();
-        }
-
-        const body = JSON.parse(event.body);
-        const { worldName, fieldChanged, newValue } = body;
-
-        const channel = client.channels.cache.get(CHANNEL_ID);
+        const channel = client.channels.cache.get(process.env.DISCORD_CHANNEL_ID);
         if (channel) {
             const message = `🔔 **World Update** 🔔\n🌍 **World**: ${worldName}\n🛠️ **Field Changed**: ${fieldChanged}\n✨ **New Value**: ${newValue}`;
             await channel.send(message);
-            console.log('Message sent:', message);
-            return { statusCode: 200, body: 'Notification sent.' };
+            console.log('Message sent successfully.');
         } else {
-            console.error('Channel not found.');
-            return { statusCode: 404, body: 'Channel not found.' };
+            console.error('Channel not found:', process.env.DISCORD_CHANNEL_ID);
         }
+    } catch (error) {
+        console.error('Error sending message:', error.message);
+    }
+};
+
+exports.handler = async (event) => {
+    try {
+        const body = JSON.parse(event.body);
+        const { worldName, fieldChanged, newValue } = body;
+
+        // Trigger message sending in the background
+        sendNotification(worldName, fieldChanged, newValue);
+
+        return { statusCode: 200, body: 'Notification is being processed.' };
     } catch (error) {
         console.error('Error in handler:', error.message);
         return {
@@ -60,5 +63,6 @@ exports.handler = async (event) => {
         };
     }
 };
+
 
 initializeBot().catch((err) => console.error('Startup error:', err));
