@@ -137,7 +137,7 @@ client.on('messageCreate', message => {
 //Other Commands
     if (message.content.startsWith('!roll')) {
         const args = message.content.split(' ');
-        const sides = parseInt(args[1]) || 6;
+        const sides = parseInt(args[1]) || 20;
         const roll = Math.floor(Math.random() * sides) + 1;
         message.channel.send(`You rolled a ${roll} on a D${sides}.`);
     }
