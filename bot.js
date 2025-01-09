@@ -1,48 +1,28 @@
 const { Client, GatewayIntentBits } = require('discord.js');
-const fs = require('fs');
-const chokidar = require('chokidar'); // For watching file changes
 
-// Bot setup
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
-const TOKEN = process.env.BOT_TOKEN; // Replace with your bot's token
-const CHANNEL_ID = 'website-test'; // Replace with your Discord channel ID
+// Create a new Discord client
+const client = new Client({
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
+});
 
-// Load worlds data
-function loadWorlds() {
-    const data = fs.readFileSync('./worlds.json', 'utf8');
-    return JSON.parse(data);
-}
+// Bot token from environment variable
+const BOT_TOKEN = process.env.BOT_TOKEN;
 
-// Respond to commands
-client.on('messageCreate', (message) => {
-    if (message.author.bot) return; // Ignore bot messages
+// When the bot is ready
+client.once('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
+});
 
-    const args = message.content.trim().split(/\s+/);
-    const command = args.shift().toLowerCase();
+// Listen for messages
+client.on('messageCreate', message => {
+    // Ignore bot messages
+    if (message.author.bot) return;
 
-    // Handle !world command
-    if (command === '!world') {
-        const worldName = args.join(' ');
-        const worlds = loadWorlds();
-
-        const world = worlds.find((w) => w.name.toLowerCase() === worldName.toLowerCase());
-        if (world) {
-            message.channel.send(`🌍 **${world.name}**\nControl: ASTRAL - ${world.control.ASTRAL}%`);
-        } else {
-            message.channel.send(`⚠️ World "${worldName}" not found.`);
-        }
+    // Respond to a simple command
+    if (message.content === '!test') {
+        message.channel.send('Test command received! Bot is working.');
     }
 });
 
-// Notify on file changes
-client.once('ready', () => {
-    console.log(`Logged in as ${client.user.tag}`);
-
-    const watcher = chokidar.watch('./worlds.json', { persistent: true });
-    watcher.on('change', () => {
-        client.channels.cache.get(CHANNEL_ID).send('🌍 **Worlds updated!**');
-    });
-});
-
-// Login to Discord
-client.login(TOKEN);
+// Log in to Discord
+client.login(BOT_TOKEN);

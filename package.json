@@ -4,7 +4,10 @@
   "description": "Serverless functions for Multiverse Tracker",
   "main": "index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "start": "node index.js",
+    "start:bot": "node bot.js"
+  },
   "dependencies": {
     "discord.js": "^14.17.3",
     "node-fetch": "^2.6.7"
