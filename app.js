@@ -2,7 +2,7 @@ export const API_URL = 'worlds.json'; // Path to your worlds.json file
 
 let loggedInUser = null;
 
-const fs = require('fs');
+import fs from 'fs';
 
 // Example: Function to save user role
 function saveUserRole(role) {
