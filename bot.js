@@ -20,15 +20,33 @@ client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
+//Add Droid Speak
+function generateDroidSpeak(seed) {
+    const phrases = ['beep', 'boop', 'womp', 'brrrt', 'woo', 'zrrt', 'bloop'];
+    const rng = seedrandom(seed); // Create a seeded random generator
+
+    const length = Math.floor(rng() * 5) + 3; // Random length between 3 and 7
+    let droidSpeak = [];
+
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(rng() * phrases.length);
+        droidSpeak.push(phrases[randomIndex]);
+    }
+
+    return droidSpeak.join(' ');
+}
+
 // Listen for messages
 client.on('messageCreate', message => {
+    const seed = `${message.author.id}-${Date.now()}`; // Seed based on user ID and timestamp
     // Ignore bot messages
     if (message.author.bot) return;
 
 //Utility Commands
     // Respond to a simple command
     if (message.content === '!test') {
-        message.channel.send('Test command received. R5-L8, ready to assist!');
+        const droidSpeak = generateDroidSpeak(seed);
+        message.channel.send(`${droidSpeak}\nTest command received. R5-L8, ready to assist!`);
     }//Tests R5's access to worlds.json
     if (message.content === '!testFileAccess') {
         if (worldsData[0].name == 'Faerûn') {
