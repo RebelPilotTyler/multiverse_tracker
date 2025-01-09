@@ -1,4 +1,10 @@
 import { Client, GatewayIntentBits } from 'discord.js';
+import fs from 'fs';
+import path from 'path';
+
+// Load the JSON file
+const jsonPath = path.resolve('worlds.json');
+const worldsData = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 
 // Create a new Discord client
 const client = new Client({
@@ -21,6 +27,14 @@ client.on('messageCreate', message => {
     // Respond to a simple command
     if (message.content === '!test') {
         message.channel.send('Test command received! Bot is working.');
+    }
+    if (message.content === '!testFileAccess') {
+        if (worldsData[0].name == 'Faerûn') {
+            message.channel.send('File Access Confirmed!');
+        }
+        else {
+            message.channel.send('File Access Incomplete.');
+        }
     }
 });
 
