@@ -83,18 +83,10 @@ jobs:
           git commit -m "Updated field $key for world index $worldIndex"
           git push
 
-      - name: Notify Discord Bot
-        run: |
-          worldIndex=$(jq -r '.worldIndex' payload.json)
-          fieldChanged=$(jq -r '.key' payload.json)
-          newValue=$(jq -r '.newValue' payload.json)
-          worldName=$(jq -r ".[${worldIndex}].name" worlds.json)
-      
-          curl -X POST -H "Content-Type: application/json" \
-          -d "{
-                \"worldName\": \"${worldName}\",
-                \"fieldChanged\": \"${fieldChanged}\",
-                \"newValue\": \"${newValue}\"
-              }" \
-          https://multiverse-tracker.netlify.app/.netlify/functions/discordBot
+      - name: Send message to Discord
+        env:
+          DISCORD_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
+          MESSAGE_CONTENT: "Workflow triggered successfully!"
+        run: node discordBot.js
          
