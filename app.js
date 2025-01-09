@@ -1,8 +1,7 @@
+import fs from 'fs';
 export const API_URL = 'worlds.json'; // Path to your worlds.json file
 
 let loggedInUser = null;
-
-import fs from 'fs';
 
 // Example: Function to save user role
 function saveUserRole(role) {
