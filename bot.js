@@ -64,57 +64,57 @@ client.on('messageCreate', message => {
             `);
     }//R5 tells someone about their character
     if (message.content === '!user') {
-        if (message.author.tag == 'Sworin'){
+        if (message.author.tag == 'daime7'){
             message.channel.send(`
                 You are Sworin of Team Alpha, a member of ASTRAL. Also the (self-proclaimed) captain of the ASTRAL Pirates.
                 `);
         }
-        else if (message.author.tag == 'Aurora Fiye'){
+        else if (message.author.tag == 'buttere13'){
             message.channel.send(`
                 You are Aurora Fiye of Team Alpha, a member of ASTRAL. Also a huntress and the hero Aura. No wonder you're helping us in the Tech Department, you've got a heck of a resume...
                 `);
         }
-        else if (message.author.tag == 'Dodo'){
+        else if (message.author.tag == 'xstar_stealerx'){
             message.channel.send(`
                 You are Dodo of Team Alpha, a member of ASTRAL. Not to mention the fancy title of Dodo the Indomitable. What's that you guys have been saying? Oh right, Dodo solos!
                 `);
         }
-        else if (message.author.tag == 'VoidRain' || message.author.tag == 'Rukia Dreamer'){
+        else if (message.author.tag == 'voidrain'){
             message.channel.send(`
                 You are Rukia Dreamer of Team Omega, a member of SPIRIT. A hunter of gigantic monster that could eat me for breakfast... You're pretty high in the ranks there at SPIRIT too huh?
                 `);
         }
-        else if (message.author.tag == 'Jack K.'){
+        else if (message.author.tag == 'knine69'){
             message.channel.send(`
                 You are Jack Kaiser of Team Omega, a member of SPIRIT. A warrior who flies on unseen wings, slaying giants who tower over most buildings. Sounds dangerous, but cool!
                 `);
         }
-        else if (message.author.tag == 'Kazuma'){
+        else if (message.author.tag == 'sithchris.'){
             message.channel.send(`
                 You are Kazuma of Team Omega, a member of SPIRIT. A Jujutsu sorcerer and talented scientist. Watch where you're throwing that space-magic!
                 `);
         }
-        else if (message.author.tag == `Xylos 'Kelamee`){
+        else if (message.author.tag == 's33dwallice'){
             message.channel.send(`
                 You are Xylos 'Kelamee of Team Alpha, a member of ASTRAL. Leader of the Seekers of the Night, a group of Elites who serve your new goal. The Final Crusade, as I recall.
                 `);
         }
-        else if (message.author.tag == 'Torin'){
+        else if (message.author.tag == 'gitglonked'){
             message.channel.send(`
                 You are Torin Wildhorne of Team Omega, a member of SPIRIT. I heard you had a cute puppy sidekick too, I must see it...
                 `);
         }
-        else if (message.author.tag == 'Shiro'){
+        else if (message.author.tag == 'oddec'){
             message.channel.send(`
                 You are Shiro of Team Alpha, a member of ASTRAL. And you've got the biggest appetite I've ever seen. And before you think it I am not edible!
                 `);
         }
-        else if (message.author.tag == `Adam White - Elmer "Cog"`){
+        else if (message.author.tag == 'arwtsh'){
             message.channel.send(`
                 You are Elmer the Precognitor of Team Omega, a member of SPIRIT. You probably knew I was going to ask but, is it true you can see the future?
                 `);
         }
-        else if (message.author.tag == 'Tyler - GM'){
+        else if (message.author.tag == 'rebelpilottyler'){
             message.channel.send(`
                 You are my creator and the writer of this game, Tyler! Forgot that easily?
                 `);
