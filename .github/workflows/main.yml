@@ -95,6 +95,6 @@ jobs:
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
-          MESSAGE_CONTENT: "$key"
+          MESSAGE_CONTENT: "World Index: $(jq -r '.worldIndex' payload.json), Key: $(jq -r '.key' payload.json), New Value: $(jq -r '.newValue' payload.json)"
         run: node discordBot.js
          
