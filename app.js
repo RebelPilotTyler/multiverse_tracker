@@ -104,7 +104,6 @@ export const displayWorlds = async () => {
         icon.style.display = 'block'; // Ensure it's visible
         const iconElement = document.getElementById('faction-icon');
         iconElement.appendChild(icon);
-        process.env.CURRENT_USER = 'ASTRAL';
     }
     if (loggedInUser == 'SPIRIT') {
         const icon = document.createElement('img');
@@ -114,7 +113,6 @@ export const displayWorlds = async () => {
         icon.style.display = 'block'; // Ensure it's visible
         const iconElement = document.getElementById('faction-icon');
         iconElement.appendChild(icon);
-        process.env.CURRENT_USER = 'SPIRIT';
     }
     if (loggedInUser == 'GM') {
         const icon = document.createElement('img');
@@ -134,8 +132,6 @@ export const displayWorlds = async () => {
         document.getElementById('close-overlay').addEventListener('click', () => {
             document.getElementById('editor-menu').style.display = 'none';
         });
-        
-        process.env.CURRENT_USER = 'GM';
     }
 
     const visibleWorlds = worlds.filter((world) => {

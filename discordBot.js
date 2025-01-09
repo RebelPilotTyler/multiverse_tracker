@@ -9,7 +9,6 @@ const DISCORD_CHANNEL_ID2 = process.env.DISCORD_CHANNEL_ID2;
 const WORLD_INDEX = process.env.WORLD_INDEX;
 const KEY = process.env.KEY;
 const NEW_VALUE = process.env.NEW_VALUE;
-const CURRENT_USER = process.env.CURRENT_USER;
 
 if (!BOT_TOKEN || !DISCORD_CHANNEL_ID || !DISCORD_CHANNEL_ID2) {
     console.error("Error: BOT_TOKEN or CHANNEL_ID is not set.");
@@ -48,8 +47,6 @@ if (KEY == 'control.SPIRIT') {
     activeChannel = DISCORD_CHANNEL_ID2;
     MESSAGE_CONTENT = "Message to the test SPIRIT channel!";
 }
-
-MESSAGE_CONTENT = `Triggered by user: ${CURRENT_USER}\n` + MESSAGE_CONTENT;
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 
