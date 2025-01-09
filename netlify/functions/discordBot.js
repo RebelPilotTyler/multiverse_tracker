@@ -1,68 +1,34 @@
-const { Client, GatewayIntentBits } = require('discord.js');
+// This script listens to Actions workflow events and sends a message to Discord using a bot
 
-const client = new Client({
-    intents: [GatewayIntentBits.Guilds], // Minimum required intents
-});
+const { Client, Intents } = require('discord.js');
 
-const TOKEN = process.env.BOT_TOKEN;
+// Environment variables: Set these in your Actions workflow or deployment settings
+const DISCORD_TOKEN = process.env.BOT_TOKEN;
 const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID;
+const MESSAGE_CONTENT = process.env.MESSAGE_CONTENT || "Workflow triggered successfully!";
 
-console.log('Starting bot...');
-
-let botInitialized = false;
-
-// Initialize the bot
-async function initializeBot() {
-    try {
-        console.log('Attempting to log in...');
-        await client.login(TOKEN);
-        console.log('Bot logged in successfully!');
-        botInitialized = true;
-    } catch (error) {
-        console.error('Error logging in:', error.message);
-    }
+if (!DISCORD_TOKEN || !CHANNEL_ID) {
+    console.error("Error: DISCORD_TOKEN or CHANNEL_ID is not set.");
+    process.exit(1);
 }
 
-client.once('ready', () => {
-    console.log(`Bot is online! Logged in as ${client.user.tag}`);
-    console.log('Guilds the bot is connected to:');
-    client.guilds.cache.forEach((guild) => {
-        console.log(`- ${guild.name} (ID: ${guild.id})`);
-    });
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+
+client.once('ready', async () => {
+    try {
+        const channel = await client.channels.fetch(CHANNEL_ID);
+        if (!channel || !channel.isText()) {
+            console.error("Error: Channel is not valid or not a text channel.");
+            process.exit(1);
+        }
+
+        await channel.send(MESSAGE_CONTENT);
+        console.log("Message sent successfully.");
+    } catch (error) {
+        console.error("Failed to send message:", error.message);
+    } finally {
+        client.destroy();
+    }
 });
 
-exports.handler = async (event) => {
-    console.log('Received event:', event.body);
-
-    try {
-        if (!botInitialized) {
-            await initializeBot();
-        }
-
-        const body = JSON.parse(event.body);
-        const { worldName, fieldChanged, newValue } = body;
-
-        console.log('Attempting to fetch channel...');
-        const channel = client.channels.cache.get(process.env.DISCORD_CHANNEL_ID);
-        if (channel) {
-            console.log('Channel found:', channel.name);
-            const message = `🔔 **World Update** 🔔\n🌍 **World**: ${worldName}\n🛠️ **Field Changed**: ${fieldChanged}\n✨ **New Value**: ${newValue}`;
-            console.log('Attempting to send message:', message);
-            await channel.send(message);
-            console.log('Message sent successfully.');
-            return { statusCode: 200, body: 'Notification sent.' };
-        } else {
-            console.error('Channel not found:', process.env.DISCORD_CHANNEL_ID);
-            return { statusCode: 404, body: 'Channel not found.' };
-        }
-    } catch (error) {
-        console.error('Error in handler:', error.message);
-        return {
-            statusCode: 500,
-            body: JSON.stringify({ error: error.message }),
-        };
-    }
-};
-
-
-initializeBot().catch((err) => console.error('Startup error:', err));
+client.login(DISCORD_TOKEN);
