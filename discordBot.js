@@ -7,6 +7,9 @@ const DISCORD_TOKEN = process.env.BOT_TOKEN;
 const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID;
 const MESSAGE_CONTENT = process.env.MESSAGE_CONTENT || "Workflow triggered successfully!";
 
+console.log(DISCORD_TOKEN);
+console.log(CHANNEL_ID);
+
 if (!DISCORD_TOKEN || !CHANNEL_ID) {
     console.error("Error: DISCORD_TOKEN or CHANNEL_ID is not set.");
     process.exit(1);
