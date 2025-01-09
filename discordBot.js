@@ -31,8 +31,11 @@ const controlSummary = Object.entries(control)
     .join(', ');
 
 
-//let MESSAGE_CONTENT = `World Index: ${WORLD_INDEX}\nKey: ${KEY}\nNew Value: ${NEW_VALUE}`; //WORKS!!!
-let MESSAGE_CONTENT = `${world.name} data changed! ASTRAL Control at ${world.control.ASTRAL}%`
+let MESSAGE_CONTENT = `World Index: ${WORLD_INDEX}\nKey: ${KEY}\nNew Value: ${NEW_VALUE}`; //WORKS!!!
+//let MESSAGE_CONTENT = `${world.name} data changed! ASTRAL Control at ${world.control.ASTRAL}%`
+if (KEY == 'control.ASTRAL') {
+    MESSAGE_CONTENT = `${world.name} data changed! ASTRAL Control at ${world.control.ASTRAL}%`
+}
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 
