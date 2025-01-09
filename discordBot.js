@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-const { Client, GatewayIntentBits } = require('discord.js');
+import { Client, GatewayIntentBits } from 'discord.js';
 
 // Environment variables: Set these in your Actions workflow or deployment settings
 const BOT_TOKEN = process.env.BOT_TOKEN;
