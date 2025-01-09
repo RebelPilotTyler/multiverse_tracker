@@ -6,7 +6,12 @@
     "left": "54%",
     "control": {
       "ASTRAL": "100",
-      "SPIRIT": "0"
+      "SPIRIT": "0",
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
     },
     "picture": "Logos/Faerun.png",
     "details": {
@@ -41,7 +46,12 @@
     "left": "57.2%",
     "control": {
       "ASTRAL": 0,
-      "SPIRIT": 0
+      "SPIRIT": 0,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
     },
     "picture": "Logos/Dragon Ball.png",
     "details": {
@@ -76,7 +86,12 @@
     "left": "82.4%",
     "control": {
       "ASTRAL": 0,
-      "SPIRIT": 20
+      "SPIRIT": 20,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
     },
     "picture": "Logos/AOT.png",
     "x_overlay": false,
@@ -112,7 +127,12 @@
     "left": "65.8%",
     "control": {
       "ASTRAL": 0,
-      "SPIRIT": 0
+      "SPIRIT": 0,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
     },
     "picture": "Logos/ATLA.png",
     "details": {
@@ -146,7 +166,12 @@
     "left": "60%",
     "control": {
       "ASTRAL": 10,
-      "SPIRIT": 40
+      "SPIRIT": 40,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
     },
     "picture": "Logos/Hylian Crest.png",
     "details": {
@@ -181,7 +206,12 @@
     "left": "42.8%",
     "control": {
       "ASTRAL": 70,
-      "SPIRIT": 15
+      "SPIRIT": 15,
+      "Gilded_Garden": 0,
+      "Marines": 0,
+      "Flood": 0,
+      "Super_Earth": 0,
+      "New_Republic": 0
     },
     "picture": "Logos/Jedi Order.png",
     "details": {

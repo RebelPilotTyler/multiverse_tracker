@@ -26,17 +26,55 @@ if (!world) {
     process.exit(1);
 }
 
+let forcedChannel = null;
+
+//Set message content based on the new value written
 let MESSAGE_CONTENT = `World Index: ${WORLD_INDEX}\nKey: ${KEY}\nNew Value: ${NEW_VALUE}`; //WORKS!!!
 //let MESSAGE_CONTENT = `${world.name} data changed! ASTRAL Control at ${world.control.ASTRAL}%`
 /*if (KEY == 'control.ASTRAL') {
     MESSAGE_CONTENT = `${world.name} data changed! ASTRAL Control at ${world.control.ASTRAL}%`
 }*/
+//Faction Control
+if (KEY == 'control.ASTRAL' || KEY == 'control.SPIRIT' || KEY == 'control.Gilded_Garden' || KEY == 'control.Marines' || KEY == 'control.Flood' || KEY == 'control.Super Earth' || KEY == 'control.New_Republic') {
+    MESSAGE_CONTENT = `***UPDATE***\nFaction Control of ${world.name} has changed.\nCheck your Portal Watch for details!`;
+}//POIs
+else if (KEY == 'ASTRAL_details.points_of_interest') {
+    MESSAGE_CONTENT = `***UPDATE***\nPOIs updated for ${world.name}.\nCheck your Portal Watch for details!`;
+    forcedChannel = 'ASTRAL';
+}
+else if (KEY == 'SPIRIT_details.points_of_interest') {
+    MESSAGE_CONTENT = `***UPDATE***\nPOIs updated for ${world.name}.\nCheck your Portal Watch for details!`;
+    forcedChannel = 'SPIRIT';
+}//Rifts
+else if (KEY == 'ASTRAL_details.rifts') {
+    MESSAGE_CONTENT = `***RIFT DETECTED***\nEnergy trace is coming from ${world.name}.\nCheck your Portal Watch for details!`;
+    forcedChannel = 'ASTRAL';
+}
+else if (KEY == 'SPIRIT_details.rifts') {
+    MESSAGE_CONTENT = `***RIFT DETECTED***\nEnergy trace is coming from ${world.name}.\nCheck your Portal Watch for details!`;
+    forcedChannel = 'SPIRIT';
+}//Merge Points
+else if (KEY == 'ASTRAL_details.merge_points') {
+    MESSAGE_CONTENT = `***MERGE POINT DISCOVERED***\nThe Merge Point for ${world.name} has been found.\nCheck your Portal Watch for details!`;
+    forcedChannel = 'ASTRAL';
+}
+else if (KEY == 'SPIRIT_details.merge_points') {
+    MESSAGE_CONTENT = `***MERGE POINT DISCOVERED***\nThe Merge Point for ${world.name} has been found.\nCheck your Portal Watch for details!`;
+    forcedChannel = 'SPIRIT';
+}//General Description
+else if (KEY == 'details.description') {
+    MESSAGE_CONTENT = `***UPDATE***\nWorld Info for ${world.name} has been updated.\nCheck your Portal Watch for details!`;
+}
+else {
+    console.log('Message not viewable by ASTRAL or SPIRIT.');
+    process.exit(1);
+}
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 
 client.once('ready', async () => {
     try {
-        if (world.viewableBy.includes('ASTRAL')) {
+        if (forcedChannel == 'ASTRAL') {
             const channel = await client.channels.fetch(DISCORD_CHANNEL_ID);
             if (!channel?.isTextBased()) {
                 console.error("Error: Channel is not valid or not a text-based channel.");
@@ -46,7 +84,7 @@ client.once('ready', async () => {
             await channel.send(MESSAGE_CONTENT);
             console.log("Message sent successfully.");
         }
-        if (world.viewableBy.includes('SPIRIT')) {
+        else if (forcedChannel == 'SPIRIT') {
             const channel = await client.channels.fetch(DISCORD_CHANNEL_ID2);
             if (!channel?.isTextBased()) {
                 console.error("Error: Channel is not valid or not a text-based channel.");
@@ -55,6 +93,28 @@ client.once('ready', async () => {
 
             await channel.send(MESSAGE_CONTENT);
             console.log("Message sent successfully.");
+        }
+        else if (world.viewableBy.includes('ASTRAL') || world.viewableBy.includes('SPIRIT')) {
+            if (world.viewableBy.includes('ASTRAL')) {
+                const channel = await client.channels.fetch(DISCORD_CHANNEL_ID);
+                if (!channel?.isTextBased()) {
+                    console.error("Error: Channel is not valid or not a text-based channel.");
+                    process.exit(1);
+                }
+
+                await channel.send(MESSAGE_CONTENT);
+                console.log("Message sent successfully.");
+            }
+            if (world.viewableBy.includes('SPIRIT')) {
+                const channel = await client.channels.fetch(DISCORD_CHANNEL_ID2);
+                if (!channel?.isTextBased()) {
+                    console.error("Error: Channel is not valid or not a text-based channel.");
+                    process.exit(1);
+                }
+
+                await channel.send(MESSAGE_CONTENT);
+                console.log("Message sent successfully.");
+            }
         }
         else {
             console.log("Message not viewable by ASTRAL or SPIRIT.");
