@@ -104,6 +104,7 @@ jobs:
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
+          DISCORD_CHANNEL_ID2: ${{ secrets.DISCORD_CHANNEL_ID2 }}
           WORLD_INDEX: ${{ env.WORLD_INDEX }}
           KEY: ${{ env.KEY }}
           NEW_VALUE: ${{ env.NEW_VALUE }}
