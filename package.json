@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Serverless functions for Multiverse Tracker",
   "main": "index.js",
-  "type": "module",
   "scripts": {},
   "dependencies": {
     "discord.js": "^14.17.3",
