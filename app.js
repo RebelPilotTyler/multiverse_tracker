@@ -544,7 +544,3 @@ async function saveField(worldIndex, key, newValue) {
         alert('Unexpected error occurred.');
     }
 }
-
-module.exports = {
-    fetchWorldStatuses
-}

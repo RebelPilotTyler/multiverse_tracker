@@ -1,6 +1,6 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 
-const { fetchWorldStatuses } = require('./app.js');
+import { fetchWorldStatuses } from './app.js';
 
 const worlds = fetchWorldStatuses();
 
