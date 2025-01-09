@@ -95,6 +95,6 @@ jobs:
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
-          MESSAGE_CONTENT: "Workflow triggered successfully!"
+          MESSAGE_CONTENT: $key
         run: node discordBot.js
          
