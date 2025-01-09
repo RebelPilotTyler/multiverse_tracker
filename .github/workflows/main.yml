@@ -91,10 +91,17 @@ jobs:
       - name: Install dependencies
         run: npm install discord.js
 
+      - name: Generate dynamic message
+        run: |
+          worldIndex=$(jq -r '.worldIndex' payload.json)
+          key=$(jq -r '.key' payload.json)
+          newValue=$(jq -r '.newValue' payload.json)
+          echo "MESSAGE_CONTENT=World Index: $worldIndex, Key: $key, New Value: $newValue" >> $GITHUB_ENV
+
       - name: Send message to Discord
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
-          MESSAGE_CONTENT: "World Index: $(jq -r '.worldIndex' payload.json), Key: $(jq -r '.key' payload.json), New Value: $(jq -r '.newValue' payload.json)"
+          MESSAGE_CONTENT: ${{ env.MESSAGE_CONTENT }}
         run: node discordBot.js
          
