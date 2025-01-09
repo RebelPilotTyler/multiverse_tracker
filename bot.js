@@ -1,6 +1,7 @@
 import { Client, GatewayIntentBits } from 'discord.js';
 import fs from 'fs';
 import path from 'path';
+import seedrandom from 'seedrandom';
 
 // Load the JSON file
 const jsonPath = path.resolve('worlds.json');
@@ -135,10 +136,18 @@ client.on('messageCreate', message => {
         message.channel.send(`Watch the latest episodes of [Heroes of the Multiverse](https://www.youtube.com/playlist?list=PLMWMDY1YH65qJ-KIPaAlWErc9mPBuAPps)!`);
     }
 //Other Commands
+    //Roll a Dice
     if (message.content.startsWith('!roll')) {
         const args = message.content.split(' ');
         const sides = parseInt(args[1]) || 20;
-        const roll = Math.floor(Math.random() * sides) + 1;
+
+        // Use the current time and user ID to create a seed for randomness
+        const seed = `${Date.now()}-${message.author.id}`;
+        const rng = seedrandom(seed);
+
+        // Generate a random number between 1 and `sides`
+        const roll = Math.floor(rng() * sides) + 1;
+
         message.channel.send(`You rolled a ${roll} on a D${sides}.`);
     }
 });
