@@ -15,20 +15,6 @@ if (!BOT_TOKEN || !DISCORD_CHANNEL_ID || !DISCORD_CHANNEL_ID2) {
     process.exit(1);
 }
 
-const userStatusPath = 'userStatus.json';
-
-// Load the user role
-function getCurrentUserRole() {
-    if (fs.existsSync(userStatusPath)) {
-        const data = JSON.parse(fs.readFileSync(userStatusPath, 'utf8'));
-        return data.currentUser || 'Unknown';
-    }
-    return 'Unknown';
-}
-
-const currentUser = getCurrentUserRole();
-console.log(`Current user: ${currentUser}`);
-
 // Load the JSON file
 const jsonPath = path.resolve('worlds.json');
 const worldsData = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
@@ -62,7 +48,7 @@ if (KEY == 'control.SPIRIT') {
     MESSAGE_CONTENT = "Message to the test SPIRIT channel!";
 }
 
-MESSAGE_CONTENT = `User: ${ currentUser }\n` + MESSAGE_CONTENT;
+//MESSAGE_CONTENT = `User: ${ currentUser }\n` + MESSAGE_CONTENT;
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 

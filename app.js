@@ -1,13 +1,6 @@
-import fs from 'fs';
 export const API_URL = 'worlds.json'; // Path to your worlds.json file
 
 let loggedInUser = null;
-
-// Example: Function to save user role
-function saveUserRole(role) {
-    const data = { currentUser: role };
-    fs.writeFileSync('userStatus.json', JSON.stringify(data), 'utf8');
-}
 
 const displayWorldInfo = (world) => {
     const menu = document.getElementById('overlay-menu');
@@ -111,7 +104,6 @@ export const displayWorlds = async () => {
         icon.style.display = 'block'; // Ensure it's visible
         const iconElement = document.getElementById('faction-icon');
         iconElement.appendChild(icon);
-        saveUserRole(loggedInUser);
     }
     if (loggedInUser == 'SPIRIT') {
         const icon = document.createElement('img');
@@ -121,7 +113,6 @@ export const displayWorlds = async () => {
         icon.style.display = 'block'; // Ensure it's visible
         const iconElement = document.getElementById('faction-icon');
         iconElement.appendChild(icon);
-        saveUserRole(loggedInUser);
     }
     if (loggedInUser == 'GM') {
         const icon = document.createElement('img');
@@ -141,7 +132,6 @@ export const displayWorlds = async () => {
         document.getElementById('close-overlay').addEventListener('click', () => {
             document.getElementById('editor-menu').style.display = 'none';
         });
-        saveUserRole(loggedInUser);
     }
 
     const visibleWorlds = worlds.filter((world) => {
