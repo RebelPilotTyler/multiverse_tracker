@@ -25,12 +25,12 @@ if (!world) {
     console.error(`Error: World with index ${WORLD_INDEX} not found.`);
     process.exit(1);
 }
-
+/*
 const { name, control } = world;
 const controlSummary = Object.entries(control)
     .map(([key, value]) => `${key}: ${value}`)
     .join(', ');
-
+*/
 
 let activeChannel = DISCORD_CHANNEL_ID;
 
@@ -41,11 +41,11 @@ let MESSAGE_CONTENT = `World Index: ${WORLD_INDEX}\nKey: ${KEY}\nNew Value: ${NE
 }*/
 if (KEY == 'control.ASTRAL') {
     activeChannel = DISCORD_CHANNEL_ID;
-    MESSAGE_CONTENT = "Message to the test ASTRAL channel!";
+    MESSAGE_CONTENT = `${world.name} data changed! ASTRAL Control at ${world.control.ASTRAL}%`
 }
 if (KEY == 'control.SPIRIT') {
     activeChannel = DISCORD_CHANNEL_ID2;
-    MESSAGE_CONTENT = "Message to the test SPIRIT channel!";
+    MESSAGE_CONTENT = `${world.name} data changed! SPIRIT Control at ${world.control.SPIRIT}%`
 }
 
 //MESSAGE_CONTENT = `User: ${ currentUser }\n` + MESSAGE_CONTENT;
