@@ -169,8 +169,8 @@ client.on('messageCreate', message => {
         const sides = parseInt(args[1]) || 20;
 
         // Use the current time and user ID to create a seed for randomness
-        const seed = `${Date.now()}-${message.author.id}`;
-        const rng = seedrandom(seed);
+        const rollseed = `${Date.now()}-${message.author.id}`;
+        const rng = seedrandom(rollseed);
 
         // Generate a random number between 1 and `sides`
         const roll = Math.floor(rng() * sides) + 1;
