@@ -36,34 +36,34 @@ let MESSAGE_CONTENT = `World Index: ${WORLD_INDEX}\nKey: ${KEY}\nNew Value: ${NE
 }*/
 //Faction Control
 if (KEY == 'control.ASTRAL' || KEY == 'control.SPIRIT' || KEY == 'control.Gilded_Garden' || KEY == 'control.Marines' || KEY == 'control.Flood' || KEY == 'control.Super Earth' || KEY == 'control.New_Republic') {
-    MESSAGE_CONTENT = `__***UPDATE***__\nFaction Control of *${world.name}* has changed.\n-# [Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
+    MESSAGE_CONTENT = `# __***UPDATE***__\nFaction Control of *${world.name}* has changed.\n-# [Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
 }//POIs
 else if (KEY == 'ASTRAL_details.points_of_interest') {
-    MESSAGE_CONTENT = `__***UPDATE***__\nPOIs updated for *${world.name}*.\n-# [Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
+    MESSAGE_CONTENT = `# __***UPDATE***__\nPOIs updated for *${world.name}*.\n-# [Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
     forcedChannel = 'ASTRAL';
 }
 else if (KEY == 'SPIRIT_details.points_of_interest') {
-    MESSAGE_CONTENT = `__***UPDATE***__\nPOIs updated for *${world.name}*.\n[-# Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
+    MESSAGE_CONTENT = `# __***UPDATE***__\nPOIs updated for *${world.name}*.\n[-# Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
     forcedChannel = 'SPIRIT';
 }//Rifts
 else if (KEY == 'ASTRAL_details.rifts') {
-    MESSAGE_CONTENT = `__***RIFT DETECTED***__\nEnergy trace is coming from *${world.name}*.\n[-# Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
+    MESSAGE_CONTENT = `# __***RIFT DETECTED***__\nEnergy trace is coming from *${world.name}*.\n[-# Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
     forcedChannel = 'ASTRAL';
 }
 else if (KEY == 'SPIRIT_details.rifts') {
-    MESSAGE_CONTENT = `__***RIFT DETECTED***__\nEnergy trace is coming from *${world.name}*.\n[-# Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
+    MESSAGE_CONTENT = `# __***RIFT DETECTED***__\nEnergy trace is coming from *${world.name}*.\n[-# Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
     forcedChannel = 'SPIRIT';
 }//Merge Points
 else if (KEY == 'ASTRAL_details.merge_points') {
-    MESSAGE_CONTENT = `__***MERGE POINT DISCOVERED***__\nThe Merge Point for *${world.name}* has been found.\n[-# Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
+    MESSAGE_CONTENT = `# __***MERGE POINT DISCOVERED***__\nThe Merge Point for *${world.name}* has been found.\n[-# Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
     forcedChannel = 'ASTRAL';
 }
 else if (KEY == 'SPIRIT_details.merge_points') {
-    MESSAGE_CONTENT = `__***MERGE POINT DISCOVERED***__\nThe Merge Point for *${world.name}* has been found.\n[-# Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
+    MESSAGE_CONTENT = `# __***MERGE POINT DISCOVERED***__\nThe Merge Point for *${world.name}* has been found.\n[-# Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
     forcedChannel = 'SPIRIT';
 }//General Description
 else if (KEY == 'details.description') {
-    MESSAGE_CONTENT = `__***UPDATE***__\nWorld Info for *${world.name}* has been updated.\n[-# Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
+    MESSAGE_CONTENT = `# __***UPDATE***__\nWorld Info for *${world.name}* has been updated.\n[-# Check your Portal Watch for details!](https://multiverse-tracker.netlify.app/)`;
 }
 else {
     console.log('Message not viewable by ASTRAL or SPIRIT.');
