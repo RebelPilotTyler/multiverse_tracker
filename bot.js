@@ -53,7 +53,9 @@ client.on('messageCreate', message => {
             - !user | Seems like a dumb question, but if you want to know about yourself...\n
             - !portalwatch | Get the link to the website that hosts your portal watch!\n
             - !music | Get the link to the Campaign Soundtrack!\n
-            - !episodes | For watching the latest episode!
+            - !episodes | For watching the latest episode!\n
+            **OTHER**\n
+            - !roll [sides] | Can't get enough dice rolling huh? Add sides for the different dice, good luck!
             `)
     }
 //Information Commands
@@ -131,6 +133,13 @@ client.on('messageCreate', message => {
     }//Gives the link to the campaign recordings
     if (message.content === '!episodes') {
         message.channel.send(`Watch the latest episodes of [Heroes of the Multiverse](https://www.youtube.com/playlist?list=PLMWMDY1YH65qJ-KIPaAlWErc9mPBuAPps)!`);
+    }
+//Other Commands
+    if (message.content.startsWith('!roll')) {
+        const args = message.content.split(' ');
+        const sides = parseInt(args[1]) || 6;
+        const roll = Math.floor(Math.random() * sides) + 1;
+        message.channel.send(`You rolled a ${roll} on a D${sides}.`);
     }
 });
 
