@@ -25,43 +25,41 @@ if (!world) {
     console.error(`Error: World with index ${WORLD_INDEX} not found.`);
     process.exit(1);
 }
-/*
-const { name, control } = world;
-const controlSummary = Object.entries(control)
-    .map(([key, value]) => `${key}: ${value}`)
-    .join(', ');
-*/
-
-let activeChannel = DISCORD_CHANNEL_ID;
 
 let MESSAGE_CONTENT = `World Index: ${WORLD_INDEX}\nKey: ${KEY}\nNew Value: ${NEW_VALUE}`; //WORKS!!!
 //let MESSAGE_CONTENT = `${world.name} data changed! ASTRAL Control at ${world.control.ASTRAL}%`
 /*if (KEY == 'control.ASTRAL') {
     MESSAGE_CONTENT = `${world.name} data changed! ASTRAL Control at ${world.control.ASTRAL}%`
 }*/
-if (KEY == 'control.ASTRAL') {
-    activeChannel = DISCORD_CHANNEL_ID;
-    MESSAGE_CONTENT = `${world.name} data changed! ASTRAL Control at ${world.control.ASTRAL}%`
-}
-if (KEY == 'control.SPIRIT') {
-    activeChannel = DISCORD_CHANNEL_ID2;
-    MESSAGE_CONTENT = `${world.name} data changed! SPIRIT Control at ${world.control.SPIRIT}%`
-}
-
-//MESSAGE_CONTENT = `User: ${ currentUser }\n` + MESSAGE_CONTENT;
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 
 client.once('ready', async () => {
     try {
-        const channel = await client.channels.fetch(activeChannel);
-        if (!channel?.isTextBased()) {
-            console.error("Error: Channel is not valid or not a text-based channel.");
+        if (world.viewableBy.includes('ASTRAL')) {
+            const channel = await client.channels.fetch(DISCORD_CHANNEL_ID);
+            if (!channel?.isTextBased()) {
+                console.error("Error: Channel is not valid or not a text-based channel.");
+                process.exit(1);
+            }
+
+            await channel.send(MESSAGE_CONTENT);
+            console.log("Message sent successfully.");
+        }
+        if (world.viewableBy.includes('SPIRIT')) {
+            const channel = await client.channels.fetch(DISCORD_CHANNEL_ID2);
+            if (!channel?.isTextBased()) {
+                console.error("Error: Channel is not valid or not a text-based channel.");
+                process.exit(1);
+            }
+
+            await channel.send(MESSAGE_CONTENT);
+            console.log("Message sent successfully.");
+        }
+        else {
+            console.log("Message not viewable by ASTRAL or SPIRIT.");
             process.exit(1);
         }
-
-        await channel.send(MESSAGE_CONTENT);
-        console.log("Message sent successfully.");
     } catch (error) {
         console.error("Failed to send message:", error.message);
     } finally {
