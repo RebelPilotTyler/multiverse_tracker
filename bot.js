@@ -64,6 +64,22 @@ client.on('messageCreate', message => {
     }//Grabs a list of R5's commands
     if (message.content === '!commands') {
         const droidSpeak = generateDroidSpeak(seed);
+//Contains base commands for R5's pre-release
+        message.channel.send(`${droidSpeak}\nHere's a list of my programmed capabilities:\n
+            **UTILITY**\n
+            - !commands | This very command, to list my functions.\n
+            - !test | Just for checking in and making sure I am active.\n
+            - !testFileAccess | Test to make sure my access to the multiverse database is online.\n
+            - !ping | Test my latency to the net.\n
+            **INFORMATION**\n
+            - !tellmeaboutyourself | Some information about your friendly multiversal droid!\n
+            - !user | Seems like a dumb question, but if you want to know about yourself...\n
+            - !music | Get the link to the Campaign Soundtrack!\n
+            - !episodes | For watching the latest episode!\n
+            **OTHER**\n
+            - !roll [sides] | Can't get enough dice rolling huh? Add sides for the different dice, good luck!
+            `);
+/*Contains updated commands for website release
         message.channel.send(`${droidSpeak}\nHere's a list of my programmed capabilities:\n
             **UTILITY**\n
             - !commands | This very command, to list my functions.\n
@@ -78,7 +94,7 @@ client.on('messageCreate', message => {
             - !episodes | For watching the latest episode!\n
             **OTHER**\n
             - !roll [sides] | Can't get enough dice rolling huh? Add sides for the different dice, good luck!
-            `)
+            `);*/
     }
 //Information Commands
     //R5 blathers on about himself for a paragraph
