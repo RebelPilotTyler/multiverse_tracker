@@ -404,7 +404,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const users = [
         { username: 'ASTRAL', password: 'epsilon#1' },
         { username: 'SPIRIT', password: 'samisawesome' },
-        { username: 'GM', password: '1' }
+        { username: 'GM', password: 'prisonOfFear' }
     ];
 
     // Handle login
