@@ -15,7 +15,7 @@
     },
     "picture": "Logos/Faerun.png",
     "details": {
-      "description": "Technology: Pre-Industrial\nMagic Prevalence: Very Common\nMagic Power: Extremely Powerful\nVery lightly populated world, civilization limited to scattered and small feudal kingdoms. Magic is a fact of everyday life, wielded by many in a weak manner and few in a powerful manner. Wild monsters extreme threat to local population. The individual holds a lot of power here. BE WARY, world crawls with supernatural hostile beasts, most are weak, but some can prove extremely dangerous."
+      "description": "Technology: Pre-Industrial\nMagic Prevalence: Very Common\nMagic Power: Extremely Powerful\n\nVery lightly populated world, civilization limited to scattered and small feudal kingdoms. Magic is a fact of everyday life, wielded by many in a weak manner and few in a powerful manner. Wild monsters extreme threat to local population. The individual holds a lot of power here. BE WARY, world crawls with supernatural hostile beasts, most are weak, but some can prove extremely dangerous."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -55,7 +55,7 @@
     },
     "picture": "Logos/Dragon Ball.png",
     "details": {
-      "description": "Technology Level: FTL capable - Galactic\nMagic Prevalence: Very Common\nMagic Power: Extremely High\nWorld dominated by apocalyptically powerful independent warrior races and deities. Single warriors have the strength to crack planets and endure attacks of the same magnitude. EXTREME DANGER, Assume any remotely martial denizen can overpower you."
+      "description": "Technology Level: FTL capable - Galactic\nMagic Prevalence: Very Common\nMagic Power: Extremely High\n\nWorld dominated by apocalyptically powerful independent warrior races and deities. Single warriors have the strength to crack planets and endure attacks of the same magnitude. EXTREME DANGER, Assume any remotely martial denizen can overpower you."
     },
     "ASTRAL_details": {
       "points_of_interest": "Planet Banna\nPlanet Namek",
@@ -96,7 +96,7 @@
     "picture": "Logos/AOT.png",
     "x_overlay": false,
     "details": {
-      "description": "Technology Level: Early Industrial\nMagic Prevalence: Very Limited\nMagic Power: Powerful\nEarly industrial world, most of the populated area is controlled by various nation-states with little to no supernatural activity. Large island is home to an isolated pre-industrial civilization constantly beset by extremely dangerous giants capable of super-regeneration. DANGER, world governments will be aggressive towards outsiders, giants attack indiscriminately and are very tough to take down."
+      "description": "Technology Level: Early Industrial\nMagic Prevalence: Very Limited\nMagic Power: Powerful\n\nEarly industrial world, most of the populated area is controlled by various nation-states with little to no supernatural activity. Large island is home to an isolated pre-industrial civilization constantly beset by extremely dangerous giants capable of super-regeneration. DANGER, world governments will be aggressive towards outsiders, giants attack indiscriminately and are very tough to take down."
     },
     "ASTRAL_details": {
       "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave",
@@ -136,7 +136,7 @@
     },
     "picture": "Logos/ATLA.png",
     "details": {
-      "description": "Technology: Advanced Pre-Industrial\nMagic Prevalence: Very Common\nMagic Power: Medium\nLarge world consisting of three separate cultures dedicated to a different type of elemental magic; air, water, fire, and earth. Two cultures have been dominated by one militaristic and technologically superior nation. LOW DANGER, One nation is militaristic, but most of their enforcers are weak compared to otherworlders."
+      "description": "Technology: Advanced Pre-Industrial\nMagic Prevalence: Very Common\nMagic Power: Medium\n\nLarge world consisting of three separate cultures dedicated to a different type of elemental magic; air, water, fire, and earth. Two cultures have been dominated by one militaristic and technologically superior nation. LOW DANGER, One nation is militaristic, but most of their enforcers are weak compared to otherworlders."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -175,7 +175,7 @@
     },
     "picture": "Logos/Hylian Crest.png",
     "details": {
-      "description": "Technology: Pre-Industrial\nMagic Prevalence: Uncommon\nMagic Power: Powerful\nA world formerly ruled by the kingdom of Hyrule, now a scattered collection of simple towns across wildly different environments. Natives take several unique forms, but only a very select few powerful beings have access to magic of any kind. MODERATE DANGER, select village guardians possess great strength, but common folk pose little threat to otherworlders."
+      "description": "Technology: Pre-Industrial\nMagic Prevalence: Uncommon\nMagic Power: Powerful\n\nA world formerly ruled by the kingdom of Hyrule, now a scattered collection of simple towns across wildly different environments. Natives take several unique forms, but only a very select few powerful beings have access to magic of any kind. MODERATE DANGER, select village guardians possess great strength, but common folk pose little threat to otherworlders."
     },
     "ASTRAL_details": {
       "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
@@ -215,7 +215,7 @@
     },
     "picture": "Logos/Jedi Order.png",
     "details": {
-      "description": "Technology: FTL capable - Galactic\nMagic Prevalence: Very Limited\nMagic Power: Powerful\nGalaxy dominated by a loosely-controlled sprawling species alliance. Boasts impressive technology available to most people. The equivalent of magic exists as a psychic energy only certain trained warriors have access to. LOW DANGER, most natives tend to not be aggressive and are used to strange occurrences in everyday life, certain beings may be difficult to fight, but they are uncommon."
+      "description": "Technology: FTL capable - Galactic\nMagic Prevalence: Very Limited\nMagic Power: Powerful\n\nGalaxy dominated by a loosely-controlled sprawling species alliance. Boasts impressive technology available to most people. The equivalent of magic exists as a psychic energy only certain trained warriors have access to. LOW DANGER, most natives tend to not be aggressive and are used to strange occurrences in everyday life, certain beings may be difficult to fight, but they are uncommon."
     },
     "ASTRAL_details": {
       "points_of_interest": "ASTRAL Station\nElysium\nDestimo's House - Takodana\nSuhk's House - Dathomir",
@@ -255,7 +255,7 @@
     },
     "picture": "Logos/JJK.png",
     "details": {
-      "description": "Technology: Information Age\nMagic Prevalence: Uncommon\nMagic Power: Very Powerful\nWorld dominated by industry-driven civilization. Many people harness a cursed magical energy innate to the world, strengthened by its denizens’ negative emotions. BE WARY, many of the local malevolent spirits are highly aggressive and will attack any target."
+      "description": "Technology: Information Age\nMagic Prevalence: Uncommon\nMagic Power: Very Powerful\n\nWorld dominated by industry-driven civilization. Many people harness a cursed magical energy innate to the world, strengthened by its denizens’ negative emotions. BE WARY, many of the local malevolent spirits are highly aggressive and will attack any target."
     },
     "ASTRAL_details": {
       "points_of_interest": "Kazuma's House\nAbandoned Lagiacrus Nest",
@@ -295,7 +295,7 @@
     },
     "picture": "Logos/World Gov..png",
     "details": {
-      "description": "Technology: Advanced Pre-Industrial\nMagic Prevalence: Very Common\nMagic Power: Powerful\nA largely sea-covered world, filled with various sailors. Many are pirates, which in a majority of cases are regarded as local heroes. A large militaristic government controls the world very closely, hunting these pirates or meddlers wherever they are found. Many citizens possess unique magical abilities acquired by eating specific fruits. MODERATE DANGER, common folk are not threats but anyone saying they belong to a group of any size likely possesses a strong magical ability."
+      "description": "Technology: Advanced Pre-Industrial\nMagic Prevalence: Very Common\nMagic Power: Powerful\n\nA largely sea-covered world, filled with various sailors. Many are pirates, which in a majority of cases are regarded as local heroes. A large militaristic government controls the world very closely, hunting these pirates or meddlers wherever they are found. Many citizens possess unique magical abilities acquired by eating specific fruits. MODERATE DANGER, common folk are not threats but anyone saying they belong to a group of any size likely possesses a strong magical ability."
     },
     "ASTRAL_details": {
       "points_of_interest": "Alabasta Island - Nanohana\nAzure Outpost Ruins\nLogue Town\nKannon Pirates' Hideout",
@@ -335,7 +335,7 @@
     },
     "picture": "Logos/Minecraft.png",
     "details": {
-      "description": "Technology: Primitive Pre-Industrial\nMagic Prevalence: Uncommon\nMagic Power: Very Weak\nNigh-Infinite spanning flat world extremely sparsely populated. Mostly peaceful, but during night, monsters materialize and roam the world. Also has two subplanes accessed through native portals. VERY LOW DANGER, Hostile creatures only appear at night and are extremely weak compared to otherworlders."
+      "description": "Technology: Primitive Pre-Industrial\nMagic Prevalence: Uncommon\nMagic Power: Very Weak\n\nNigh-Infinite spanning flat world extremely sparsely populated. Mostly peaceful, but during night, monsters materialize and roam the world. Also has two subplanes accessed through native portals. VERY LOW DANGER, Hostile creatures only appear at night and are extremely weak compared to otherworlders."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -374,7 +374,7 @@
     },
     "picture": "Logos/Monster Hunter.png",
     "details": {
-      "description": "Technology: Advanced Pre-Industrial\nMagic Prevalence: Universal\nMagic Power: Powerful\nWorld covered in very large and extremely powerful monsters, keeping human settlements small and scattered. Human warrior-tribes wield weapons specifically designed to take down these goliaths. HIGH DANGER, monsters are gargantuan in size, have unique supernatural abilities, and are aggressive."
+      "description": "Technology: Advanced Pre-Industrial\nMagic Prevalence: Universal\nMagic Power: Powerful\n\nWorld covered in very large and extremely powerful monsters, keeping human settlements small and scattered. Human warrior-tribes wield weapons specifically designed to take down these goliaths. HIGH DANGER, monsters are gargantuan in size, have unique supernatural abilities, and are aggressive."
     },
     "ASTRAL_details": {
       "points_of_interest": "Astera Village",
@@ -414,7 +414,7 @@
     },
     "picture": "Logos/Oni World.png",
     "details": {
-      "description": "Technology Level: Pre-Industrial\nMagic Prevalence: Uncommon\nMagic Power: Weak\nA world with scattered primitive beings known as Oni. They mostly live off the land, hunting the unusually large game in the surrounding forests to survive. LOW DANGER, a moderate amount of people possess mundane magic or combat skill, but are friendly."
+      "description": "Technology Level: Pre-Industrial\nMagic Prevalence: Uncommon\nMagic Power: Weak\n\nA world with scattered primitive beings known as Oni. They mostly live off the land, hunting the unusually large game in the surrounding forests to survive. LOW DANGER, a moderate amount of people possess mundane magic or combat skill, but are friendly."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -453,7 +453,7 @@
     },
     "picture": "Logos/Panthalassa.png",
     "details": {
-      "description": "Technology: N/A\nMagic Prevalence: N/A\nMagic Power: N/A\nFunctionally infinitely-spanning tropical archipelago demiplane with no native inhabitants. Draws its population from other worlds, trapping them there. It is impossible to navigate its surface. There is no magnetic North, stars are in inconsistent locations, winds are inconsistent, and currents change daily. HIGH DANGER, while the surface is sparsely populated, inhabitants are desperate and rift magic is weak here."
+      "description": "Technology: N/A\nMagic Prevalence: N/A\nMagic Power: N/A\n\nFunctionally infinitely-spanning tropical archipelago demiplane with no native inhabitants. Draws its population from other worlds, trapping them there. It is impossible to navigate its surface. There is no magnetic North, stars are in inconsistent locations, winds are inconsistent, and currents change daily. HIGH DANGER, while the surface is sparsely populated, inhabitants are desperate and rift magic is weak here."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -491,7 +491,7 @@
     },
     "picture": "Logos/Pokemon.png",
     "details": {
-      "description": "Technology Level: Advanced Information Age\nMagic Prevalence: Limited\nMagic Power: Moderate\nWorld covered in monsters, each wielding unique supernatural abilities. Monsters are captured and trained by personal warriors and used for combat. LOW DANGER, most monsters are docile towards humans but may attack others that they see as threats or challenges."
+      "description": "Technology Level: Advanced Information Age\nMagic Prevalence: Limited\nMagic Power: Moderate\n\nWorld covered in monsters, each wielding unique supernatural abilities. Monsters are captured and trained by personal warriors and used for combat. LOW DANGER, most monsters are docile towards humans but may attack others that they see as threats or challenges."
     },
     "ASTRAL_details": {
       "points_of_interest": "Light & Rachel's House",
@@ -531,7 +531,7 @@
     },
     "picture": "Logos/RWBY.png",
     "details": {
-      "description": "Technology Level: Advanced Information Age\nMagic Prevalence: Universal\nMagic Power: High\nDivided states control a single planet. Malevolent entities of an unknown origin and seeming infinite number assault human civilization, held back by conventional industrial-age militaries as well as an elite corp of magic-wielding monster hunters. Every human has access to magic energy called Aura, making the average person of the world more resistant to physical damage. BE WARY, most natives will not be aggressive, but causing great disruptions can cause supernatural beings to materialize and attack."
+      "description": "Technology Level: Advanced Information Age\nMagic Prevalence: Universal\nMagic Power: High\n\nDivided states control a single planet. Malevolent entities of an unknown origin and seeming infinite number assault human civilization, held back by conventional industrial-age militaries as well as an elite corp of magic-wielding monster hunters. Every human has access to magic energy called Aura, making the average person of the world more resistant to physical damage. BE WARY, most natives will not be aggressive, but causing great disruptions can cause supernatural beings to materialize and attack."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -571,7 +571,7 @@
     },
     "picture": "Logos/Skylanders.png",
     "details": {
-      "description": "Technology: Advanced Industrial\nMagic Prevalence: Universal\nMagic Power: Powerful\nA world consisting entirely of islands scattered about a sea of clouds, with the locals using flying ships to go between them. Local heroes known as the Skylanders act as a peacekeeping force, but have to teleport there from an unknown plane. MODERATE DANGER, Skylanders and select powerful groups pose a threat, but common folk pose little threat to otherworlders."
+      "description": "Technology: Advanced Industrial\nMagic Prevalence: Universal\nMagic Power: Powerful\n\nA world consisting entirely of islands scattered about a sea of clouds, with the locals using flying ships to go between them. Local heroes known as the Skylanders act as a peacekeeping force, but have to teleport there from an unknown plane. MODERATE DANGER, Skylanders and select powerful groups pose a threat, but common folk pose little threat to otherworlders."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -610,7 +610,7 @@
     },
     "picture": "Logos/Slime.png",
     "details": {
-      "description": "Technology: Industrial\nMagic Prevalence: Universal\nMagic Power: Extremely Powerful\nA world of one habitable continent that is ruled by a number of kingdoms and states. Magic exists in a unique form here known as magicules, which are simply particles of magic. Only recently has it been discovered that these magicules can be used for a variety of technology, causing a recent economic boom. MODERATE DANGER, many locals are friendly but several unique individuals possess extreme magical and political power."
+      "description": "Technology: Industrial\nMagic Prevalence: Universal\nMagic Power: Extremely Powerful\n\nA world of one habitable continent that is ruled by a number of kingdoms and states. Magic exists in a unique form here known as magicules, which are simply particles of magic. Only recently has it been discovered that these magicules can be used for a variety of technology, causing a recent economic boom. MODERATE DANGER, many locals are friendly but several unique individuals possess extreme magical and political power."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -650,7 +650,7 @@
     },
     "picture": "Logos/Splatoon.png",
     "details": {
-      "description": "Technology: Advanced Information Age\nMagic Prevalence: None\nMagic Power: -\nA world whose citizens have all evolved into various beings resembling sea creatures, mostly squids or octopi. The locals host very popular competitions based upon splattering opponents with ink-based weaponry. LOW DANGER, locals are aggressive, but hold little power to harm most otherworlders."
+      "description": "Technology: Advanced Information Age\nMagic Prevalence: None\nMagic Power: -\n\nA world whose citizens have all evolved into various beings resembling sea creatures, mostly squids or octopi. The locals host very popular competitions based upon splattering opponents with ink-based weaponry. LOW DANGER, locals are aggressive, but hold little power to harm most otherworlders."
     },
     "ASTRAL_details": {
       "points_of_interest": "Inkopolis",
@@ -690,7 +690,7 @@
     },
     "picture": "Logos/Super Earth.png",
     "details": {
-      "description": "Technology Level: FTL capable - Galactic\nMagic Prevalence: None\nMagic Power: -\nAdvanced FTL capable civilization expands across the galaxy, centrally controlled by a fascist military government. Galaxy beset on all sides with war against insectoid aliens, post-human cybernetic revolutionaries, and technologically superior alien ethno-state. HIGH DANGER, all factions are immediately hostile and are heavily armed."
+      "description": "Technology Level: FTL capable - Galactic\nMagic Prevalence: None\nMagic Power: -\n\nAdvanced FTL capable civilization expands across the galaxy, centrally controlled by a fascist military government. Galaxy beset on all sides with war against insectoid aliens, post-human cybernetic revolutionaries, and technologically superior alien ethno-state. HIGH DANGER, all factions are immediately hostile and are heavily armed."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -730,7 +730,7 @@
     },
     "picture": "Logos/UA.png",
     "details": {
-      "description": "Technology: Advanced Information Age\nMagic Prevalence: Very Common\nMagic Power: Powerful\nWorld dominated by industry-driven civilization. The majority of people are born with a single supernatural ability, varying wildly in use and strength. Many world nations have government-aided programs and schools to train those with supernatural abilities to be benevolent civil police. DANGER, many people have access to extremely powerful innate abilities."
+      "description": "Technology: Advanced Information Age\nMagic Prevalence: Very Common\nMagic Power: Powerful\n\nWorld dominated by industry-driven civilization. The majority of people are born with a single supernatural ability, varying wildly in use and strength. Many world nations have government-aided programs and schools to train those with supernatural abilities to be benevolent civil police. DANGER, many people have access to extremely powerful innate abilities."
     },
     "ASTRAL_details": {
       "points_of_interest": "Aurora's Apartment\nThunder Spartan's House",
@@ -770,7 +770,7 @@
     },
     "picture": "Logos/UNSC.png",
     "details": {
-      "description": "Technology Level: FTL capable - Galactic\nMagic Prevalence: Extremely Limited\nMagic Power: Very Powerful\nGalaxy dominated by fascist human state. Human state engages in infrequent conflict with the remnants of a large non-human religious hegemony. Both factions employ space combat and conventional industrial age ground combat. DANGER, both militaristic factions will be aggressive towards humans and non-humans respectively."
+      "description": "Technology Level: FTL capable - Galactic\nMagic Prevalence: Extremely Limited\nMagic Power: Very Powerful\n\nGalaxy dominated by fascist human state. Human state engages in infrequent conflict with the remnants of a large non-human religious hegemony. Both factions employ space combat and conventional industrial age ground combat. DANGER, both militaristic factions will be aggressive towards humans and non-humans respectively."
     },
     "ASTRAL_details": {
       "points_of_interest": "Crashed High Charity",
