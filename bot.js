@@ -101,7 +101,7 @@ client.on('messageCreate', message => {
     if (message.content === '!tellmeaboutyourself') {
         const droidSpeak = generateDroidSpeak(seed);
         message.channel.send(`${droidSpeak}\n
-            Of course! I'm R5-L8, a droid for Star Squadron. Right now I help out on ASTRAL Stationin the Technology Department. I am equipped with numerous technological and even combat functions, although I don't do much of that anymore. Ah that takes me back! I remember when I used to fight alongside the rest of the clones and- you know what nevermind.
+            Of course! I'm R5-L8, a droid for Star Squadron. Right now I help out on ASTRAL Station in the Technology Department. I am equipped with numerous technological and even combat functions, although I don't do much of that anymore. Ah that takes me back! I remember when I used to fight alongside the rest of the clones and- you know what nevermind.
             `);
     }//R5 tells someone about their character
     if (message.content === '!user') {
@@ -123,7 +123,7 @@ client.on('messageCreate', message => {
         }
         else if (message.author.tag == 'voidrain'){
             message.channel.send(`${droidSpeak}\n
-                You are Rukia Dreamer of Team Omega, a member of SPIRIT. A hunter of gigantic monster that could eat me for breakfast... You're pretty high in the ranks there at SPIRIT too huh?
+                You are Rukia Dreamer of Team Omega, a member of SPIRIT. A hunter of gigantic monsters that could eat me for breakfast... You're pretty high in the ranks there at SPIRIT too huh?
                 `);
         }
         else if (message.author.tag == 'knine69'){
