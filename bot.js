@@ -122,7 +122,7 @@ client.on('messageCreate', message => {
         }
         else if (message.author.tag == 's33dwallice'){
             message.channel.send(`${droidSpeak}\n
-                You are Xylos 'Kelamee of Team Alpha, a member of ASTRAL. Leader of the Seekers of the Night, a group of Elites who serve your new goal. The Final Crusade, as I recall.
+                You are Xylos 'Kelamee of Team Alpha, a member of ASTRAL. Leader of the Final Crusaders, a group of Elites who serve your new goal. The Final Crusade, as I recall.
                 `);
         }
         else if (message.author.tag == 'gitglonked'){

@@ -15,7 +15,7 @@
     },
     "picture": "Logos/Faerun.png",
     "details": {
-      "description": "Faerûn is a vibrant and tumultuous world teeming with magic. From its soaring arcane towers to its ancient forests brimming with magical creatures, it is a realm where natural forces blend with powerful sorcery. Technology here is rudimentary, as the inhabitants rely on spells and enchanted artifacts to achieve what others accomplish with machinery."
+      "description": "Technology: Pre-Industrial\nMagic Prevalence: Very Common\nMagic Power: Extremely Powerful\nVery lightly populated world, civilization limited to scattered and small feudal kingdoms. Magic is a fact of everyday life, wielded by many in a weak manner and few in a powerful manner. Wild monsters extreme threat to local population. The individual holds a lot of power here. BE WARY, world crawls with supernatural hostile beasts, most are weak, but some can prove extremely dangerous."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -55,7 +55,7 @@
     },
     "picture": "Logos/Dragon Ball.png",
     "details": {
-      "description": "A realm where martial arts and raw power dominate, Dragon Ball is a unique blend of advanced alien technology and almost mystical energy manipulation known as 'ki.' Its inhabitants routinely push the limits of what seems possible, blurring the lines between science and the supernatural."
+      "description": "Technology Level: FTL capable - Galactic\nMagic Prevalence: Very Common\nMagic Power: Extremely High\nWorld dominated by apocalyptically powerful independent warrior races and deities. Single warriors have the strength to crack planets and endure attacks of the same magnitude. EXTREME DANGER, Assume any remotely martial denizen can overpower you."
     },
     "ASTRAL_details": {
       "points_of_interest": "Planet Banna\nPlanet Namek",
@@ -96,7 +96,7 @@
     "picture": "Logos/AOT.png",
     "x_overlay": false,
     "details": {
-      "description": "A grim and desperate world, Attack on Titan is defined by its isolation and reliance on rudimentary technology. Magic is non-existent, and survival hinges on innovation within tight constraints. The people have developed advanced engineering in their fight against the towering Titans."
+      "description": "Technology Level: Early Industrial\nMagic Prevalence: Very Limited\nMagic Power: Powerful\nEarly industrial world, most of the populated area is controlled by various nation-states with little to no supernatural activity. Large island is home to an isolated pre-industrial civilization constantly beset by extremely dangerous giants capable of super-regeneration. DANGER, world governments will be aggressive towards outsiders, giants attack indiscriminately and are very tough to take down."
     },
     "ASTRAL_details": {
       "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave",
@@ -136,7 +136,7 @@
     },
     "picture": "Logos/ATLA.png",
     "details": {
-      "description": "The Avatar world is deeply attuned to elemental magic known as 'bending,' where individuals manipulate air, water, earth, and fire. Technology is emerging but remains limited, as society leans heavily on their bending arts for warfare, construction, and everyday life."
+      "description": "Technology: Advanced Pre-Industrial\nMagic Prevalence: Very Common\nMagic Power: Medium\nLarge world consisting of three separate cultures dedicated to a different type of elemental magic; air, water, fire, and earth. Two cultures have been dominated by one militaristic and technologically superior nation. LOW DANGER, One nation is militaristic, but most of their enforcers are weak compared to otherworlders."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -175,7 +175,7 @@
     },
     "picture": "Logos/Hylian Crest.png",
     "details": {
-      "description": "Hyrule is a land of legendary magic, protected by ancient relics and gods. Its medieval society is bolstered by enchanted artifacts and divine intervention. Technology is minimal, though ingenuity thrives in the form of puzzles and mechanisms tied to magical ruins."
+      "description": "Technology: Pre-Industrial\nMagic Prevalence: Uncommon\nMagic Power: Powerful\nA world formerly ruled by the kingdom of Hyrule, now a scattered collection of simple towns across wildly different environments. Natives take several unique forms, but only a very select few powerful beings have access to magic of any kind. MODERATE DANGER, select village guardians possess great strength, but common folk pose little threat to otherworlders."
     },
     "ASTRAL_details": {
       "points_of_interest": "Rito Village\nHyrule Castle Ruins\nSPIRIT Outpost",
@@ -215,7 +215,7 @@
     },
     "picture": "Logos/Jedi Order.png",
     "details": {
-      "description": "The galaxy of Star Wars is a sprawling theater of advanced technology interwoven with the mysterious Force, a quasi-mystical energy binding all living things. From hyperspace travel to droid companions, technological marvels define life, while the Force introduces a magical undercurrent."
+      "description": "Technology: FTL capable - Galactic\nMagic Prevalence: Very Limited\nMagic Power: Powerful\nGalaxy dominated by a loosely-controlled sprawling species alliance. Boasts impressive technology available to most people. The equivalent of magic exists as a psychic energy only certain trained warriors have access to. LOW DANGER, most natives tend to not be aggressive and are used to strange occurrences in everyday life, certain beings may be difficult to fight, but they are uncommon."
     },
     "ASTRAL_details": {
       "points_of_interest": "ASTRAL Station\nElysium\nDestimo's House - Takodana\nSuhk's House - Dathomir",
@@ -255,7 +255,7 @@
     },
     "picture": "Logos/JJK.png",
     "details": {
-      "description": "Jujutsu Kaisen is a world enshrouded by cursed energy, a malevolent force born from human emotions. Sorcerers wield this energy to exorcise curses, creating a dangerous yet fascinating interplay between humanity and its inner darkness. Technology is modern but often secondary to the battles fought in the shadows of society."
+      "description": "Technology: Information Age\nMagic Prevalence: Uncommon\nMagic Power: Very Powerful\nWorld dominated by industry-driven civilization. Many people harness a cursed magical energy innate to the world, strengthened by its denizens’ negative emotions. BE WARY, many of the local malevolent spirits are highly aggressive and will attack any target."
     },
     "ASTRAL_details": {
       "points_of_interest": "Kazuma's House\nAbandoned Lagiacrus Nest",
@@ -295,7 +295,7 @@
     },
     "picture": "Logos/World Gov..png",
     "details": {
-      "description": "One Piece is a nautical world dominated by powerful pirate crews and Devil Fruits, granting unique abilities akin to magic. Technology is scattered and varies greatly, with some islands displaying advanced innovations while others remain primitive."
+      "description": "Technology: Advanced Pre-Industrial\nMagic Prevalence: Very Common\nMagic Power: Powerful\nA largely sea-covered world, filled with various sailors. Many are pirates, which in a majority of cases are regarded as local heroes. A large militaristic government controls the world very closely, hunting these pirates or meddlers wherever they are found. Many citizens possess unique magical abilities acquired by eating specific fruits. MODERATE DANGER, common folk are not threats but anyone saying they belong to a group of any size likely possesses a strong magical ability."
     },
     "ASTRAL_details": {
       "points_of_interest": "Alabasta Island - Nanohana\nAzure Outpost Ruins\nLogue Town\nKannon Pirates' Hideout",
@@ -335,7 +335,7 @@
     },
     "picture": "Logos/Minecraft.png",
     "details": {
-      "description": "Minecraft is a procedurally infinite realm defined by blocks, where creativity and survival dominate. Technology is rudimentary but adaptable, as inhabitants craft tools, machines, and weapons from natural resources. Magic manifests through enchanting and alchemy, blending seamlessly into the fabric of the world."
+      "description": "Technology: Primitive Pre-Industrial\nMagic Prevalence: Uncommon\nMagic Power: Very Weak\nNigh-Infinite spanning flat world extremely sparsely populated. Mostly peaceful, but during night, monsters materialize and roam the world. Also has two subplanes accessed through native portals. VERY LOW DANGER, Hostile creatures only appear at night and are extremely weak compared to otherworlders."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -374,7 +374,7 @@
     },
     "picture": "Logos/Monster Hunter.png",
     "details": {
-      "description": "The Monster Hunter world is a vibrant ecosystem ruled by colossal beasts. Advanced weaponry and armor forged from the remains of these creatures serve as the pinnacle of its technological achievements. Magic is absent, but alchemy and ecological mastery drive the balance between survival and dominance."
+      "description": "Technology: Advanced Pre-Industrial\nMagic Prevalence: Universal\nMagic Power: Powerful\nWorld covered in very large and extremely powerful monsters, keeping human settlements small and scattered. Human warrior-tribes wield weapons specifically designed to take down these goliaths. HIGH DANGER, monsters are gargantuan in size, have unique supernatural abilities, and are aggressive."
     },
     "ASTRAL_details": {
       "points_of_interest": "Astera Village",
@@ -414,7 +414,7 @@
     },
     "picture": "Logos/Oni World.png",
     "details": {
-      "description": "-"
+      "description": "Technology Level: Pre-Industrial\nMagic Prevalence: Uncommon\nMagic Power: Weak\nA world with scattered primitive beings known as Oni. They mostly live off the land, hunting the unusually large game in the surrounding forests to survive. LOW DANGER, a moderate amount of people possess mundane magic or combat skill, but are friendly."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -453,7 +453,7 @@
     },
     "picture": "Logos/Panthalassa.png",
     "details": {
-      "description": "-"
+      "description": "Technology: N/A\nMagic Prevalence: N/A\nMagic Power: N/A\nFunctionally infinitely-spanning tropical archipelago demiplane with no native inhabitants. Draws its population from other worlds, trapping them there. It is impossible to navigate its surface. There is no magnetic North, stars are in inconsistent locations, winds are inconsistent, and currents change daily. HIGH DANGER, while the surface is sparsely populated, inhabitants are desperate and rift magic is weak here."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -491,7 +491,7 @@
     },
     "picture": "Logos/Pokemon.png",
     "details": {
-      "description": "Pokémon is a harmonious blend of nature and technology, where humanity coexists with fantastical creatures capable of extraordinary abilities. Technology is advanced, supporting the capture and training of Pokémon, but magic is entirely absent, replaced by the innate powers of the creatures themselves."
+      "description": "Technology Level: Advanced Information Age\nMagic Prevalence: Limited\nMagic Power: Moderate\nWorld covered in monsters, each wielding unique supernatural abilities. Monsters are captured and trained by personal warriors and used for combat. LOW DANGER, most monsters are docile towards humans but may attack others that they see as threats or challenges."
     },
     "ASTRAL_details": {
       "points_of_interest": "Light & Rachel's House",
@@ -531,7 +531,7 @@
     },
     "picture": "Logos/RWBY.png",
     "details": {
-      "description": "The world of RWBY combines steampunk technology with a pervasive reliance on magical energy known as Dust. Combat is a delicate balance of skill, strategy, and the unique properties of Dust, while technology is shaped by humanity’s fight for survival against the Grimm."
+      "description": "Technology Level: Advanced Information Age\nMagic Prevalence: Universal\nMagic Power: High\nDivided states control a single planet. Malevolent entities of an unknown origin and seeming infinite number assault human civilization, held back by conventional industrial-age militaries as well as an elite corp of magic-wielding monster hunters. Every human has access to magic energy called Aura, making the average person of the world more resistant to physical damage. BE WARY, most natives will not be aggressive, but causing great disruptions can cause supernatural beings to materialize and attack."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -571,7 +571,7 @@
     },
     "picture": "Logos/Skylanders.png",
     "details": {
-      "description": "Skylands is a vibrant realm of floating islands powered by elemental magic. The Skylanders wield powerful abilities tied to these elements to protect their world from evil forces. While magic is the foundation of their society, technological innovations occasionally emerge as complementary tools in their battles."
+      "description": "Technology: Advanced Industrial\nMagic Prevalence: Universal\nMagic Power: Powerful\nA world consisting entirely of islands scattered about a sea of clouds, with the locals using flying ships to go between them. Local heroes known as the Skylanders act as a peacekeeping force, but have to teleport there from an unknown plane. MODERATE DANGER, Skylanders and select powerful groups pose a threat, but common folk pose little threat to otherworlders."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -610,7 +610,7 @@
     },
     "picture": "Logos/Slime.png",
     "details": {
-      "description": "This world is a dynamic fusion of high magic and innovative technology. Races and cultures unite under the guidance of powerful individuals to develop both. The balance of power is dictated by magical prowess, with technology advancing rapidly to complement these mystical capabilities."
+      "description": "Technology: Industrial\nMagic Prevalence: Universal\nMagic Power: Extremely Powerful\nA world of one habitable continent that is ruled by a number of kingdoms and states. Magic exists in a unique form here known as magicules, which are simply particles of magic. Only recently has it been discovered that these magicules can be used for a variety of technology, causing a recent economic boom. MODERATE DANGER, many locals are friendly but several unique individuals possess extreme magical and political power."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -650,7 +650,7 @@
     },
     "picture": "Logos/Splatoon.png",
     "details": {
-      "description": "Splatoon is a quirky, vibrant world dominated by Inkling and Octarian cultures, where advanced but playful technology fuels competitive turf wars. Magic is non-existent, and all advancements are rooted in science and engineering, often with a playful twist of creativity."
+      "description": "Technology: Advanced Information Age\nMagic Prevalence: None\nMagic Power: -\nA world whose citizens have all evolved into various beings resembling sea creatures, mostly squids or octopi. The locals host very popular competitions based upon splattering opponents with ink-based weaponry. LOW DANGER, locals are aggressive, but hold little power to harm most otherworlders."
     },
     "ASTRAL_details": {
       "points_of_interest": "Inkopolis",
@@ -690,7 +690,7 @@
     },
     "picture": "Logos/Super Earth.png",
     "details": {
-      "description": "Super Earth is a militarized, dystopian future defined by relentless warfare across the galaxy. Advanced technology is the backbone of survival, from orbital drops to automated weaponry. Magic is non-existent, as the survival of humanity depends entirely on tactical superiority and firepower."
+      "description": "Technology Level: FTL capable - Galactic\nMagic Prevalence: None\nMagic Power: -\nAdvanced FTL capable civilization expands across the galaxy, centrally controlled by a fascist military government. Galaxy beset on all sides with war against insectoid aliens, post-human cybernetic revolutionaries, and technologically superior alien ethno-state. HIGH DANGER, all factions are immediately hostile and are heavily armed."
     },
     "ASTRAL_details": {
       "points_of_interest": "-",
@@ -730,7 +730,7 @@
     },
     "picture": "Logos/UA.png",
     "details": {
-      "description": "My Hero Academia is a society reshaped by 'Quirks,' genetic mutations granting superhuman abilities to 80% of the population. While technology is present, the world’s focus is on harnessing and controlling these powers, blending science with what feels like modern-day magic."
+      "description": "Technology: Advanced Information Age\nMagic Prevalence: Very Common\nMagic Power: Powerful\nWorld dominated by industry-driven civilization. The majority of people are born with a single supernatural ability, varying wildly in use and strength. Many world nations have government-aided programs and schools to train those with supernatural abilities to be benevolent civil police. DANGER, many people have access to extremely powerful innate abilities."
     },
     "ASTRAL_details": {
       "points_of_interest": "Aurora's Apartment\nThunder Spartan's House",
@@ -770,7 +770,7 @@
     },
     "picture": "Logos/UNSC.png",
     "details": {
-      "description": "Halo is a vast interstellar battleground where advanced alien and human technology defines the war for survival. From powered armor to energy weapons, the universe thrives on technological innovation. Magic is absent, replaced by scientific marvels that border on the mystical in their complexity."
+      "description": "Technology Level: FTL capable - Galactic\nMagic Prevalence: Extremely Limited\nMagic Power: Very Powerful\nGalaxy dominated by fascist human state. Human state engages in infrequent conflict with the remnants of a large non-human religious hegemony. Both factions employ space combat and conventional industrial age ground combat. DANGER, both militaristic factions will be aggressive towards humans and non-humans respectively."
     },
     "ASTRAL_details": {
       "points_of_interest": "Crashed High Charity",
