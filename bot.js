@@ -195,5 +195,24 @@ client.on('messageCreate', message => {
     }
 });
 
+client.on('messageCreate', async message => {
+    // Ignore bot's own messages
+    if (message.author.bot) return;
+    const seed = `${message.author.id}-${Date.now()}`; // Seed based on user ID and timestamp
+    // Check if the bot is mentioned in the message
+    if (message.mentions.has(client.user)) {
+        try {
+            const droidSpeak = generateDroidSpeak(seed)
+            // React to the message with an emoji
+            await message.react('👀'); // Replace with any emoji, like 🤖, ⚡, or ⭐
+
+            // Optionally send a reply
+            message.channel.send(`${droidSpeak}\nDid someone call for me?`);
+        } catch (error) {
+            console.error('Failed to react to mention:', error);
+        }
+    }
+});
+
 // Log in to Discord
 client.login(BOT_TOKEN);
