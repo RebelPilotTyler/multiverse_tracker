@@ -50,7 +50,7 @@ client.on('messageCreate', message => {
     }//Tests R5's access to worlds.json
     if (message.content === '!testFileAccess') {
         const droidSpeak = generateDroidSpeak(seed);
-        if (worldsData[0].name == 'Faerûn') {
+        if (worldsData[0].name == 'Faerun') {
             message.channel.send(`${droidSpeak}\nFile Access Confirmed!`);
         }
         else {
