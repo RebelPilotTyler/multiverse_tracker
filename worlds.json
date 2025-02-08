@@ -600,7 +600,7 @@
     "top": "195%",
     "left": "75%",
     "control": {
-      "ASTRAL": 0,
+      "ASTRAL": "20",
       "SPIRIT": 0,
       "Gilded_Garden": 90,
       "Marines": 0,
