@@ -94,7 +94,7 @@
       "New_Republic": 0
     },
     "picture": "Logos/AOT.png",
-    "x_overlay": false,
+    "x_overlay": "true",
     "details": {
       "description": "Technology Level: Early Industrial\nMagic Prevalence: Very Limited\nMagic Power: Powerful\n\nEarly industrial world, most of the populated area is controlled by various nation-states with little to no supernatural activity. Large island is home to an isolated pre-industrial civilization constantly beset by extremely dangerous giants capable of super-regeneration. DANGER, world governments will be aggressive towards outsiders, giants attack indiscriminately and are very tough to take down."
     },
