@@ -416,12 +416,12 @@ document.addEventListener('DOMContentLoaded', () => {
         { username: 'ASTRAL'},
         { username: 'SPIRIT'},
         { username: 'GM' }
-    ];*/
+    ];
     const passwords = [
         process.env.ASTRAL_PASSWORD,
         process.env.SPIRIT_PASSWORD,
         process.env.GM_PASSWORD,
-      ];      
+    ];      */
 
     // Handle login
     loginButton.addEventListener('click', async () => {
