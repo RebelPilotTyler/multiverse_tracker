@@ -392,6 +392,16 @@ function updateMapBoundaries(map, container, scale) {
     map.style.top = `${constrainedTop}px`;
 }
 
+async function authenticateUser(username, password) {
+    const response = await fetch('/.netlify/functions/authenticate', {
+        method: 'POST',
+        body: JSON.stringify({ username, password }),
+    });
+
+    const data = await response.json();
+    return data.success;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const loginButton = document.getElementById('login-button');
     const usernameInput = document.getElementById('username-input');
@@ -414,36 +424,21 @@ document.addEventListener('DOMContentLoaded', () => {
       ];      
 
     // Handle login
-    loginButton.addEventListener('click', () => {
-    const enteredUsername = usernameInput.value;
-    const enteredPassword = passwordInput.value;
-/*
-    const user = users.find(
-        (user) => user.username === enteredUsername && user.password === enteredPassword
-    );
-*/
-    valid = false;
-    if (enteredUsername == "ASTRAL" && enteredPassword == passwords[0]) {
-        valid = true;
-    }
-    else if (enteredUsername == "SPIRIT" && enteredPassword == passwords[1]) {
-        valid = true;
-    }
-    else if (enteredUsername == "GM" && enteredPassword == passwords[2]) {
-        valid = true;
-    }
-
-    if (valid) {
-        loggedInUser = user.username; // Store the logged-in user
-
-        loginScreen.style.display = 'none';
-        mainContent.style.display = 'block';
-        displayWorlds(); // Load worlds after successful login
-    } else {
-        errorMessage.style.display = 'block';
-    }
-});
-
+    loginButton.addEventListener('click', async () => {
+        const enteredUsername = usernameInput.value;
+        const enteredPassword = passwordInput.value;
+    
+        const isValid = await authenticateUser(enteredUsername, enteredPassword);
+        
+        if (isValid) {
+            loggedInUser = enteredUsername;
+            loginScreen.style.display = 'none';
+            mainContent.style.display = 'block';
+            displayWorlds(); // Load worlds after successful login
+        } else {
+            errorMessage.style.display = 'block';
+        }
+    });
 
     // Optionally, handle "Enter" key for username or password input
     [usernameInput, passwordInput].forEach((input) => {
