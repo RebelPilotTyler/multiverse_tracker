@@ -410,19 +410,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginScreen = document.getElementById('login-screen');
     const mainContent = document.getElementById('main-content');
 
-    // Array of users and passwords
-    /*
-    const users = [
-        { username: 'ASTRAL'},
-        { username: 'SPIRIT'},
-        { username: 'GM' }
-    ];
-    const passwords = [
-        process.env.ASTRAL_PASSWORD,
-        process.env.SPIRIT_PASSWORD,
-        process.env.GM_PASSWORD,
-    ];      */
-
     // Handle login
     loginButton.addEventListener('click', async () => {
         const enteredUsername = usernameInput.value;
