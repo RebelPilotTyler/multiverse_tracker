@@ -402,9 +402,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Array of users and passwords
     const users = [
-        { username: 'ASTRAL', password: 'epsilon#1' },
-        { username: 'SPIRIT', password: 'samisawesome' },
-        { username: 'GM', password: 'prisonOfFear' }
+        { username: 'ASTRAL', password: process.env.ASTRAL_PASSWORD },
+        { username: 'SPIRIT', password: process.env.SPIRIT_PASSWORD },
+        { username: 'GM', password: process.env.GM_PASSWORD }
     ];
 
     // Handle login
