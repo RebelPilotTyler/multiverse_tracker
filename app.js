@@ -401,22 +401,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainContent = document.getElementById('main-content');
 
     // Array of users and passwords
+    /*
     const users = [
-        { username: 'ASTRAL', password: process.env.ASTRAL_PASSWORD },
-        { username: 'SPIRIT', password: process.env.SPIRIT_PASSWORD },
-        { username: 'GM', password: process.env.GM_PASSWORD }
-    ];
+        { username: 'ASTRAL'},
+        { username: 'SPIRIT'},
+        { username: 'GM' }
+    ];*/
+    const passwords = [
+        process.env.ASTRAL_PASSWORD,
+        process.env.SPIRIT_PASSWORD,
+        process.env.GM_PASSWORD,
+      ];      
 
     // Handle login
     loginButton.addEventListener('click', () => {
     const enteredUsername = usernameInput.value;
     const enteredPassword = passwordInput.value;
-
+/*
     const user = users.find(
         (user) => user.username === enteredUsername && user.password === enteredPassword
     );
+*/
+    valid = false;
+    if (enteredUsername == "ASTRAL" && enteredPassword == passwords[0]) {
+        valid = true;
+    }
+    else if (enteredUsername == "SPIRIT" && enteredPassword == passwords[1]) {
+        valid = true;
+    }
+    else if (enteredUsername == "GM" && enteredPassword == passwords[2]) {
+        valid = true;
+    }
 
-    if (user) {
+    if (valid) {
         loggedInUser = user.username; // Store the logged-in user
 
         loginScreen.style.display = 'none';
