@@ -101,12 +101,12 @@
     "ASTRAL_details": {
       "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave",
       "rifts": "Wall Maria House Basement > ???",
-      "merge_points": "???"
+      "merge_points": "Ancient Skeleton Jungle"
     },
     "SPIRIT_details": {
       "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave\nMarleyan Capital",
       "rifts": "Wall Maria House Basement > ???",
-      "merge_points": "???"
+      "merge_points": "Ancient Skeleton Jungle"
     },
     "GM_details": {
       "points_of_interest": "Paradis Island - Shiganshina\nParadis Island - Scorched Cave\nMarleyan Capital",
@@ -115,7 +115,8 @@
     },
     "viewableBy": [
       "SPIRIT",
-      "GM"
+      "GM",
+      "ASTRAL"
     ],
     "": ""
   },
@@ -153,7 +154,6 @@
       "merge_points": "???"
     },
     "viewableBy": [
-      "SPIRIT",
       "GM"
     ],
     "": ""
@@ -352,7 +352,6 @@
       "merge_points": "???"
     },
     "viewableBy": [
-      "SPIRIT",
       "GM"
     ],
     "": ""
@@ -614,7 +613,7 @@
     "ASTRAL_details": {
       "points_of_interest": "-",
       "rifts": "Jura Waterfall > ???",
-      "merge_points": "???"
+      "merge_points": "Barren Lands Oasis"
     },
     "SPIRIT_details": {
       "points_of_interest": "Mages of Luminus Hideout",
