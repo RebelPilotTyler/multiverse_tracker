@@ -4,7 +4,7 @@ const path = require("path");
 exports.handler = async () => {
     try {
         // Define file path
-        const filePath = path.join(__dirname, "../../protected/worlds.json");
+        const filePath = path.join(__dirname, "..", "..", "protected", "worlds.json");
 
         // Debug: Log file path to check if it's correct
         console.log("Attempting to read file:", filePath);
