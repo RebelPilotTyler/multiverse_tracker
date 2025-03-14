@@ -1,4 +1,4 @@
-export const API_URL = 'worlds.json'; // Path to your worlds.json file
+export const API_URL = 'protected/worlds.json'; // Path to your worlds.json file
 
 let loggedInUser = null;
 
