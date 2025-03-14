@@ -16,7 +16,7 @@ if (!BOT_TOKEN || !DISCORD_CHANNEL_ID || !DISCORD_CHANNEL_ID2) {
 }
 
 // Load the JSON file
-const jsonPath = path.resolve('/.netlify/functions/getWorlds');
+const jsonPath = path.resolve('worlds.json');
 const worldsData = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 
 // Extract world data

@@ -4,7 +4,7 @@ import path from 'path';
 import seedrandom from 'seedrandom';
 
 // Load the JSON file
-const jsonPath = path.resolve('/.netlify/functions/getWorlds');
+const jsonPath = path.resolve('worlds.json');
 const worldsData = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 
 // Create a new Discord client
