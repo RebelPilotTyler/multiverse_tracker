@@ -3,8 +3,22 @@ const path = require("path");
 
 exports.handler = async () => {
     try {
-        // Read the file from Netlify's filesystem
+        // Define file path
         const filePath = path.join(__dirname, "../../protected/worlds.json");
+
+        // Debug: Log file path to check if it's correct
+        console.log("Attempting to read file:", filePath);
+
+        // Check if file exists
+        if (!fs.existsSync(filePath)) {
+            console.error("File not found:", filePath);
+            return {
+                statusCode: 404,
+                body: JSON.stringify({ error: "worlds.json not found" }),
+            };
+        }
+
+        // Read file
         const worldsData = fs.readFileSync(filePath, "utf-8");
 
         return {
@@ -12,9 +26,10 @@ exports.handler = async () => {
             body: worldsData,
         };
     } catch (error) {
+        console.error("Error in getWorlds.js:", error);
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: "Error retrieving worlds data" }),
+            body: JSON.stringify({ error: "Internal Server Error" }),
         };
     }
 };
