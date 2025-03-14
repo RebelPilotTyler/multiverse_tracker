@@ -3,8 +3,8 @@ const path = require("path");
 
 exports.handler = async () => {
     try {
-        // Use Netlify's deployment directory
-        const filePath = path.join(process.cwd(), "protected", "worlds.json");
+        // Use correct path inside the Netlify function execution environment
+        const filePath = path.join(__dirname, "worlds.json");
 
         console.log("Attempting to read file:", filePath);
 
@@ -17,6 +17,7 @@ exports.handler = async () => {
         }
 
         const worldsData = fs.readFileSync(filePath, "utf-8");
+
         return {
             statusCode: 200,
             body: worldsData,
