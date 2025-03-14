@@ -4,7 +4,7 @@ const path = require("path");
 exports.handler = async () => {
     try {
         // Use correct path inside the Netlify function execution environment
-        const filePath = path.join(__dirname, "worlds.json");
+        const filePath = "worlds.json";
 
         console.log("Attempting to read file:", filePath);
 
