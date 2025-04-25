@@ -1,4 +1,4 @@
-exports.handler = async (event) => {
+export async function handler(event) {
     const { username, password } = JSON.parse(event.body);
 
     // Securely get passwords from Netlify environment variables
@@ -20,4 +20,4 @@ exports.handler = async (event) => {
             body: JSON.stringify({ success: false, message: "Invalid credentials" }),
         };
     }
-};
+}

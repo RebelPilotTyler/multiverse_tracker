@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-exports.handler = async (event) => {
+export async function handler(event) {
     try {
         const body = JSON.parse(event.body);
         const { event_type, client_payload } = body;
@@ -41,4 +41,4 @@ exports.handler = async (event) => {
             body: JSON.stringify({ error: error.message }),
         };
     }
-};
+}

@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-exports.handler = async () => {
+export async function handler(event) {
     try {
         // Use correct path inside the Netlify function execution environment
         const filePath = "netlify/functions/worlds.json";
@@ -29,4 +29,4 @@ exports.handler = async () => {
             body: JSON.stringify({ error: "Internal Server Error" }),
         };
     }
-};
+}
